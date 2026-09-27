@@ -43,14 +43,17 @@ public final class StructuredOutput {
 
     public static void main(String[] args) throws Exception {
         if (args.length == 1 && "--self-test".equals(args[0])) { ContractTests.run(); return; }
-        if (args.length < 1 || !"--live".equals(args[0])) {
-            System.out.println("Use --self-test (offline) or --live [new evidence directory] (3 API calls)."); return;
+        boolean jsonMode = args.length > 0 && "--live-json".equals(args[0]);
+        if (args.length < 1 || (!"--live".equals(args[0]) && !jsonMode)) {
+            System.out.println("Use --self-test (offline) or --live [new directory] (3 calls), --live-json [new directory] (1 JSON-mode probe)."); return;
         }
         String key = System.getenv("AGNES_API_KEY");
         if (key == null || key.trim().isEmpty()) throw new IOException("AGNES_API_KEY_missing");
         Path dir = Paths.get(args.length > 1 ? args[1] : "evidence/live-" + System.currentTimeMillis());
         Files.createDirectories(dir);
-        if (Files.list(dir).findAny().isPresent()) throw new IOException("evidence_directory_not_empty");
+        try (java.util.stream.Stream<Path> paths = Files.list(dir)) {
+            if (paths.findAny().isPresent()) throw new IOException("evidence_directory_not_empty");
+        }
         ChatClient client = new ChatClient(ENDPOINT, key, 90000, false);
         String[] inputs = {
             "本文介绍使用 Java 调用大模型 HTTP 接口，并用 Gson 解析 JSON。示例中有术语 \"接口\" 和换行。\n包括多轮对话。",
@@ -58,9 +61,14 @@ public final class StructuredOutput {
             "在 MuJoCo 中用双指夹爪拾取红色方块，记录接触和放置误差。"
         };
         JsonArray records = new JsonArray();
-        for (int i = 0; i < inputs.length; i++) {
+        int requestCount = jsonMode ? 1 : inputs.length;
+        for (int i = 0; i < requestCount; i++) {
             JsonObject row = record("live-" + (i + 1), "live-api");
             JsonObject request = request(inputs[i]);
+            if (jsonMode) {
+                JsonObject format = new JsonObject(); format.addProperty("type", "json_object");
+                request.add("response_format", format);
+            }
             row.add("request", request); long start = System.nanoTime();
             try {
                 JsonObject envelope = client.post(request);
@@ -83,7 +91,8 @@ public final class StructuredOutput {
         }
         JsonObject manifest = record("manifest", "live-api");
         manifest.addProperty("javaVersion", System.getProperty("java.version"));
-        manifest.addProperty("requestCount", inputs.length);
+        manifest.addProperty("requestCount", requestCount);
+        manifest.addProperty("responseFormat", jsonMode ? "json_object" : "prompt-only");
         manifest.addProperty("endpoint", ENDPOINT);
         manifest.addProperty("model", MODEL);
         manifest.addProperty("responsePolicy", "Selected response fields only; no headers, credentials or reasoning_content.");
