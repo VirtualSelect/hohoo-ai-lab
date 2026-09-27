@@ -29,6 +29,12 @@ public final class StructuredOutput {
         return root;
     }
 
+    static String hex(byte[] bytes) {
+        StringBuilder value = new StringBuilder();
+        for (byte b : bytes) value.append(String.format("%02x", b & 255));
+        return value.toString();
+    }
+
     static JsonObject record(String id, String mode) {
         JsonObject row = new JsonObject(); row.addProperty("id", id); row.addProperty("mode", mode);
         row.addProperty("at", Instant.now().toString()); row.addProperty("promptVersion", "classification-v1");
@@ -43,6 +49,21 @@ public final class StructuredOutput {
 
     public static void main(String[] args) throws Exception {
         if (args.length == 1 && "--self-test".equals(args[0])) { ContractTests.run(); return; }
+        if (args.length == 2 && "--replay".equals(args[0])) {
+            Path source = Paths.get(args[1]);
+            if (Files.size(source) > 65536) throw new IOException("record_too_large");
+            JsonObject captured = JsonParser.parseString(new String(Files.readAllBytes(source), StandardCharsets.UTF_8)).getAsJsonObject();
+            String raw = captured.getAsJsonObject("response").get("content").getAsString();
+            String normalized = ContentFormat.unwrapOneJsonFence(raw);
+            Classification classification = Classification.parse(normalized);
+            JsonObject replay = record("fence-adapter", "offline-replay-of-live-response");
+            replay.addProperty("source", source.toString().replace(java.io.File.separator, "/"));
+            replay.addProperty("sourceSha256", hex(java.security.MessageDigest.getInstance("SHA-256").digest(Files.readAllBytes(source))));
+            replay.addProperty("transformation", raw.equals(normalized) ? "none" : "unwrap-one-json-fence");
+            replay.addProperty("accepted", true); replay.add("classification", JSON.toJsonTree(classification));
+            save(Paths.get("evidence/replay-" + System.currentTimeMillis() + ".json"), replay);
+            System.out.println(JSON.toJson(replay)); return;
+        }
         boolean jsonMode = args.length > 0 && "--live-json".equals(args[0]);
         if (args.length < 1 || (!"--live".equals(args[0]) && !jsonMode)) {
             System.out.println("Use --self-test (offline) or --live [new directory] (3 calls), --live-json [new directory] (1 JSON-mode probe)."); return;

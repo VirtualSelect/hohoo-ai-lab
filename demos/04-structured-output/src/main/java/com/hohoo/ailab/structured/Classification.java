@@ -45,7 +45,7 @@ public final class Classification {
                     String tag = reader.nextString();
                     require(!tag.trim().isEmpty() && tag.equals(tag.trim()), "invalid_tag_whitespace");
                     require(tag.codePointCount(0, tag.length()) <= 20, "tag_too_long");
-                    require(!tag.matches("(?s).*[\\p{Cntrl}].*"), "tag_control_character");
+                    require(!tag.matches("(?s).*[\\p{Cc}].*"), "tag_control_character");
                     require(!tags.contains(tag), "duplicate_tag");
                     tags.add(tag);
                 }

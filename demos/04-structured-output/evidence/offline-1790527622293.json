@@ -1,0 +1,330 @@
+{
+  "id": "offline-tests",
+  "mode": "offline-test-run",
+  "at": "2026-09-27T16:47:02.293Z",
+  "promptVersion": "classification-v1",
+  "contractVersion": "classification-v1",
+  "javaVersion": "1.8.0_171",
+  "passed": 34,
+  "tests": [
+    {
+      "id": "valid",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.269Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"ai-apps\",\"tags\":[\"Java\",\"JSON\"]}",
+      "expectedAccepted": true,
+      "actualAccepted": true
+    },
+    {
+      "id": "review",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"needs-review\",\"tags\":[\"待审核\"]}",
+      "expectedAccepted": true,
+      "actualAccepted": true
+    },
+    {
+      "id": "markdown",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "```json\n{\"category\":\"ai-apps\",\"tags\":[\"Java\",\"JSON\"]}\n```",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "unknown-category",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"java\",\"tags\":[\"Java\",\"JSON\"]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "numeric-tag",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\",\"tags\":[12]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "empty-tags",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\",\"tags\":[]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "four-tags",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\",\"tags\":[\"a\",\"b\",\"c\",\"d\"]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "duplicate-tag",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\",\"tags\":[\"a\",\"a\"]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "unknown-field",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\",\"tags\":[\"a\"],\"command\":\"delete\"}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "duplicate-field",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\",\"category\":\"ai-apps\",\"tags\":[\"a\"]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "missing-field",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\"}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "null",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":null,\"tags\":[\"a\"]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "not-json",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "这里是结果：{\"category\":\"ai-apps\",\"tags\":[\"Java\",\"JSON\"]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "single-quotes",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{'category':'llm','tags':['a']}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "trailing-json",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"ai-apps\",\"tags\":[\"Java\",\"JSON\"]}{}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "blank-tag",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\",\"tags\":[\" \"]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "control-tag",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\",\"tags\":[\"a\\nb\"]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "long-tag",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\",\"tags\":[\"abcdefghijklmnopqrstuvwxyz\"]}",
+      "expectedAccepted": false,
+      "actualAccepted": false
+    },
+    {
+      "id": "semantic-mistake-still-valid",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "input": "{\"category\":\"llm\",\"tags\":[\"炒饭\"]}",
+      "expectedAccepted": true,
+      "actualAccepted": true
+    },
+    {
+      "id": "finished",
+      "mode": "synthetic-envelope",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": true,
+      "expectedAccepted": true
+    },
+    {
+      "id": "truncated",
+      "mode": "synthetic-envelope",
+      "at": "2026-09-27T16:47:00.283Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": false,
+      "expectedAccepted": false
+    },
+    {
+      "id": "empty-choices",
+      "mode": "synthetic-envelope",
+      "at": "2026-09-27T16:47:00.284Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": false,
+      "expectedAccepted": false
+    },
+    {
+      "id": "empty-content",
+      "mode": "synthetic-envelope",
+      "at": "2026-09-27T16:47:00.284Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": false,
+      "expectedAccepted": false
+    },
+    {
+      "id": "input-escaping",
+      "mode": "synthetic-fixture",
+      "at": "2026-09-27T16:47:00.284Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "passed": true
+    },
+    {
+      "id": "adapter-plain",
+      "mode": "synthetic-format-adapter",
+      "at": "2026-09-27T16:47:00.285Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": true,
+      "expectedAccepted": true
+    },
+    {
+      "id": "adapter-single-fence",
+      "mode": "synthetic-format-adapter",
+      "at": "2026-09-27T16:47:00.285Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": true,
+      "expectedAccepted": true
+    },
+    {
+      "id": "adapter-prose",
+      "mode": "synthetic-format-adapter",
+      "at": "2026-09-27T16:47:00.285Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": false,
+      "expectedAccepted": false
+    },
+    {
+      "id": "adapter-two-fences",
+      "mode": "synthetic-format-adapter",
+      "at": "2026-09-27T16:47:00.285Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": false,
+      "expectedAccepted": false
+    },
+    {
+      "id": "adapter-still-checks-enum",
+      "mode": "synthetic-format-adapter",
+      "at": "2026-09-27T16:47:00.285Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": false,
+      "expectedAccepted": false
+    },
+    {
+      "id": "transport-ok",
+      "mode": "loopback-http-fixture",
+      "at": "2026-09-27T16:47:02.211Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": true
+    },
+    {
+      "id": "transport-error",
+      "mode": "loopback-http-fixture",
+      "at": "2026-09-27T16:47:02.228Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": false
+    },
+    {
+      "id": "transport-redirect",
+      "mode": "loopback-http-fixture",
+      "at": "2026-09-27T16:47:02.229Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": false
+    },
+    {
+      "id": "transport-slow",
+      "mode": "loopback-http-fixture",
+      "at": "2026-09-27T16:47:02.290Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": false
+    },
+    {
+      "id": "transport-invalid",
+      "mode": "loopback-http-fixture",
+      "at": "2026-09-27T16:47:02.291Z",
+      "promptVersion": "classification-v1",
+      "contractVersion": "classification-v1",
+      "actualAccepted": false
+    }
+  ]
+}

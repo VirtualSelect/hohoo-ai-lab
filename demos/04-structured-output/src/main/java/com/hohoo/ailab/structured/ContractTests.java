@@ -50,6 +50,7 @@ public final class ContractTests {
         check("trailing-json", ok + "{}", false);
         check("blank-tag", "{\"category\":\"llm\",\"tags\":[\" \"]}", false);
         check("control-tag", "{\"category\":\"llm\",\"tags\":[\"a\\nb\"]}", false);
+        check("control-c1-tag", "{\"category\":\"llm\",\"tags\":[\"a\\u0085b\"]}", false);
         check("long-tag", "{\"category\":\"llm\",\"tags\":[\"abcdefghijklmnopqrstuvwxyz\"]}", false);
         check("semantic-mistake-still-valid", "{\"category\":\"llm\",\"tags\":[\"炒饭\"]}", true);
         envelopeCheck("finished", envelope(ok, "stop"), true);
@@ -61,12 +62,25 @@ public final class ContractTests {
         if (!input.equals(decoded)) throw new AssertionError("escaping");
         JsonObject escape = StructuredOutput.record("input-escaping", "synthetic-fixture");
         escape.addProperty("passed", true); records.add(escape);
+        adapter("adapter-plain", ok, true);
+        adapter("adapter-single-fence", "\n\n```json\n" + ok + "\n```", true);
+        adapter("adapter-prose", "Result:\n```json\n" + ok + "\n```", false);
+        adapter("adapter-two-fences", "```json\n" + ok + "\n```\n```json\n" + ok + "\n```", false);
+        adapter("adapter-still-checks-enum", "```json\n" + ok.replace("ai-apps", "java") + "\n```", false);
         transport();
         JsonObject report = StructuredOutput.record("offline-tests", "offline-test-run");
         report.addProperty("javaVersion", System.getProperty("java.version"));
         report.addProperty("passed", records.size()); report.add("tests", records);
         StructuredOutput.save(Paths.get("evidence/offline-" + System.currentTimeMillis() + ".json"), report);
         System.out.println(records.size() + " offline checks passed. Fixtures are not model outputs.");
+    }
+    static void adapter(String id, String value, boolean expected) throws Exception {
+        boolean accepted;
+        try { Classification.parse(ContentFormat.unwrapOneJsonFence(value)); accepted = true; }
+        catch (IOException e) { accepted = false; }
+        if (accepted != expected) throw new AssertionError(id);
+        JsonObject row = StructuredOutput.record(id, "synthetic-format-adapter");
+        row.addProperty("actualAccepted", accepted); row.addProperty("expectedAccepted", expected); records.add(row);
     }
     static void transport() throws Exception {
         HttpServer server = HttpServer.create(new InetSocketAddress("127.0.0.1", 0), 0);
