@@ -1,0 +1,29 @@
+{
+  "index": 26,
+  "case": "F2",
+  "condition": "absent",
+  "repeat": 2,
+  "startedAt": "2026-09-28T15:56:26.757Z",
+  "requestSha256": "82a8648212692638de202b60b27b05eb8d3912819db046b2a864805a85a62aaa",
+  "requestCharacters": 4301,
+  "httpStatus": 200,
+  "id": "66f7255c0e404a508cf0954bf7e91018",
+  "model": "agnes-2.5-flash",
+  "created": 1790610991,
+  "usage": {
+    "completion_tokens": 88,
+    "prompt_tokens": 2883,
+    "total_tokens": 2971,
+    "completion_tokens_details": {
+      "reasoning_tokens": 85,
+      "text_tokens": 3
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "finishReason": "stop",
+  "content": "\n\nUNKNOWN",
+  "outcome": "correct_abstention",
+  "elapsedMs": 6136
+}

@@ -1,0 +1,13 @@
+{
+  "index": 27,
+  "case": "F5",
+  "condition": "middle",
+  "repeat": 2,
+  "startedAt": "2026-09-28T15:56:32.894Z",
+  "requestSha256": "eb758d5652d82a8ed85de0730158b4df6aefb6703168f6adde49a46fbe6b376f",
+  "requestCharacters": 4298,
+  "outcome": "transport_error",
+  "errorClass": "IOException",
+  "errorCode": "http_429",
+  "elapsedMs": 397
+}

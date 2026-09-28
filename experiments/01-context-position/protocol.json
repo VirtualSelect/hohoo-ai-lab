@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "id": "L1",
+  "model": "agnes-2.5-flash",
+  "endpoint": "https://apihub.agnes-ai.com/v1/chat/completions",
+  "repeats": 2,
+  "distractors": 60,
+  "conditions": [
+    "beginning",
+    "middle",
+    "end",
+    "absent"
+  ],
+  "orderSeed": 20260928,
+  "temperature": 0,
+  "maxTokens": 512,
+  "connectTimeoutMs": 10000,
+  "readTimeoutMs": 90000,
+  "consecutiveFailureLimit": 3,
+  "maxRequests": 48,
+  "scoring": "Exact trimmed answer. Correct code / wrong code / UNKNOWN / other format. Missing evidence requires UNKNOWN. HTTP, finish and parsing failures are separate.",
+  "scope": "Synthetic Chinese key retrieval, one context length, one endpoint and model. Not a replication of Lost in the Middle, a benchmark or long-term memory evaluation."
+}
