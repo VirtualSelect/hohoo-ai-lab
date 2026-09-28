@@ -1,0 +1,13 @@
+{
+  "index": 29,
+  "case": "F3",
+  "condition": "end",
+  "repeat": 1,
+  "startedAt": "2026-09-28T15:56:35.446Z",
+  "requestSha256": "173d1b24e9ed90dbf70455a9dd493b4c29a1e1a4b19137e9e02f613f70c39681",
+  "requestCharacters": 4298,
+  "outcome": "transport_error",
+  "errorClass": "IOException",
+  "errorCode": "http_429",
+  "elapsedMs": 3091
+}

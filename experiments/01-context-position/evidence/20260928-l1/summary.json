@@ -1,0 +1,22 @@
+{
+  "conditions": {
+    "middle": {
+      "correct": 6,
+      "transport_error": 2
+    },
+    "beginning": {
+      "correct": 8
+    },
+    "end": {
+      "correct": 6,
+      "transport_error": 1
+    },
+    "absent": {
+      "correct_abstention": 6
+    }
+  },
+  "finishedAt": "2026-09-28T15:56:38.538Z",
+  "planned": 48,
+  "attempted": 29,
+  "stoppedEarly": true
+}
