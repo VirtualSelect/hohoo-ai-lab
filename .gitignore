@@ -2,3 +2,5 @@ demos/**/out/
 demos/**/target/
 *.class
 .idea/
+
+experiments/**/target/
