@@ -1,3 +1,4 @@
 demos/**/out/
 demos/**/target/
 *.class
+.idea/

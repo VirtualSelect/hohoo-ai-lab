@@ -1,0 +1,12 @@
+{
+  "id": "manifest",
+  "mode": "live-api",
+  "at": "2026-09-27T16:28:48.933Z",
+  "promptVersion": "classification-v1",
+  "contractVersion": "classification-v1",
+  "javaVersion": "1.8.0_171",
+  "requestCount": 3,
+  "endpoint": "https://apihub.agnes-ai.com/v1/chat/completions",
+  "model": "agnes-2.5-flash",
+  "responsePolicy": "Selected response fields only; no headers, credentials or reasoning_content."
+}

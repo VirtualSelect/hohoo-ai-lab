@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ArticleClassification",
+  "description": "Documented core contract. Java additionally rejects duplicate keys, control characters and surrounding whitespace in tags. This file is not sent to Agnes.",
+  "type": "object",
+  "required": [
+    "category",
+    "tags"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "category": {
+      "type": "string",
+      "enum": [
+        "ai-apps",
+        "llm",
+        "embodied-ai",
+        "needs-review"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 20
+      }
+    }
+  }
+}

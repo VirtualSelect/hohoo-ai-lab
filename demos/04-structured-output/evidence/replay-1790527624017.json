@@ -1,0 +1,19 @@
+{
+  "id": "fence-adapter",
+  "mode": "offline-replay-of-live-response",
+  "at": "2026-09-27T16:47:03.984Z",
+  "promptVersion": "classification-v1",
+  "contractVersion": "classification-v1",
+  "source": "evidence/live-20260928/live-1.json",
+  "sourceSha256": "34ef2eaed813d4c0c5453f40aaeab9227feca4ccb1ed21fedc129ecc6aa2eace",
+  "transformation": "unwrap-one-json-fence",
+  "accepted": true,
+  "classification": {
+    "category": "ai-apps",
+    "tags": [
+      "LLM应用",
+      "API集成",
+      "多轮对话"
+    ]
+  }
+}
