@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "id": "L1v2",
+  "model": "agnes-2.5-flash",
+  "endpoint": "https://apihub.agnes-ai.com/v1/chat/completions",
+  "repeats": 1,
+  "conditions": [
+    "beginning",
+    "middle",
+    "end",
+    "absent"
+  ],
+  "orderSeed": 20260928,
+  "temperature": 0,
+  "maxTokens": 1024,
+  "connectTimeoutMs": 10000,
+  "readTimeoutMs": 90000,
+  "consecutiveFailureLimit": 2,
+  "maxRequests": 24,
+  "scoring": "Exact trimmed answer. Correct code / wrong code / UNKNOWN / other format. Missing evidence requires UNKNOWN. HTTP, finish and parsing failures are separate.",
+  "scope": "Three synthetic Chinese cases x two material lengths x four conditions. Consecutive within-block comparisons; no retries, stop immediately on HTTP 429/401/403. Small descriptive study, not a benchmark or causal isolation of attention.",
+  "lengths": [
+    60,
+    240
+  ],
+  "minPauseMs": 20000
+}
