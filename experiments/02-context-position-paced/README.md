@@ -38,3 +38,9 @@
     node audit.mjs evidence/my-preparation --prepared
 
 该目录只有材料和离线检查记录，不包含模型响应。真实执行另选新目录。
+
+## 本次已完成的验证
+
+2026-09-29，Java 1.8.0_171 上实际通过80项离线检查，完整24项请求计划已导出，独立Node审计通过。证据目录：evidence/20260929-l1v2-offline。该目录没有 attempt 响应文件；未执行新的线上模型对照，不能据此报告位置效应或成功率。
+
+[配套文章](https://huhohoo.com/docs/llm/context-position-paired-protocol)
