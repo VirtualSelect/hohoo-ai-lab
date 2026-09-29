@@ -197,7 +197,14 @@ public final class ContextExperiment {
     protocol=JsonParser.parseString(new String(Files.readAllBytes(Paths.get("protocol.json")),StandardCharsets.UTF_8)).getAsJsonObject();cases=JsonParser.parseString(new String(Files.readAllBytes(Paths.get("cases.json")),StandardCharsets.UTF_8)).getAsJsonArray();
     if(args.length==1&&args[0].equals("--self-test")){System.out.println("PASS "+selfTest()+" checks");return;}
     if(args.length==1&&args[0].equals("--dry-run")){JsonArray jobs=plan();int min=Integer.MAX_VALUE,max=0;for(JsonElement j:jobs){int n=j.getAsJsonObject().get("request").toString().length();min=Math.min(min,n);max=Math.max(max,n);}System.out.println("Requests="+jobs.size()+", repeats="+number("repeats")+", request UTF-16 characters="+min+".."+max+", max output tokens="+number("maxTokens")+". No API calls. Character count is not tokens.");return;}
+    if(args.length==2&&args[0].equals("--prepare")){
+      Path out=Paths.get(args[1]);check(!Files.exists(out),"output_directory_exists");int checks=selfTest();Files.createDirectories(out);
+      JsonObject manifest=new JsonObject();manifest.addProperty("kind","offline-preparation; no model requests");manifest.addProperty("at",Instant.now().toString());manifest.addProperty("java",System.getProperty("java.version"));manifest.addProperty("commit",gitRevision());manifest.addProperty("offlineChecks",checks);
+      JsonObject hashes=new JsonObject();for(String file:new String[]{"protocol.json","cases.json",SOURCE})hashes.addProperty(file,sha(Files.readAllBytes(Paths.get(file))));manifest.add("sha256",hashes);
+      save(out.resolve("manifest.json"),manifest);save(out.resolve("protocol.json"),protocol);save(out.resolve("cases.json"),cases);save(out.resolve("plan.json"),plan());
+      System.out.println("PASS "+checks+" offline checks. Prepared 24 requests. No API calls.");return;
+    }
     if(args.length==2&&args[0].equals("--run")){selfTest();run(Paths.get(args[1]));return;}
-    System.out.println("Use --self-test, --dry-run or --run <new-evidence-directory>. --run calls Agnes up to 24 times; 20s pause after each attempt; no retries.");
+    System.out.println("Use --self-test, --dry-run, --prepare <new-directory> or --run <new-evidence-directory>. --run calls Agnes up to 24 times; 20s pause after each attempt; no retries.");
   }
 }

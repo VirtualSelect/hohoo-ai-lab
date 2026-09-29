@@ -7,7 +7,7 @@ if(!dir)throw new Error('Usage: node audit.mjs <evidence-directory>');
 const read=f=>JSON.parse(fs.readFileSync(path.join(dir,f),'utf8'));
 const bytes=r=>JSON.stringify(r).replace('"temperature":0,','"temperature":0.0,');
 const hash=v=>crypto.createHash('sha256').update(v).digest('hex');
-const plan=read('plan.json'),cases=read('cases.json'),protocol=read('protocol.json'),summary=read('summary.json');
+const plan=read('plan.json'),cases=read('cases.json'),protocol=read('protocol.json');
 assert.equal(plan.length,24);
 assert.equal(new Set(plan.map(j=>[j.case,j.distractors,j.condition].join('/'))).size,24);
 for(const c of cases)for(const n of protocol.lengths){
@@ -24,6 +24,12 @@ for(const c of cases)for(const n of protocol.lengths){
  const absent=lines(jobs.find(j=>j.condition==='absent')).join('\n');
  assert.ok(!absent.includes(c.answer)&&!absent.includes(c.project));
 }
+if(process.argv.includes('--prepared')){
+ assert.equal(read('manifest.json').kind,'offline-preparation; no model requests');
+ assert.equal(fs.readdirSync(dir).filter(f=>/^attempt-/.test(f)).length,0);
+ console.log(JSON.stringify({kind:'offline-preparation',planned:plan.length,requestsSent:0,cases:cases.length,lengths:protocol.lengths,offlineChecks:read('manifest.json').offlineChecks}));process.exit(0);
+}
+const summary=read('summary.json');
 const files=fs.readdirSync(dir).filter(f=>/^attempt-\d+.json$/.test(f)).sort();
 const counts={},usage={prompt_tokens:0,completion_tokens:0,total_tokens:0};
 let available=0,failures=0,previous;
