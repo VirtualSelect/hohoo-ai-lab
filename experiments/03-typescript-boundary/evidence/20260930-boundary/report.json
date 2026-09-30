@@ -1,0 +1,291 @@
+{
+  "kind": "synthetic contract differential test + historical response replay; not model benchmark",
+  "at": "2026-09-30T03:03:05.904Z",
+  "node": "v26.8.2",
+  "typescript": "7.0.2",
+  "java": "1.8.0_171",
+  "commit": "dfd9a076103e44d7110cdf718005ee217fdcd41a",
+  "sourceSha256": {
+    "fixtures.json": "20dbf657ee6ab37e883590fdc8b850a933256832578be0f92e8efc175d3cd522",
+    "src/classification.ts": "34cd7751bb11f1581223d8c523b9d273ccf51f5afa0b367a3cc30552fc1a9f69",
+    "src/type-contract.ts": "bd73f5efdf5ff0c275d91a529b0e576bdbb83a111ad05b5311cb287844d4ed25",
+    "java/ContractProbe.java": "7081992586c53fb911bc14b1526afa4a97b8d9108b203b15ae2461a8ff37fc8b",
+    "run.mjs": "99578a1987dfa2fd7267c6fae3c7080004a1c2f829cf9debce6a299de26c283e",
+    "package.json": "da1f96338ab7affc8f692a0a29e9bbc5de9f4db4165718648fbe0fe5f976c0ca",
+    "package-lock.json": "51870e2efa5f8519b113bff36608ac1bb78705167ae764721f3caa260ad21606",
+    "tsconfig.json": "1521211b539227c8c16bdef818867b647a594d4aba9a8faff5b4d816a602775e"
+  },
+  "javaValidatorSha256": "2a7bc4d5c75782f15805d39a785c76999b2e17f3a28cf8f67db7047d89d387c5",
+  "counts": {
+    "fixtures": 32,
+    "castFalseAccepts": 22,
+    "objectFalseAccepts": 4,
+    "wireJavaAgreements": 32
+  },
+  "rows": [
+    {
+      "id": "valid",
+      "expectedAccepted": true,
+      "castAccepted": true,
+      "objectAccepted": true,
+      "wireAccepted": true,
+      "javaAccepted": true
+    },
+    {
+      "id": "review",
+      "expectedAccepted": true,
+      "castAccepted": true,
+      "objectAccepted": true,
+      "wireAccepted": true,
+      "javaAccepted": true
+    },
+    {
+      "id": "markdown",
+      "expectedAccepted": false,
+      "castAccepted": false,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "unknown-category",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "numeric-tag",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "empty-tags",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "four-tags",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "duplicate-tag",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "unknown-field",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "duplicate-field",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": true,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "missing-field",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "null",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "not-json",
+      "expectedAccepted": false,
+      "castAccepted": false,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "single-quotes",
+      "expectedAccepted": false,
+      "castAccepted": false,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "trailing-json",
+      "expectedAccepted": false,
+      "castAccepted": false,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "blank-tag",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "control-tag",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "control-c1-tag",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "long-tag",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "semantic-mistake-still-valid",
+      "expectedAccepted": true,
+      "castAccepted": true,
+      "objectAccepted": true,
+      "wireAccepted": true,
+      "javaAccepted": true
+    },
+    {
+      "id": "escaped-duplicate-key",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": true,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "duplicate-tags",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": true,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "root-array",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "nested-tag",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "escaped-string-delimiters",
+      "expectedAccepted": true,
+      "castAccepted": true,
+      "objectAccepted": true,
+      "wireAccepted": true,
+      "javaAccepted": true
+    },
+    {
+      "id": "unicode-20-codepoints",
+      "expectedAccepted": true,
+      "castAccepted": true,
+      "objectAccepted": true,
+      "wireAccepted": true,
+      "javaAccepted": true
+    },
+    {
+      "id": "unicode-21-codepoints",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "leading-ascii-space",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "nbsp-compatibility",
+      "expectedAccepted": true,
+      "castAccepted": true,
+      "objectAccepted": true,
+      "wireAccepted": true,
+      "javaAccepted": true
+    },
+    {
+      "id": "unknown-prototype-property",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "oversized-content",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": true,
+      "wireAccepted": false,
+      "javaAccepted": false
+    },
+    {
+      "id": "single-root-null",
+      "expectedAccepted": false,
+      "castAccepted": true,
+      "objectAccepted": false,
+      "wireAccepted": false,
+      "javaAccepted": false
+    }
+  ],
+  "replay": {
+    "kind": "offline replay of saved real response, no API call",
+    "source": "../../demos/04-structured-output/evidence/live-20260928/live-1.json",
+    "sourceSha256": "89be193101122b239c631f11f0d39bba97f7b4ff514ed473a1ad0d75633f500f",
+    "sourceModel": "agnes-2.5-flash",
+    "strictAccepted": false,
+    "adaptedAccepted": true
+  }
+}

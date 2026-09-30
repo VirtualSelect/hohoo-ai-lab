@@ -1,0 +1,12 @@
+{
+  "kind": "offline-preparation; no model requests",
+  "at": "2026-09-30T02:50:11.945Z",
+  "java": "1.8.0_171",
+  "commit": "bae8ea4f7ad43680c9653c9a8b481083af8043d2",
+  "offlineChecks": 80,
+  "sha256": {
+    "protocol.json": "c10f0d2b8f304e93b01a512a80c28e93a6ec4f57b85ff0d6d6e57f1354a27bb0",
+    "cases.json": "96ab481b27af2c2084c36c00bc55f20c9e2a7278fbe27f0f5588b776ba993078",
+    "src/main/java/com/hohoo/ailab/context/ContextExperiment.java": "1899603cb1e5d4f39af836f73db32c17b1ee6f97e2d4935d0b84d729b1eeb083"
+  }
+}
