@@ -44,3 +44,21 @@
 2026-09-29，Java 1.8.0_171 上实际通过80项离线检查，完整24项请求计划已导出，独立Node审计通过。证据目录：evidence/20260929-l1v2-offline。该目录没有 attempt 响应文件；未执行新的线上模型对照，不能据此报告位置效应或成功率。
 
 [配套文章](https://huhohoo.com/docs/llm/context-position-paired-protocol)
+
+## 2026-09-30 · Agnes 3.0 在线结果
+
+在协议 L1v2-agnes3（version 3）下执行全部24次请求，无重试。18份含答案响应编号正确，6份缺失答案响应为 UNKNOWN；6个block完整，未发生HTTP或协议失败。每个长度的beginning/middle/end/absent各3份，均符合预期。
+
+- 原始证据：`evidence/20260930-agnes3-live`。
+- `audit.json`：独立评分、完整块、服务端用量及最短观察间隔（20001ms）。
+- `verification.json`：与20260930-agnes3-prepared逐项比对，附30份JSON的LF规范化SHA256。
+- 返回用量：prompt 134614、completion 144、total 134758 tokens；这是响应usage之和，不是账单或价格估算。
+- UTC 05:06:52.476–05:17:12.120；Java 1.8.0_171；运行代码提交 b352a380eb04eba936867fa2e0b79aacb0dcc732。
+- 原准备协议文件在Windows检出后仅LF/CRLF发生变化，规范化哈希、JSON内容与全部请求计划一致。manifest保存运行时实际字节哈希，旧准备材料不覆盖。
+
+结论仅为本次固定材料中未观察到位置差异。三题、两种长度、每格一次且全对存在天花板；不能证明位置无关，也不能与Agnes 2.5旧试验拼接比较。下一轮应增加语义相近干扰或问题类型并预先冻结协议，不用这24个样本调整到得出预设结论。
+
+离线复核（不读密钥、不调用模型）：
+
+    node audit.mjs evidence/20260930-agnes3-live
+    node --test audit.test.mjs

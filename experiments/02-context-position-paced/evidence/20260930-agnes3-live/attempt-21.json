@@ -1,0 +1,23 @@
+{
+  "index": 21,
+  "case": "F3",
+  "condition": "middle",
+  "block": 6,
+  "distractors": 240,
+  "startedAt": "2026-09-30T05:15:54.385Z",
+  "requestSha256": "c35431a7dc760985e56e59e545ba23b4072f46d285103d1b4ce0e64e7b03d048",
+  "requestCharacters": 13909,
+  "httpStatus": 200,
+  "id": "a9316e0a3eee4e94aaed5dbfda87c356",
+  "model": "agnes-3.0-flash",
+  "created": 1790745356,
+  "usage": {
+    "completion_tokens": 7,
+    "prompt_tokens": 8897,
+    "total_tokens": 8904
+  },
+  "finishReason": "stop",
+  "content": "JT-9053",
+  "outcome": "correct",
+  "elapsedMs": 2336
+}

@@ -19,7 +19,7 @@ Learning, experimenting and building with AI — Java, LLMs, RAG, Agents and bey
 
 - [L1：上下文位置试验](experiments/01-context-position/README.md)：冻结材料、92项离线断言、29次尝试和提前停止记录；不把请求失败计作模型答错。
 
-- [L1v2：成组对照与节流](experiments/02-context-position-paced/README.md)：60/240行材料、24项冻结计划、80项离线检查；支持先导出请求再调用。当前提交只包含离线准备证据，没有新增模型响应。
+- [L1v2：成组对照与节流](experiments/02-context-position-paced/README.md)：60/240行材料、80项离线检查；Agnes 3.0完成24次实测，6组成对照，18个编号正确与6个正确拒答。固定材料全对不等于位置无关。
 
 - [A1：事务式对话历史](demos/05-transactional-chat/README.md)：41项离线检查，整轮提交与UTF-8请求预算，无新增API请求。
 - [TypeScript 输出边界](experiments/03-typescript-boundary/README.md)：32组Java/TypeScript对照，37项测试，历史响应离线重放。
