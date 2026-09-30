@@ -1,0 +1,14 @@
+{
+  "kind": "offline-preparation; no model requests",
+  "planned": 128,
+  "requestsSent": 0,
+  "cases": 8,
+  "lengths": [
+    60,
+    240
+  ],
+  "blocks": 32,
+  "pairs": 16,
+  "offlineChecks": 2515,
+  "materialIntegrity": "passed"
+}

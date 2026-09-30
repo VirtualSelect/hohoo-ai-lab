@@ -23,3 +23,7 @@ Learning, experimenting and building with AI — Java, LLMs, RAG, Agents and bey
 
 - [A1：事务式对话历史](demos/05-transactional-chat/README.md)：41项离线检查，整轮提交与UTF-8请求预算，无新增API请求。
 - [TypeScript 输出边界](experiments/03-typescript-boundary/README.md)：32组Java/TypeScript对照，37项测试，历史响应离线重放。
+
+## 下一轮：相似干扰与上下文位置（离线就绪）
+
+[L1v3](experiments/04-context-position-similar/README.md)：8题×两种长度×两种相似度×四条件，128项冻结计划。本机Java 8/Maven编译、2515项自检与60项独立测试通过，真实请求为0；没有新增模型结论。线上请求需单独确认费率与金额预算。

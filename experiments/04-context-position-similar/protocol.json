@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "id": "L1v3-similar-agnes3",
+  "model": "agnes-3.0-flash",
+  "endpoint": "https://apihub.agnes-ai.com/v1/chat/completions",
+  "conditions": [
+    "beginning",
+    "middle",
+    "end",
+    "absent"
+  ],
+  "orderSeed": 20260930,
+  "temperature": 0,
+  "maxTokens": 1024,
+  "connectTimeoutMs": 10000,
+  "readTimeoutMs": 90000,
+  "consecutiveFailureLimit": 2,
+  "maxRequests": 128,
+  "scoring": "Exact trimmed answer. Correct code / wrong code / UNKNOWN / other format. Missing evidence requires UNKNOWN. HTTP, finish and parsing failures are separate.",
+  "scope": "Eight lexical/code cases from one template family x two lengths x two similarity levels x four conditions. Exploratory paired study; requests are not independent. No pooling with prior experiments.",
+  "lengths": [
+    60,
+    240
+  ],
+  "minPauseMs": 20000,
+  "modelChange": "New model run; do not pool with Agnes 2.5 or the prior offline preparation.",
+  "similarities": [
+    "low",
+    "high"
+  ],
+  "primaryMetric": "mean_case(mean_length(middle_loss_high-middle_loss_low)); middle_loss=(beginning+end)/2-middle",
+  "practicalThreshold": 0.1,
+  "bootstrapSeed": 20260930,
+  "bootstrapSamples": 10000,
+  "distractorSlots": "floor((2*k+1)*N/12), k=0..5; same slots low/high",
+  "orderDesign": "Java Collections.shuffle(new Random(orderSeed)); lengths in declared order; low/high alternates by shuffled case index; Williams row index modulo four",
+  "primaryEligibility": "case has complete low/high blocks at every planned length; case then length equal weighting",
+  "caseFamilyLimitation": "Lexical/code instantiations of one shared retrieval template family; requests are not independent samples"
+}

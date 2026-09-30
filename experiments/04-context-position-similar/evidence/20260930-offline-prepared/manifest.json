@@ -1,0 +1,24 @@
+{
+  "kind": "offline-preparation; no model requests",
+  "at": "2026-09-30T08:05:02.732096705Z",
+  "java": "21.0.12.1",
+  "commit": "16a05f19c69ba4f00a20b41c80a4fe4da93dedb2",
+  "offlineChecks": 2515,
+  "evidenceSha256": {
+    "protocol.json": "f45b4213db9afd4daabb4ce32128f0c8a8906bea7ccbde5ca1674f4cc3f21147",
+    "cases.json": "a4f574faa3eb08644e1dd0089be35ebe9d9710c4b32d36f8ae68a39e952207e4",
+    "plan.json": "aea7473f206ff315a1fc3d0151a85cc258fe81765d103e58c5990d8397194a56"
+  },
+  "evidenceLfSha256": {
+    "protocol.json": "f45b4213db9afd4daabb4ce32128f0c8a8906bea7ccbde5ca1674f4cc3f21147",
+    "cases.json": "a4f574faa3eb08644e1dd0089be35ebe9d9710c4b32d36f8ae68a39e952207e4",
+    "plan.json": "aea7473f206ff315a1fc3d0151a85cc258fe81765d103e58c5990d8397194a56"
+  },
+  "sha256": {
+    "protocol.json": "f45b4213db9afd4daabb4ce32128f0c8a8906bea7ccbde5ca1674f4cc3f21147",
+    "cases.json": "a4f574faa3eb08644e1dd0089be35ebe9d9710c4b32d36f8ae68a39e952207e4",
+    "src/main/java/com/hohoo/ailab/context/ContextExperiment.java": "0ac77816468fb399ad8caaa53ffa37c1785ce9b3d762818d97333a2a8b801289",
+    "audit.mjs": "dfe56e772a47c8ac2b15f368998a1fb390eb3e7d576a3bfd352873347e1067aa"
+  },
+  "workingTreeStatus": "?? experiments/04-context-position-similar/\n"
+}
