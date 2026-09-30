@@ -1,0 +1,194 @@
+[
+  {
+    "id": "valid",
+    "input": "{\"category\":\"ai-apps\",\"tags\":[\"Java\",\"JSON\"]}",
+    "expectedAccepted": true,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "review",
+    "input": "{\"category\":\"needs-review\",\"tags\":[\"待审核\"]}",
+    "expectedAccepted": true,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "markdown",
+    "input": "```json\n{\"category\":\"ai-apps\",\"tags\":[\"Java\",\"JSON\"]}\n```",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "unknown-category",
+    "input": "{\"category\":\"java\",\"tags\":[\"Java\",\"JSON\"]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "numeric-tag",
+    "input": "{\"category\":\"llm\",\"tags\":[12]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "empty-tags",
+    "input": "{\"category\":\"llm\",\"tags\":[]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "four-tags",
+    "input": "{\"category\":\"llm\",\"tags\":[\"a\",\"b\",\"c\",\"d\"]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "duplicate-tag",
+    "input": "{\"category\":\"llm\",\"tags\":[\"a\",\"a\"]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "unknown-field",
+    "input": "{\"category\":\"llm\",\"tags\":[\"a\"],\"command\":\"delete\"}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "duplicate-field",
+    "input": "{\"category\":\"llm\",\"category\":\"ai-apps\",\"tags\":[\"a\"]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "missing-field",
+    "input": "{\"category\":\"llm\"}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "null",
+    "input": "{\"category\":null,\"tags\":[\"a\"]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "not-json",
+    "input": "这里是结果：{\"category\":\"ai-apps\",\"tags\":[\"Java\",\"JSON\"]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "single-quotes",
+    "input": "{'category':'llm','tags':['a']}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "trailing-json",
+    "input": "{\"category\":\"ai-apps\",\"tags\":[\"Java\",\"JSON\"]}{}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "blank-tag",
+    "input": "{\"category\":\"llm\",\"tags\":[\" \"]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "control-tag",
+    "input": "{\"category\":\"llm\",\"tags\":[\"a\\nb\"]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "control-c1-tag",
+    "input": "{\"category\":\"llm\",\"tags\":[\"a\\u0085b\"]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "long-tag",
+    "input": "{\"category\":\"llm\",\"tags\":[\"abcdefghijklmnopqrstuvwxyz\"]}",
+    "expectedAccepted": false,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "semantic-mistake-still-valid",
+    "input": "{\"category\":\"llm\",\"tags\":[\"炒饭\"]}",
+    "expectedAccepted": true,
+    "origin": "existing Java synthetic fixture"
+  },
+  {
+    "id": "escaped-duplicate-key",
+    "input": "{\"category\":\"llm\",\"\\u0063ategory\":\"ai-apps\",\"tags\":[\"a\"]}",
+    "expectedAccepted": false,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "duplicate-tags",
+    "input": "{\"category\":\"llm\",\"tags\":[\"a\"],\"tags\":[\"b\"]}",
+    "expectedAccepted": false,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "root-array",
+    "input": "[{\"category\":\"llm\",\"tags\":[\"a\"]}]",
+    "expectedAccepted": false,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "nested-tag",
+    "input": "{\"category\":\"llm\",\"tags\":[[\"a\"]]}",
+    "expectedAccepted": false,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "escaped-string-delimiters",
+    "input": "{\"category\":\"llm\",\"tags\":[\"a}[\\\"b:\",\"\\\\path\"]}",
+    "expectedAccepted": true,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "unicode-20-codepoints",
+    "input": "{\"category\":\"llm\",\"tags\":[\"😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀\"]}",
+    "expectedAccepted": true,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "unicode-21-codepoints",
+    "input": "{\"category\":\"llm\",\"tags\":[\"😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀\"]}",
+    "expectedAccepted": false,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "leading-ascii-space",
+    "input": "{\"category\":\"llm\",\"tags\":[\" a\"]}",
+    "expectedAccepted": false,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "nbsp-compatibility",
+    "input": "{\"category\":\"llm\",\"tags\":[\" a \"]}",
+    "expectedAccepted": true,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "unknown-prototype-property",
+    "input": "{\"category\":\"llm\",\"tags\":[\"a\"],\"__proto__\":{\"allowed\":true}}",
+    "expectedAccepted": false,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "oversized-content",
+    "input": "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 {\"category\":\"llm\",\"tags\":[\"a\"]}",
+    "expectedAccepted": false,
+    "origin": "synthetic migration edge case"
+  },
+  {
+    "id": "single-root-null",
+    "input": "null",
+    "expectedAccepted": false,
+    "origin": "synthetic migration edge case"
+  }
+]

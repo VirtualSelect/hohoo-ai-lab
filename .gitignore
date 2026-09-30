@@ -4,3 +4,6 @@ demos/**/target/
 .idea/
 
 experiments/**/target/
+
+experiments/**/node_modules/
+experiments/**/.cache/
