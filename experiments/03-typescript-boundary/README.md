@@ -23,3 +23,9 @@ npm run experiment -- evidence/my-run
 Java探针依赖JAVA_HOME和Maven默认本地仓库里的Gson2.10.1；若使用自定义Maven仓库，通过进程环境变量GSON_JAR指定现有jar文件，不复制依赖或读取凭证。产物保留输入、四路接受结果、版本和哈希。模拟输入不代表模型输出分布，全部通过也不能证明语义正确或端到端安全。历史真实响应只离线重放，不重新调用旧模型。
 
 [配套文章](https://huhohoo.com/docs/ai-apps/typescript-output-boundary)
+
+## 2026-09-30 的结果
+
+32个刻意构造的边界样本：类型断言误接收22个无效输入，仅对象校验误接收4个，原始字符串校验与Java判定32/32一致。不是模型准确率。37项单元测试与类型检查通过。历史真实围栏响应严格拒绝、显式适配后接受；本轮网络请求为0。记录在 evidence/20260930-boundary。
+
+运行 node audit.mjs evidence/20260930-boundary 复核输入、判定及哈希。旧Java文件/历史JSON可能因Git的autocrlf改变换行；审计只允许LF/CRLF归一化，不忽略其他字节差异。
