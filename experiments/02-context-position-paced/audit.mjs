@@ -9,6 +9,12 @@ const bytes=r=>JSON.stringify(r).replace('"temperature":0,','"temperature":0.0,'
 const hash=v=>crypto.createHash('sha256').update(v).digest('hex');
 const plan=read('plan.json'),cases=read('cases.json'),protocol=read('protocol.json');
 assert.equal(plan.length,24);
+assert.equal(protocol.maxRequests,24);
+for (const job of plan) {
+ assert.equal(job.request.model,protocol.model);
+ assert.equal(job.request.temperature,protocol.temperature);
+ assert.equal(job.request.max_tokens,protocol.maxTokens);
+}
 assert.equal(new Set(plan.map(j=>[j.case,j.distractors,j.condition].join('/'))).size,24);
 for(const c of cases)for(const n of protocol.lengths){
  const jobs=plan.filter(j=>j.case===c.id&&j.distractors===n);
@@ -31,6 +37,8 @@ if(process.argv.includes('--prepared')){
 }
 const summary=read('summary.json');
 const files=fs.readdirSync(dir).filter(f=>/^attempt-\d+.json$/.test(f)).sort();
+assert.ok(files.length>0&&files.length<=protocol.maxRequests,'request budget');
+const gaps=[];
 const counts={},usage={prompt_tokens:0,completion_tokens:0,total_tokens:0};
 let available=0,failures=0,previous;
 const records=files.map((f,i)=>{
@@ -38,12 +46,14 @@ const records=files.map((f,i)=>{
  for(const k of ['case','block','condition','distractors'])assert.equal(r[k],j[k]);
  assert.equal(r.requestSha256,hash(bytes(j.request)));
  assert.equal(r.requestCharacters,bytes(j.request).length);
- if(previous)assert.ok(Date.parse(r.startedAt)-Date.parse(previous.startedAt)-previous.elapsedMs>=protocol.minPauseMs-30,'pacing gap');
- if(r.httpStatus===200&&r.finishReason==='stop'&&r.outcome!=='protocol_error'){
+ if(previous){const gap=Date.parse(r.startedAt)-Date.parse(previous.startedAt)-previous.elapsedMs;gaps.push(gap);assert.ok(gap>=protocol.minPauseMs-30,'pacing gap');}
+ if(r.httpStatus===200&&r.finishReason==='stop'&&!['protocol_error','transport_error'].includes(r.outcome)){
+  assert.equal(r.model,protocol.model,'returned model');
   const s=r.content.trim(),expected=cases.find(c=>c.id===r.case).answer;
   const score=s==='UNKNOWN'?(r.condition==='absent'?'correct_abstention':'abstention'):!/^[A-Z]{2}-[0-9]{4}$/.test(s)?'format_error':r.condition!=='absent'&&s===expected?'correct':'incorrect';
   assert.equal(r.outcome,score);available++;failures=0;
-  for(const k of Object.keys(usage))usage[k]+=r.usage?.[k]||0;
+  for(const k of Object.keys(usage)){const n=r.usage?.[k];assert.ok(Number.isSafeInteger(n)&&n>=0,'reported usage');usage[k]+=n;}
+  assert.equal(r.usage.total_tokens,r.usage.prompt_tokens+r.usage.completion_tokens,'usage sum');
  }else failures++;
  assert.ok(i===files.length-1||(![429,401,403].includes(r.httpStatus)&&failures<protocol.consecutiveFailureLimit),'stop was ignored');
  const g=r.distractors+'/'+r.condition;
@@ -58,5 +68,5 @@ assert.deepEqual(complete,summary.completeBlocks);
 assert.equal(summary.attempted,files.length);assert.deepEqual(counts,summary.conditions);
 assert.equal(summary.stoppedEarly,files.length<24);
 if(summary.stoppedEarly)assert.ok([429,401,403].includes(records.at(-1)?.httpStatus)||failures>=protocol.consecutiveFailureLimit);
-const report={planned:24,attempted:files.length,available,notAttempted:24-files.length,completeBlocks:complete,counts,returnedUsageOnly:usage};
+const report={planned:24,attempted:files.length,available,notAttempted:24-files.length,completeBlocks:complete,counts,returnedUsageOnly:usage,model:protocol.model,minimumObservedPauseMs:gaps.length?Math.min(...gaps):null,startedAt:records[0].startedAt,finishedAt:summary.finishedAt};
 console.log(JSON.stringify(report,null,2));

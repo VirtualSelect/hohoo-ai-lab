@@ -1,0 +1,49 @@
+{
+  "planned": 24,
+  "attempted": 24,
+  "available": 24,
+  "notAttempted": 0,
+  "completeBlocks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "counts": {
+    "60/beginning": {
+      "correct": 3
+    },
+    "60/middle": {
+      "correct": 3
+    },
+    "60/end": {
+      "correct": 3
+    },
+    "60/absent": {
+      "correct_abstention": 3
+    },
+    "240/middle": {
+      "correct": 3
+    },
+    "240/end": {
+      "correct": 3
+    },
+    "240/absent": {
+      "correct_abstention": 3
+    },
+    "240/beginning": {
+      "correct": 3
+    }
+  },
+  "returnedUsageOnly": {
+    "prompt_tokens": 134614,
+    "completion_tokens": 144,
+    "total_tokens": 134758
+  },
+  "model": "agnes-3.0-flash",
+  "minimumObservedPauseMs": 20001,
+  "startedAt": "2026-09-30T05:06:52.476Z",
+  "finishedAt": "2026-09-30T05:17:12.120Z"
+}
