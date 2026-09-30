@@ -1,6 +1,12 @@
 # hohoo-ai-lab
 Learning, experimenting and building with AI — Java, LLMs, RAG, Agents and beyond.
 
+## 后续模型约定 · 2026-09-29
+
+后续 Java LLM 新示例与新实验统一使用 `agnes-3.0-flash`，不再以 `agnes-2.5-flash` 发起新的研究调用。
+
+历史文章、原始响应、实验清单和固定版本保留实际使用的模型型号。已有冻结协议（包括 L1v2）切换模型时，先更新并重新冻结协议与请求清单，新结果单独归档，不与旧型号结果混作同一组对照。
+
 ## Demos
 
 - `demos/01-first-llm-call`：用 Java 8 标准库完成第一次 LLM HTTP 调用，打印原始 JSON。
