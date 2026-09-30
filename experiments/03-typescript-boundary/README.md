@@ -20,6 +20,6 @@ npm test
 npm run experiment -- evidence/my-run
 ```
 
-Java探针依赖JAVA_HOME和Maven默认本地仓库里的Gson2.10.1；若使用自定义Maven仓库，修改run.mjs中的Gson路径。产物保留输入、四路接受结果、版本和哈希。模拟输入不代表模型输出分布，全部通过也不能证明语义正确或端到端安全。历史真实响应只离线重放，不重新调用旧模型。
+Java探针依赖JAVA_HOME和Maven默认本地仓库里的Gson2.10.1；若使用自定义Maven仓库，通过进程环境变量GSON_JAR指定现有jar文件，不复制依赖或读取凭证。产物保留输入、四路接受结果、版本和哈希。模拟输入不代表模型输出分布，全部通过也不能证明语义正确或端到端安全。历史真实响应只离线重放，不重新调用旧模型。
 
 [配套文章](https://huhohoo.com/docs/ai-apps/typescript-output-boundary)
