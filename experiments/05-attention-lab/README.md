@@ -5,7 +5,7 @@
 模型是未训练的双层单头 attention + tanh 残差，16维、32个离散ID、float64；无 tokenizer、FFN、归一化、语言任务或 Agnes 调用。随机权重仅用于构造非退化计算，不是模型效果或性能基准。固定种子7/19/41，全部矩阵与反例归档。
 
 ```sh
-python -m pip install -r requirements.txt
+python -m pip install -r experiments/05-attention-lab/requirements.txt
 python -m unittest discover -s experiments/05-attention-lab -p "test_*.py"
 python experiments/05-attention-lab/run.py --out experiments/05-attention-lab/evidence/NEW-RUN
 python experiments/05-attention-lab/audit.py experiments/05-attention-lab/evidence/NEW-RUN
