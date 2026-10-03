@@ -8,3 +8,9 @@ demos/06-reliable-workflows/** text eol=lf
 *.png binary
 
 experiments/05-attention-lab/evidence/** -text
+
+experiments/06-prefix-cache/** text eol=lf
+experiments/06-prefix-cache/evidence/** -text
+
+demos/07-grounded-claims/** text eol=lf
+demos/07-grounded-claims/evidence/** -text

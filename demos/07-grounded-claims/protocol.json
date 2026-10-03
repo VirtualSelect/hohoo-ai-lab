@@ -1,0 +1,10 @@
+{
+  "study": "A5",
+  "cases": 22,
+  "baselines": [
+    "exact-quote-in-supplied-doc",
+    "closed-configuration-contract"
+  ],
+  "networkRequests": 0,
+  "scope": "No model generation or general semantic entailment. Gold labels frozen before execution."
+}

@@ -1,0 +1,33 @@
+{
+  "seeds": [
+    7,
+    19,
+    41
+  ],
+  "prefix": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "suffix": [
+    9,
+    10,
+    11,
+    12
+  ],
+  "cases": [
+    "same-prefix",
+    "edited-prefix",
+    "different-weights",
+    "different-window",
+    "different-scope",
+    "new-suffix"
+  ],
+  "tolerance": 1e-12,
+  "scope": "Untrained two-layer attention. No language-model API, tokenizer, shared server, wall-clock or security benchmark."
+}
