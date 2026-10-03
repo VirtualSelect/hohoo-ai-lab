@@ -79,8 +79,9 @@ public final class Suite {
         check("retrieval/unknown-citation",!Retrieval.citation(h,"absent","A read timeout"),"rejected");
         check("retrieval/empty-query",index.search("",3).isEmpty(),"no hits");
         check("retrieval/no-overlap",index.search("photosynthesis",3).isEmpty(),"no hits");
-        check("retrieval/context-budget",Retrieval.pack(h,20).isEmpty(),"whole evidence block omitted");
-        check("retrieval/pack-exact",Retrieval.pack(h,10000).contains("[timeouts]"),"source IDs retained");
+        check("retrieval/context-budget",Retrieval.pack(h,20).text.isEmpty(),"whole evidence block omitted");
+        check("retrieval/pack-exact",Retrieval.pack(h,10000).text.contains("[timeouts]"),"source IDs retained");
+        check("retrieval/omitted-citation",!Retrieval.pack(h,20).cites("timeouts","A read timeout"),"omitted evidence rejected");
         boolean duplicate=false;try{new Retrieval(Arrays.asList(docs.get(0),docs.get(0)));}catch(IllegalArgumentException e){duplicate=true;}
         check("retrieval/duplicate-id",duplicate,duplicate);
         return rows;

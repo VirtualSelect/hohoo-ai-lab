@@ -45,10 +45,17 @@ public final class Retrieval {
         hits.sort(Comparator.<Hit>comparingDouble(h->-h.score).thenComparing(h->h.doc.id));
         return new ArrayList<Hit>(hits.subList(0,Math.min(k,hits.size())));
     }
-    public static String pack(List<Hit> hits,int maxChars){
+    public static final class Evidence {
+        public final String text;
+        private final List<Hit> included;
+        Evidence(String text,List<Hit> included){this.text=text;this.included=included;}
+        public boolean cites(String id,String quote){return citation(included,id,quote);}
+    }
+    public static Evidence pack(List<Hit> hits,int maxChars){
         if(maxChars<0)throw new IllegalArgumentException("budget");StringBuilder b=new StringBuilder();
-        for(Hit h:hits){String block="["+h.doc.id+"] "+h.doc.text+"\n";if(b.length()+block.length()<=maxChars)b.append(block);}
-        return b.toString();
+        List<Hit> included=new ArrayList<Hit>();
+        for(Hit h:hits){String block="["+h.doc.id+"] "+h.doc.text+"\n";if(b.length()+block.length()<=maxChars){b.append(block);included.add(h);}}
+        return new Evidence(b.toString(),included);
     }
     public static boolean citation(List<Hit> supplied,String id,String exactQuote){
         if(exactQuote==null||exactQuote.trim().isEmpty())return false;

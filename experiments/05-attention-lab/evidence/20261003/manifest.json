@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-03T05:19:40.643194+00:00",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "commit": "cb43e212eaf87b07a54780b3a0bdfcdca9f9556c",
+  "dirty": false,
+  "sources": {
+    "attention.py": "e0e016a564100f412a0ddd07a6953f9c155814a837d4dba22ce7753addb1c29c",
+    "audit.py": "db49e6dc9676992137082cfad2af07a06d0865edfba8d3aee6f0ae8559b23840",
+    "protocol.json": "08fdb459ae6135f1d97e8bbc27ca9deb00ca1ab70589fd1838e0f954955cfa92",
+    "run.py": "cb383060bab8102955b29a2e9805ad6bd8d25b0c770d3c55a4dad5a83dd427ee",
+    "test_attention.py": "b982410b43b662fa411573480407fba4bd5e7a8955d88477b0d3253663cccc26"
+  },
+  "protocol": {
+    "id": "L2-L4-attention-mechanisms-v1",
+    "seeds": [
+      7,
+      19,
+      41
+    ],
+    "length": 24,
+    "dimension": 16,
+    "layers": 2,
+    "vocabulary": 32,
+    "window": 4,
+    "dtype": "float64",
+    "tolerance": 1e-12,
+    "trained": false,
+    "networkRequests": 0,
+    "scope": "Seeded, untrained two-layer single-head attention with residual tanh and additive absolute sinusoidal positions. No tokenizer, language quality, provider benchmark or hardware speed claim.",
+    "studies": [
+      "future perturbation with causal/unmasked attention",
+      "prefix recomputation vs token/chunk KV caching",
+      "sliding cached attention vs full masked reference and raw-prefix recomputation"
+    ],
+    "frozenInputs": "tokens[i]=(7*i+3)%32; perturb tokens[12:] by +1 modulo32; chunks 5,3,7,9",
+    "accounting": "Count actual projected rows and attention score elements in this implementation; byte count is ndarray K+V payload only, not process memory."
+  }
+}
