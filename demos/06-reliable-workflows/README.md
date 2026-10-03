@@ -4,7 +4,7 @@
 
 ```sh
 cd demos/06-reliable-workflows
-mvn -q compile exec:java -Dexec.args="evidence/NEW-RUN/results.json"
+python run.py --out evidence/NEW-RUN
 ```
 
 输出目录必须独立，不覆盖历史结果。Suite实际启动线程并注入超时工具，读取仓库内原创合成语料，记录所有断言与14题排名。无在线模型调用，不读取API Key。
@@ -14,3 +14,5 @@ mvn -q compile exec:java -Dexec.args="evidence/NEW-RUN/results.json"
 工具不是沙箱：只允许本地登记的只读函数。取消Future不能杀死不配合的线程，测试故意展示超时后仍发生本地计数更新。生产应隔离非可信代码，不能开放shell或任意URL。预算按成功提交给执行器的任务计数，INVALID/UNKNOWN/BUSY不消耗。
 
 检索仅英文规则分词；12道有答案题和2道无答案题分开统计。引用存在不等于引用支持答案；本例不调用生成模型、不计算答案正确率。`pack`预算按Java UTF-16字符计，不是token计数。
+
+`run.py`需要本机Java8/Maven（可用`--maven`指定路径），自动保存源码指纹和独立审计。直接运行Suite只导出结果，不单独补造来源清单。
