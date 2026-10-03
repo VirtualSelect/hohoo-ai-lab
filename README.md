@@ -27,3 +27,8 @@ Learning, experimenting and building with AI — Java, LLMs, RAG, Agents and bey
 ## 下一轮：相似干扰与上下文位置（离线就绪）
 
 [L1v3](experiments/04-context-position-similar/README.md)：8题×两种长度×两种相似度×四条件，128项冻结计划。本机Java 8/Maven编译、2515项自检与60项独立测试通过，真实请求为0；没有新增模型结论。线上请求需单独确认费率与金额预算。
+
+## 2026-10-03 / 可靠性与注意力机制
+
+- [A2–A4](demos/06-reliable-workflows/README.md)：并发提交、工具执行边界、BM25引用链路；33项实际Java8验收，14题自有合成语料。12道可回答题中11题进入top1/top3，2道不可回答题中1题仍有命中，不宣称端到端RAG正确率。
+- [L2–L4](experiments/05-attention-lab/README.md)：因果掩码、KV缓存、滑动窗口位置；3种固定种子、48组存档数组、27项误差复核。未训练教学网络，零在线请求，不替代L1v3待授权的模型对照。

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": 33,
+  "queries": 14,
+  "answerable": 12,
+  "hitAt1": 11,
+  "hitAt3": 11,
+  "unanswerable": 2,
+  "unanswerable_with_hits": 1,
+  "networkRequests": 0
+}

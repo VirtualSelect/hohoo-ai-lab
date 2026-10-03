@@ -1,0 +1,15 @@
+{
+  "commit": "2c101d620f65c2a55a7f81bd793111693f6bdb3c",
+  "sources": {
+    "src/main/java/com/hohoo/ailab/reliable/ReadOnlyTools.java": "7f5f70f4306be9fb31677238ae501ece09233142f2f525abc2c63e62cae8f434",
+    "src/main/java/com/hohoo/ailab/reliable/Retrieval.java": "d895be6412d0f55ba4f8ee74dbbcc45eefb5295317617dfdb3d962d1f75fbc59",
+    "src/main/java/com/hohoo/ailab/reliable/Suite.java": "09120fd593151b7bb51d3788ba7645489bd5bd5e96f17558110b74ddcc503098",
+    "src/main/java/com/hohoo/ailab/reliable/VersionedSession.java": "c3af5a648bace9f58a285b64abe51a3f8aeac12fd74d4e232923814ea6a68d93",
+    "protocol.json": "0d3ed5b9802de9cbebd60df3562e045aa7c733b56de38221b3e52dfef738b2d6",
+    "corpus.json": "81b7af3d02d6925b7e572ff9880026400a7562b8a0dae5325a258a660cca3a2b",
+    "audit.py": "d4616e23c0215b964ea3362966cf1f408ce7bff85b7d4a2a21529549919e7aca",
+    "pom.xml": "dd385171398919cd8f73aa9a9f610a18ee39f043572159801e07949b174dd7da"
+  },
+  "resultsSha256": "0579362590e2fdeddaeb5ed4f5700a82686a787aa6bffd8e1c01512dbc10b5a6",
+  "scope": "Java 8 local checks; zero provider requests"
+}

@@ -1,0 +1,376 @@
+{
+  "java": "1.8.0_171",
+  "at": "2026-10-03T05:25:00.939Z",
+  "networkRequests": 0,
+  "checks": [
+    {
+      "name": "concurrency/no-lost-update",
+      "passed": true,
+      "observed": [
+        "fast:COMMITTED",
+        "slow:STALE"
+      ]
+    },
+    {
+      "name": "concurrency/pair-atomic",
+      "passed": true,
+      "observed": [
+        "fast",
+        "new answer"
+      ]
+    },
+    {
+      "name": "concurrency/idempotent-commit",
+      "passed": true,
+      "observed": 1
+    },
+    {
+      "name": "concurrency/id-conflict",
+      "passed": true,
+      "observed": [
+        "fast",
+        "new answer"
+      ]
+    },
+    {
+      "name": "concurrency/incomplete-rejected",
+      "passed": true,
+      "observed": 1
+    },
+    {
+      "name": "concurrency/whole-pair-trim",
+      "passed": true,
+      "observed": [
+        "third",
+        "third answer",
+        "fourth",
+        "fourth answer"
+      ]
+    },
+    {
+      "name": "concurrency/foreign-ticket",
+      "passed": true,
+      "observed": true
+    },
+    {
+      "name": "concurrency/snapshot-immutable",
+      "passed": true,
+      "observed": []
+    },
+    {
+      "name": "tools/invalid-8",
+      "passed": true,
+      "observed": "{}"
+    },
+    {
+      "name": "tools/invalid-9",
+      "passed": true,
+      "observed": "{\"tool\":\"lookup\",\"key\":\"x\",\"key\":\"known\"}"
+    },
+    {
+      "name": "tools/invalid-10",
+      "passed": true,
+      "observed": "{\"tool\":\"lookup\",\"key\":4}"
+    },
+    {
+      "name": "tools/invalid-11",
+      "passed": true,
+      "observed": "{\"tool\":\"lookup\",\"key\":\"../secret\"}"
+    },
+    {
+      "name": "tools/invalid-12",
+      "passed": true,
+      "observed": "{\"tool\":\"lookup\",\"key\":\"x\",\"url\":\"https://example.com\"}"
+    },
+    {
+      "name": "tools/invalid-13",
+      "passed": true,
+      "observed": "{\"tool\":\"lookup\",\"key\":\"known\"} trailing"
+    },
+    {
+      "name": "tools/allowlist",
+      "passed": true,
+      "observed": 0
+    },
+    {
+      "name": "tools/reject-before-execution",
+      "passed": true,
+      "observed": 0
+    },
+    {
+      "name": "tools/read",
+      "passed": true,
+      "observed": "OK"
+    },
+    {
+      "name": "tools/budget",
+      "passed": true,
+      "observed": 1
+    },
+    {
+      "name": "tools/missing",
+      "passed": true,
+      "observed": "NOT_FOUND"
+    },
+    {
+      "name": "tools/error-sanitized",
+      "passed": true,
+      "observed": "TOOL_ERROR"
+    },
+    {
+      "name": "tools/timeout",
+      "passed": true,
+      "observed": "TIMEOUT"
+    },
+    {
+      "name": "tools/no-queue-after-timeout",
+      "passed": true,
+      "observed": 1
+    },
+    {
+      "name": "tools/cancellation-not-termination",
+      "passed": true,
+      "observed": 1
+    },
+    {
+      "name": "retrieval/expected-first",
+      "passed": true,
+      "observed": "timeouts"
+    },
+    {
+      "name": "retrieval/quote-bound",
+      "passed": true,
+      "observed": "existing exact span"
+    },
+    {
+      "name": "retrieval/invented-quote",
+      "passed": true,
+      "observed": "rejected"
+    },
+    {
+      "name": "retrieval/unknown-citation",
+      "passed": true,
+      "observed": "rejected"
+    },
+    {
+      "name": "retrieval/empty-query",
+      "passed": true,
+      "observed": "no hits"
+    },
+    {
+      "name": "retrieval/no-overlap",
+      "passed": true,
+      "observed": "no hits"
+    },
+    {
+      "name": "retrieval/context-budget",
+      "passed": true,
+      "observed": "whole evidence block omitted"
+    },
+    {
+      "name": "retrieval/pack-exact",
+      "passed": true,
+      "observed": "source IDs retained"
+    },
+    {
+      "name": "retrieval/omitted-citation",
+      "passed": true,
+      "observed": "omitted evidence rejected"
+    },
+    {
+      "name": "retrieval/duplicate-id",
+      "passed": true,
+      "observed": true
+    }
+  ],
+  "retrieval": [
+    {
+      "id": "q01",
+      "query": "read timeout socket",
+      "gold": "timeouts",
+      "hits": [
+        "timeouts",
+        "cancel",
+        "retry"
+      ],
+      "scores": [
+        4.11508495461415,
+        1.5059692201406671,
+        1.1117290433697065
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q02",
+      "query": "complete user assistant history",
+      "gold": "history",
+      "hits": [
+        "history"
+      ],
+      "scores": [
+        7.914841174500039
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q03",
+      "query": "unknown tools allowlist",
+      "gold": "tools",
+      "hits": [
+        "tools"
+      ],
+      "scores": [
+        6.30556312030383
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q04",
+      "query": "worker ignores interruption",
+      "gold": "cancel",
+      "hits": [
+        "cancel"
+      ],
+      "scores": [
+        6.8207969084664555
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q05",
+      "query": "syntax field validation",
+      "gold": "json",
+      "hits": [
+        "json",
+        "history"
+      ],
+      "scores": [
+        5.830296961097295,
+        1.4714022143225953
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q06",
+      "query": "cache keys values",
+      "gold": "cache",
+      "hits": [
+        "cache",
+        "secrets"
+      ],
+      "scores": [
+        5.830296961097295,
+        1.5421994339371545
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q07",
+      "query": "ranked evidence chunks",
+      "gold": "retrieval",
+      "hits": [
+        "retrieval",
+        "secrets"
+      ],
+      "scores": [
+        6.241598268016383,
+        1.5421994339371545
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q08",
+      "query": "gripper placement tray",
+      "gold": "release",
+      "hits": [
+        "release"
+      ],
+      "scores": [
+        6.075585795852517
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q09",
+      "query": "retry operation remotely",
+      "gold": "retry",
+      "hits": [
+        "retry"
+      ],
+      "scores": [
+        6.552768488652872
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q10",
+      "query": "API keys browser",
+      "gold": "secrets",
+      "hits": [
+        "secrets",
+        "cache"
+      ],
+      "scores": [
+        5.690033201006742,
+        1.5802158538370024
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q11",
+      "query": "client waiting",
+      "gold": "timeouts",
+      "hits": [
+        "timeouts"
+      ],
+      "scores": [
+        3.5499991129277797
+      ],
+      "hitAt1": true,
+      "hitAt3": true
+    },
+    {
+      "id": "q12",
+      "query": "conversation race",
+      "gold": "history",
+      "hits": [],
+      "scores": [],
+      "hitAt1": false,
+      "hitAt3": false
+    },
+    {
+      "id": "q13",
+      "query": "photosynthesis",
+      "gold": null,
+      "hits": [],
+      "scores": [],
+      "hitAt1": false,
+      "hitAt3": false
+    },
+    {
+      "id": "q14",
+      "query": "cache payment",
+      "gold": null,
+      "hits": [
+        "cache",
+        "retry"
+      ],
+      "scores": [
+        2.125040553630146,
+        1.9343114089512998
+      ],
+      "hitAt1": false,
+      "hitAt3": false
+    }
+  ]
+}
