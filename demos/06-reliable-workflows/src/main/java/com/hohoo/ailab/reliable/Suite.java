@@ -91,7 +91,7 @@ public final class Suite {
         if(Files.exists(out))throw new IllegalArgumentException("output already exists");
         concurrency();tools();List<Map<String,Object>> rows=retrieval();
         Map<String,Object> result=new LinkedHashMap<String,Object>();result.put("java",System.getProperty("java.version"));result.put("at",java.time.Instant.now().toString());result.put("networkRequests",0);result.put("checks",checks);result.put("retrieval",rows);
-        Files.createDirectories(out.toAbsolutePath().getParent());Files.write(out,new GsonBuilder().setPrettyPrinting().create().toJson(result).getBytes(StandardCharsets.UTF_8),StandardOpenOption.CREATE_NEW);
+        Files.createDirectories(out.toAbsolutePath().getParent());Files.write(out,new GsonBuilder().serializeNulls().setPrettyPrinting().create().toJson(result).getBytes(StandardCharsets.UTF_8),StandardOpenOption.CREATE_NEW);
         System.out.println("Checks passed: "+checks.size()+"; retrieval cases: "+rows.size()+"; no provider requests.");
     }
 }

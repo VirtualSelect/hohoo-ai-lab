@@ -6,3 +6,5 @@ experiments/05-attention-lab/** text eol=lf
 demos/06-reliable-workflows/** text eol=lf
 *.npz binary
 *.png binary
+
+experiments/05-attention-lab/evidence/** -text
