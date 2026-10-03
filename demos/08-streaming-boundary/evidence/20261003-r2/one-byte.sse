@@ -1,0 +1,8 @@
+data: {"choices":[{"index":0,"delta":{"content":"你好，"},"finish_reason":null}]}
+
+data: {"choices":[{"index":0,"delta":{"content":"Java 🌱"},"finish_reason":null}]}
+
+data: {"choices":[{"index":0,"delta":{},"finish_reason":"stop"}]}
+
+data: [DONE]
+

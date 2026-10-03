@@ -8,3 +8,5 @@ python demos/08-streaming-boundary/audit.py demos/08-streaming-boundary/evidence
 ```
 
 设置 JAVA_HOME 到 Java 8，Maven 不在 PATH 时传 --maven。失败与取消仅保留预览、不追加历史；单请求教学模型不提供并发会话锁。读超时与字符处理期限不是严格可抢占的总墙钟截止时间。不自动重连、不调用付费模型、不需要密钥。
+
+实测记录：`evidence/20261003-r2`。最初运行器等待未固定的 dependency 插件解析，未开始 HTTP 案例即停止；改为沿用已有固定版本 exec 插件后完成。可加 `--offline` 使用本机缓存。

@@ -1,0 +1,249 @@
+{
+  "providerRequests": 0,
+  "loopbackRequests": 22,
+  "java": "1.8.0_171",
+  "cases": [
+    {
+      "case": "one-byte",
+      "expected": "COMPLETE",
+      "status": "COMPLETE",
+      "http": 200,
+      "readCapBytes": 1,
+      "readCalls": 253,
+      "preview": "你好，Java 🌱",
+      "historySize": 4,
+      "committed": true
+    },
+    {
+      "case": "seven-byte",
+      "expected": "COMPLETE",
+      "status": "COMPLETE",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 37,
+      "preview": "你好，Java 🌱",
+      "historySize": 4,
+      "committed": true
+    },
+    {
+      "case": "crlf",
+      "expected": "COMPLETE",
+      "status": "COMPLETE",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 38,
+      "preview": "你好，Java 🌱",
+      "historySize": 4,
+      "committed": true
+    },
+    {
+      "case": "bare-cr",
+      "expected": "COMPLETE",
+      "status": "COMPLETE",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 37,
+      "preview": "你好，Java 🌱",
+      "historySize": 4,
+      "committed": true
+    },
+    {
+      "case": "multiline",
+      "expected": "COMPLETE",
+      "status": "COMPLETE",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 40,
+      "preview": "你好，Java 🌱",
+      "historySize": 4,
+      "committed": true
+    },
+    {
+      "case": "bom-heartbeat",
+      "expected": "COMPLETE",
+      "status": "COMPLETE",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 44,
+      "preview": "你好，Java 🌱",
+      "historySize": 4,
+      "committed": true
+    },
+    {
+      "case": "missing-done",
+      "expected": "INCOMPLETE_STREAM",
+      "status": "INCOMPLETE_STREAM",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 23,
+      "preview": "你好，",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "unterminated-done",
+      "expected": "INCOMPLETE_STREAM",
+      "status": "INCOMPLETE_STREAM",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 25,
+      "preview": "你好，",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "done-without-finish",
+      "expected": "PROTOCOL",
+      "status": "PROTOCOL",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 15,
+      "preview": "你好，",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "length-finish",
+      "expected": "INCOMPLETE_FINISH",
+      "status": "INCOMPLETE_FINISH",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 35,
+      "preview": "你好，Java 🌱",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "provider-error",
+      "expected": "PROVIDER_ERROR",
+      "status": "PROVIDER_ERROR",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 18,
+      "preview": "你好，",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "malformed-json",
+      "expected": "INVALID_JSON",
+      "status": "INVALID_JSON",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 2,
+      "preview": "",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "duplicate-json",
+      "expected": "INVALID_JSON",
+      "status": "INVALID_JSON",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 5,
+      "preview": "",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "invalid-utf8",
+      "expected": "INVALID_UTF8",
+      "status": "INVALID_UTF8",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 1,
+      "preview": "",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "oversized-line",
+      "expected": "LIMIT",
+      "status": "LIMIT",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 1172,
+      "preview": "",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "oversized-output",
+      "expected": "LIMIT",
+      "status": "LIMIT",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 598,
+      "preview": "",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "after-finish",
+      "expected": "PROTOCOL",
+      "status": "PROTOCOL",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 34,
+      "preview": "你好，",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "wrong-mime",
+      "expected": "CONTENT_TYPE",
+      "status": "CONTENT_TYPE",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 0,
+      "preview": "",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "http-503",
+      "expected": "HTTP_503",
+      "status": "HTTP_503",
+      "http": 503,
+      "readCapBytes": 7,
+      "readCalls": 0,
+      "preview": "",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "cancel",
+      "expected": "CANCELLED",
+      "status": "CANCELLED",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 13,
+      "preview": "你好，",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "read-timeout",
+      "expected": "READ_TIMEOUT",
+      "status": "READ_TIMEOUT",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 1,
+      "preview": "",
+      "historySize": 2,
+      "committed": false
+    },
+    {
+      "case": "tool-delta",
+      "expected": "PROTOCOL",
+      "status": "PROTOCOL",
+      "http": 200,
+      "readCapBytes": 7,
+      "readCalls": 9,
+      "preview": "",
+      "historySize": 2,
+      "committed": false
+    }
+  ]
+}

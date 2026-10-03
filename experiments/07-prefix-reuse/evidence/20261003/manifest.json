@@ -1,0 +1,18 @@
+{
+  "commit": "e9763de21e7df700a50b43e73c2d94267ce84c42",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "sources": {
+    "experiments/07-prefix-reuse/audit.py": "4ed01eae3c840ec0eb3365aa5d84868b1a987914abee7ed567fd9b7d6720778b",
+    "experiments/07-prefix-reuse/reuse.py": "e36cc2cc7e6f136825e9e48699c1e9ceeb1107e43eee648bf5e73ba9640b6fa8",
+    "experiments/07-prefix-reuse/run.py": "826b5bf96ae08f018ef88233043cad5ea3be7feff4bdf53b81b26962a632c221",
+    "experiments/07-prefix-reuse/test_reuse.py": "69d7e627f453ccc0cf342f1ec867750855435da9493f5d0656695f5c37ba93e0",
+    "experiments/07-prefix-reuse/protocol.json": "51260c1ab068bb237b2597420ecc45821ada885baa357c17bebb440847fcd41f",
+    "experiments/05-attention-lab/attention.py": "e0e016a564100f412a0ddd07a6953f9c155814a837d4dba22ce7753addb1c29c",
+    "experiments/06-prefix-cache/prefix_cache.py": "603ee2a4079b831aca430d985e29b7648d71d3fba823261c3d4c7b84e89dfbf5"
+  },
+  "files": {
+    "arrays.npz": "9fcb0c43b42746a1b022964b50dbeb39ba2b02c967ec39f16dcb0c74e6a3067d",
+    "results.json": "59b71c819bbaae0e2cd162b10f2ef30e42defdde171aebf05e56f8523ac50499"
+  }
+}

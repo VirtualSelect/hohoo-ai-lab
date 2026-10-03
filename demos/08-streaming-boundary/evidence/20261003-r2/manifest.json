@@ -1,0 +1,36 @@
+{
+  "commit": "f73dbbb379acd19739b83967c170f822803d9fc6",
+  "sources": {
+    "demos/08-streaming-boundary/src/main/java/com/hohoo/ailab/stream/StreamReader.java": "0038042d50a786e3967fe27349aa85ff2681f67412695c54a0055b8aa1dd6575",
+    "demos/08-streaming-boundary/src/main/java/com/hohoo/ailab/stream/Suite.java": "b854df7007e0ef0febd190f01ed9ffb870795bc08d253584210ba5b81a13cd7c",
+    "demos/08-streaming-boundary/audit.py": "c96957306339bd13fc22074a7e6bd1a50bbce72b820ea16954cf7208042e6af2",
+    "demos/08-streaming-boundary/run.py": "ec01baa8103cd41589dba1bba359e8d70c175349557ffe4fd2ef49531a353c14",
+    "demos/08-streaming-boundary/pom.xml": "9d2e00ac23a74ebba8fdb4f125dbff79ff1f1e483b29318f98af7e17a5685c07",
+    "demos/08-streaming-boundary/protocol.json": "3be8139302be5728c06cce6d7e87baf6e44a438666cacd2d55c9d38c697b25f5"
+  },
+  "files": {
+    "after-finish.sse": "e05658661b86aa345e8bb382da5312a409cd5b14048d6d37e8a2bc8c8aa837ed",
+    "bare-cr.sse": "8f1e30023b6d10bc6b16de975f4c202b6fb084dea059644f900696a010bd4aa8",
+    "bom-heartbeat.sse": "0095fa634f251c0f2148cfda2970d530c3c6fae02d07de8b21c44dc43e6b5024",
+    "cancel.sse": "f4570815369d1ec60f793c19fdd292bee21aa25672c16dae3df8f5d6af664024",
+    "crlf.sse": "799a5372ad5e03f5a85dbad647149c0d360ffac14ae7d7628023cf38f2d35619",
+    "done-without-finish.sse": "24d48c4d0b9fcc84e878cdc64b442bfe65775f0cb9b190b439310445332fe195",
+    "duplicate-json.sse": "edc723b3c81432945cff096d5b4324b9da9b99a86dfa49abc7dbb0dd525d6333",
+    "http-503.sse": "f4570815369d1ec60f793c19fdd292bee21aa25672c16dae3df8f5d6af664024",
+    "invalid-utf8.sse": "eddf68639913a3cb8331cdfe7f87559e0beccf2c289c0d90ac4d89b3204004f8",
+    "length-finish.sse": "aefa4db6a7870978c5f372a6b88c24b70d282186bdd8edaa86d1714cdeeba529",
+    "malformed-json.sse": "1b43a89b64c824f6dd004375229b4e7cd65bd3ae1ba883670655276750fbfe3e",
+    "missing-done.sse": "35099b52750db8c78c0887f6318b990f06e1a7a0becf221f5fc4f69a22c701de",
+    "multiline.sse": "d5a777368a947f490a4c115e7eb61eb3ad4fe4472a6a71930058abed3e46bde2",
+    "one-byte.sse": "f4570815369d1ec60f793c19fdd292bee21aa25672c16dae3df8f5d6af664024",
+    "oversized-line.sse": "cc62126136b38857cd894d3b12c009f8026f3c8a08722c7bd0725c40c0e454f7",
+    "oversized-output.sse": "0fdcf6805fbf54b590aa5cc99076c1153901e3613b935cd88ccb1d3e2c7937dc",
+    "provider-error.sse": "ebdc876f69e0bcb24b97864780bb862ba6ae442ffbbbdda48a556517839ca0cc",
+    "read-timeout.sse": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results.json": "b6a08222eccd00707f5f6ee3b23e899451ffe1052588e017f5463fb582b9c98c",
+    "seven-byte.sse": "f4570815369d1ec60f793c19fdd292bee21aa25672c16dae3df8f5d6af664024",
+    "tool-delta.sse": "0432c9b644caa761b87db3110390b9ab72000b27d913dad25a027c9b11e016e4",
+    "unterminated-done.sse": "6db2de8b8e38ea58796145e5fbf9c3218deefea38be6e2d19d143c740f34ca81",
+    "wrong-mime.sse": "f4570815369d1ec60f793c19fdd292bee21aa25672c16dae3df8f5d6af664024"
+  }
+}

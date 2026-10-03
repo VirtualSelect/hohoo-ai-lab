@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "cases": 27,
+  "arrays": 81,
+  "recomputed_errors": 54,
+  "partial_position_failures": 9,
+  "max_error": 3.885780586188048e-16
+}

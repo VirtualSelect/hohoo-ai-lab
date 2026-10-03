@@ -32,3 +32,9 @@ Learning, experimenting and building with AI — Java, LLMs, RAG, Agents and bey
 
 - [A2–A4](demos/06-reliable-workflows/README.md)：并发提交、工具执行边界、BM25引用链路；33项实际Java8验收，14题自有合成语料。12道可回答题中11题进入top1/top3，2道不可回答题中1题仍有命中，不宣称端到端RAG正确率。
 - [L2–L4](experiments/05-attention-lab/README.md)：因果掩码、KV缓存、滑动窗口位置；3种固定种子、48组存档数组、27项误差复核。未训练教学网络，零在线请求，不替代L1v3待授权的模型对照。
+
+## 新一轮：流式提交与历史编辑
+
+- [A5 引用与声明契约](demos/07-grounded-claims/README.md)：22 个闭合配置案例。
+- [A6 SSE 文本流与历史提交](demos/08-streaming-boundary/README.md)：22 个回环 HTTP 案例；6 个完成、16 个拒绝或取消，不调用模型。
+- [L6 最长相同前缀复用](experiments/07-prefix-reuse/README.md)：27 个条件、81 个原始数组；局部裁剪必须同步位置编号。

@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "cases": 22,
+  "complete": 6,
+  "refused": 16,
+  "naiveReplacementCharacters": 13,
+  "providerRequests": 0
+}
