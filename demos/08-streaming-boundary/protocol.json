@@ -1,0 +1,36 @@
+{
+  "study": "A6",
+  "expected": {
+    "one-byte": "COMPLETE",
+    "seven-byte": "COMPLETE",
+    "crlf": "COMPLETE",
+    "bare-cr": "COMPLETE",
+    "multiline": "COMPLETE",
+    "bom-heartbeat": "COMPLETE",
+    "missing-done": "INCOMPLETE_STREAM",
+    "unterminated-done": "INCOMPLETE_STREAM",
+    "done-without-finish": "PROTOCOL",
+    "length-finish": "INCOMPLETE_FINISH",
+    "provider-error": "PROVIDER_ERROR",
+    "malformed-json": "INVALID_JSON",
+    "duplicate-json": "INVALID_JSON",
+    "invalid-utf8": "INVALID_UTF8",
+    "oversized-line": "LIMIT",
+    "oversized-output": "LIMIT",
+    "after-finish": "PROTOCOL",
+    "wrong-mime": "CONTENT_TYPE",
+    "http-503": "HTTP_503",
+    "cancel": "CANCELLED",
+    "read-timeout": "READ_TIMEOUT",
+    "tool-delta": "PROTOCOL"
+  },
+  "providerRequests": 0,
+  "limits": {
+    "lineChars": 8192,
+    "eventChars": 8192,
+    "totalChars": 65536,
+    "outputChars": 4096,
+    "events": 256
+  },
+  "design": "Real loopback HTTP, capped client reads; caps are not TCP packet boundaries. Text-only fixture protocol, not certified Agnes compatibility."
+}

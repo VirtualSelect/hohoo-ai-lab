@@ -1,0 +1,24 @@
+{
+  "id": "L6-v1",
+  "seeds": [
+    7,
+    11,
+    23
+  ],
+  "conditions": [
+    "append",
+    "edit-first",
+    "edit-middle",
+    "edit-last",
+    "shorter",
+    "branch-two",
+    "different-scope",
+    "window-edit",
+    "window-append"
+  ],
+  "tolerance": 1e-12,
+  "model": "untrained float64, 2 layers, 1 head, d16, vocab32, absolute sinusoidal, tanh residual; no FFN/LN",
+  "capacity": 2,
+  "window": 4,
+  "compare": "fresh full causal suffix vs cropped identical prefix vs intentionally stale next_position; record arrays, never infer GPU latency"
+}

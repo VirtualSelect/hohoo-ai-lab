@@ -14,3 +14,9 @@ experiments/06-prefix-cache/evidence/** -text
 
 demos/07-grounded-claims/** text eol=lf
 demos/07-grounded-claims/evidence/** -text
+
+demos/08-streaming-boundary/** text eol=lf
+demos/08-streaming-boundary/evidence/** -text
+
+experiments/07-prefix-reuse/** text eol=lf
+experiments/07-prefix-reuse/evidence/** -text
