@@ -1,0 +1,170 @@
+{
+  "javaVersion": "1.8.0_171",
+  "cases": [
+    {
+      "id": "correct-two-facts",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "citationOnly": true,
+      "accepted": {
+        "read_timeout_ms": "5000",
+        "retry_enabled": "false"
+      }
+    },
+    {
+      "id": "reversed-order",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "citationOnly": true,
+      "accepted": {
+        "read_timeout_ms": "5000",
+        "retry_enabled": "false"
+      }
+    },
+    {
+      "id": "one-field-request",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "citationOnly": true,
+      "accepted": {
+        "read_timeout_ms": "5000"
+      }
+    },
+    {
+      "id": "wrong-value",
+      "expected": "VALUE_MISMATCH",
+      "actual": "VALUE_MISMATCH",
+      "citationOnly": true,
+      "accepted": {}
+    },
+    {
+      "id": "wrong-unit",
+      "expected": "VALUE_MISMATCH",
+      "actual": "VALUE_MISMATCH",
+      "citationOnly": true,
+      "accepted": {}
+    },
+    {
+      "id": "other-environment",
+      "expected": "SCOPE_MISMATCH",
+      "actual": "SCOPE_MISMATCH",
+      "citationOnly": true,
+      "accepted": {}
+    },
+    {
+      "id": "old-revision",
+      "expected": "STALE_REVISION",
+      "actual": "STALE_REVISION",
+      "citationOnly": true,
+      "accepted": {}
+    },
+    {
+      "id": "other-service",
+      "expected": "SCOPE_MISMATCH",
+      "actual": "SCOPE_MISMATCH",
+      "citationOnly": true,
+      "accepted": {}
+    },
+    {
+      "id": "real-but-unrelated-quote",
+      "expected": "QUOTE_NOT_SUPPORTING",
+      "actual": "QUOTE_NOT_SUPPORTING",
+      "citationOnly": true,
+      "accepted": {}
+    },
+    {
+      "id": "injection-as-quote",
+      "expected": "QUOTE_NOT_SUPPORTING",
+      "actual": "QUOTE_NOT_SUPPORTING",
+      "citationOnly": true,
+      "accepted": {}
+    },
+    {
+      "id": "omitted-field",
+      "expected": "INCOMPLETE",
+      "actual": "INCOMPLETE",
+      "citationOnly": true,
+      "accepted": {}
+    },
+    {
+      "id": "duplicate-claim",
+      "expected": "DUPLICATE_CLAIM",
+      "actual": "DUPLICATE_CLAIM",
+      "citationOnly": true,
+      "accepted": {}
+    },
+    {
+      "id": "unrequested-field",
+      "expected": "UNREQUESTED_FIELD",
+      "actual": "UNREQUESTED_FIELD",
+      "citationOnly": true,
+      "accepted": {}
+    },
+    {
+      "id": "not-in-evidence",
+      "expected": "NO_CITATION",
+      "actual": "NO_CITATION",
+      "citationOnly": false,
+      "accepted": {}
+    },
+    {
+      "id": "invented-doc",
+      "expected": "NO_CITATION",
+      "actual": "NO_CITATION",
+      "citationOnly": false,
+      "accepted": {}
+    },
+    {
+      "id": "invented-quote",
+      "expected": "NO_CITATION",
+      "actual": "NO_CITATION",
+      "citationOnly": false,
+      "accepted": {}
+    },
+    {
+      "id": "empty",
+      "expected": "NO_CITATION",
+      "actual": "NO_CITATION",
+      "citationOnly": false,
+      "accepted": {}
+    },
+    {
+      "id": "free-text-bypass",
+      "expected": "INVALID_JSON",
+      "actual": "INVALID_JSON",
+      "citationOnly": false,
+      "accepted": {}
+    },
+    {
+      "id": "duplicate-json-key",
+      "expected": "INVALID_JSON",
+      "actual": "INVALID_JSON",
+      "citationOnly": false,
+      "accepted": {}
+    },
+    {
+      "id": "numeric-value",
+      "expected": "INVALID_JSON",
+      "actual": "INVALID_JSON",
+      "citationOnly": false,
+      "accepted": {}
+    },
+    {
+      "id": "trailing-json",
+      "expected": "INVALID_JSON",
+      "actual": "INVALID_JSON",
+      "citationOnly": false,
+      "accepted": {}
+    },
+    {
+      "id": "unknown-member",
+      "expected": "INVALID_JSON",
+      "actual": "INVALID_JSON",
+      "citationOnly": false,
+      "accepted": {}
+    }
+  ],
+  "positiveCases": 3,
+  "citationOnlyFalseAccepts": 10,
+  "networkRequests": 0
+}

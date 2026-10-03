@@ -1,0 +1,15 @@
+{
+  "commit": "926d239de0666b242b213be75cd152aef994fda2",
+  "dirtyBeforeRun": false,
+  "sources": {
+    "src/main/java/com/hohoo/ailab/grounded/EvidenceGate.java": "2c6a7680a372f7eb9401cef6453c7e3e9298050f9cb303696928bc94f133b5cc",
+    "src/main/java/com/hohoo/ailab/grounded/Suite.java": "d9a0b62fdf27aecc371a6ee5ec22b6f68c08424c4a436a11b34be44cb950c4a2",
+    "fixtures.json": "2bfa6cf4a125b843a582cc688c866eb2b3ae819bfc67b66f52444faf828f8839",
+    "protocol.json": "afb9a859d870f68145dc13b30cb56fedab43bfef12eecc71fec37edac21ca9b7",
+    "pom.xml": "0228e300119d96620e2f49cfbde2806fe891be358131e08eadad6ddd32c66bc3",
+    "audit.py": "b2a0106b868196ec5818d89a646a5f966f59e6af04e27e86611f59bb4c28a201",
+    "run.py": "0827d6618c37cda367780f4d18f9bedc1c82fde4ca67707c89cbf999a6a0fc10"
+  },
+  "scope": "Local Java8 fixtures; zero provider requests",
+  "resultsSha256": "ee29a21f5f02bb7c5a643cdfce032da36c959f75b3cc9dafb92dedcdb4311854"
+}

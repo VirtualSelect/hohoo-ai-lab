@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-03T07:21:50.136539+00:00",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "protocol": {
+    "seeds": [
+      7,
+      19,
+      41
+    ],
+    "prefix": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "suffix": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "cases": [
+      "same-prefix",
+      "edited-prefix",
+      "different-weights",
+      "different-window",
+      "different-scope",
+      "new-suffix"
+    ],
+    "tolerance": 1e-12,
+    "scope": "Untrained two-layer attention. No language-model API, tokenizer, shared server, wall-clock or security benchmark."
+  },
+  "commit": "926d239de0666b242b213be75cd152aef994fda2",
+  "dirtyBeforeRun": true,
+  "sources": {
+    "experiments/06-prefix-cache/audit.py": "1c4ab628f9764bcdbf56a270a82986f5021d1ba02874ec6be734f6b46820abd6",
+    "experiments/06-prefix-cache/prefix_cache.py": "603ee2a4079b831aca430d985e29b7648d71d3fba823261c3d4c7b84e89dfbf5",
+    "experiments/06-prefix-cache/run.py": "f2593b39a30515eeed9dafc64e9003b0801e5a93fc41663705a9f82458c17480",
+    "experiments/06-prefix-cache/test_prefix.py": "e1f33fc5d28ebdaadf85df70f38dc02961a94be1ef27d4c8f89f0ea960a91cbc",
+    "experiments/06-prefix-cache/protocol.json": "5a5e93d5064ac246bfabf3f43b23af60d525605a28fb130e6c32b5aa18191589",
+    "experiments/05-attention-lab/attention.py": "e0e016a564100f412a0ddd07a6953f9c155814a837d4dba22ce7753addb1c29c"
+  }
+}
