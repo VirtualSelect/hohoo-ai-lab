@@ -1,0 +1,25 @@
+{
+  "id": "L2-L4-attention-mechanisms-v1",
+  "seeds": [
+    7,
+    19,
+    41
+  ],
+  "length": 24,
+  "dimension": 16,
+  "layers": 2,
+  "vocabulary": 32,
+  "window": 4,
+  "dtype": "float64",
+  "tolerance": 1e-12,
+  "trained": false,
+  "networkRequests": 0,
+  "scope": "Seeded, untrained two-layer single-head attention with residual tanh and additive absolute sinusoidal positions. No tokenizer, language quality, provider benchmark or hardware speed claim.",
+  "studies": [
+    "future perturbation with causal/unmasked attention",
+    "prefix recomputation vs token/chunk KV caching",
+    "sliding cached attention vs full masked reference and raw-prefix recomputation"
+  ],
+  "frozenInputs": "tokens[i]=(7*i+3)%32; perturb tokens[12:] by +1 modulo32; chunks 5,3,7,9",
+  "accounting": "Count actual projected rows and attention score elements in this implementation; byte count is ndarray K+V payload only, not process memory."
+}

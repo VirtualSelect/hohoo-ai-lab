@@ -1,3 +1,8 @@
 /experiments/03-typescript-boundary/** text eol=lf
 /demos/05-transactional-chat/** text eol=lf
 /experiments/04-context-position-similar/** text eol=lf
+
+experiments/05-attention-lab/** text eol=lf
+demos/06-reliable-workflows/** text eol=lf
+*.npz binary
+*.png binary

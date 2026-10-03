@@ -1,0 +1,9 @@
+{
+  "id": "A2-A4-reliable-workflows-v1",
+  "networkRequests": 0,
+  "concurrency": "Two actual Java threads with latch-fixed reversed completion order; in-memory version commit, bounded receipts, no automatic resend",
+  "tools": "Owned read-only fixtures; allowlist, exact duplicate-free string fields, one worker, zero queue, attempts bounded, timeout150ms fault worker ignores interruption until explicit release",
+  "retrieval": "10 owned English documents; 12 labelled answerable and 2 unanswerable questions; BM25 k1=1.2 b=0.75; top1/top3 reported without tuning; exact quote gate checks provenance only, not entailment",
+  "model": "none",
+  "limits": "No distributed transaction, hard thread kill, vector model, generated answer, model inference, accuracy benchmark, or latency benchmark"
+}

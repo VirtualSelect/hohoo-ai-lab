@@ -1,0 +1,117 @@
+{
+  "kind": "Owned synthetic operational handbook, not real user documents; frozen query labels, not a general retrieval benchmark",
+  "documents": [
+    {
+      "id": "timeouts",
+      "text": "A read timeout means the client stopped waiting for socket data. It does not prove the remote server did not execute the request."
+    },
+    {
+      "id": "history",
+      "text": "Commit a complete user assistant pair only after validation. Candidate history is private until the version check succeeds."
+    },
+    {
+      "id": "tools",
+      "text": "Read only tools use a fixed allowlist and a bounded call budget. Unknown tools and invalid arguments are rejected before execution."
+    },
+    {
+      "id": "cancel",
+      "text": "Cancellation requests interruption. A worker that ignores interruption can finish later. A timeout is not forced termination."
+    },
+    {
+      "id": "json",
+      "text": "Structured output must pass syntax and field validation. Parse success alone cannot establish semantic correctness."
+    },
+    {
+      "id": "cache",
+      "text": "KV cache stores projected keys and values for attention. Cached positions continue increasing after eviction."
+    },
+    {
+      "id": "retrieval",
+      "text": "Retrieval returns ranked evidence chunks. A source identifier and exact quote make the selected evidence traceable."
+    },
+    {
+      "id": "release",
+      "text": "A gripper release command does not prove object placement. Check contact separation, tray support, location and speed."
+    },
+    {
+      "id": "retry",
+      "text": "A retry can repeat an operation already executed remotely. Read only lookup is easier to retry than a payment."
+    },
+    {
+      "id": "secrets",
+      "text": "Keep API keys in server environment variables. Never embed credentials in browser code or evidence logs."
+    }
+  ],
+  "queries": [
+    {
+      "id": "q01",
+      "query": "read timeout socket",
+      "gold": "timeouts"
+    },
+    {
+      "id": "q02",
+      "query": "complete user assistant history",
+      "gold": "history"
+    },
+    {
+      "id": "q03",
+      "query": "unknown tools allowlist",
+      "gold": "tools"
+    },
+    {
+      "id": "q04",
+      "query": "worker ignores interruption",
+      "gold": "cancel"
+    },
+    {
+      "id": "q05",
+      "query": "syntax field validation",
+      "gold": "json"
+    },
+    {
+      "id": "q06",
+      "query": "cache keys values",
+      "gold": "cache"
+    },
+    {
+      "id": "q07",
+      "query": "ranked evidence chunks",
+      "gold": "retrieval"
+    },
+    {
+      "id": "q08",
+      "query": "gripper placement tray",
+      "gold": "release"
+    },
+    {
+      "id": "q09",
+      "query": "retry operation remotely",
+      "gold": "retry"
+    },
+    {
+      "id": "q10",
+      "query": "API keys browser",
+      "gold": "secrets"
+    },
+    {
+      "id": "q11",
+      "query": "client waiting",
+      "gold": "timeouts"
+    },
+    {
+      "id": "q12",
+      "query": "conversation race",
+      "gold": "history"
+    },
+    {
+      "id": "q13",
+      "query": "photosynthesis",
+      "gold": null
+    },
+    {
+      "id": "q14",
+      "query": "cache payment",
+      "gold": null
+    }
+  ]
+}
