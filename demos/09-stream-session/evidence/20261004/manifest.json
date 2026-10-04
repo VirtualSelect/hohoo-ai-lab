@@ -1,0 +1,15 @@
+{
+  "commit": "0ffef550bdd1af1c25385ae535221477b512a5f9",
+  "sources": {
+    "demos/09-stream-session/src/main/java/com/hohoo/ailab/session/Session.java": "cd24eb971289b0bfd2e3235fc2456b3f501da5b9821e5ba6b853a46307acb84b",
+    "demos/09-stream-session/src/main/java/com/hohoo/ailab/session/Suite.java": "98a61bdde69e683c393dfeb20a5b368fedf5168bf4de4a57102d8c1b2ed67945",
+    "demos/09-stream-session/src/main/java/com/hohoo/ailab/stream/StreamReader.java": "0038042d50a786e3967fe27349aa85ff2681f67412695c54a0055b8aa1dd6575",
+    "demos/09-stream-session/audit.py": "c323b8d370fc0f0d56af0fedc5a15a27efa595eb53c792c23b8856e0cf026da6",
+    "demos/09-stream-session/run.py": "ec01baa8103cd41589dba1bba359e8d70c175349557ffe4fd2ef49531a353c14",
+    "demos/09-stream-session/pom.xml": "85eafbf22087ec8d6bab0c1e10e3f8a314606069f3517e8830551bb6cdca10a8",
+    "demos/09-stream-session/protocol.json": "f128dc90ad87f90982301caee14077c9419341de6fbe2ce58de6c45aeb770b1a"
+  },
+  "files": {
+    "results.json": "858e4d851fc01318c2cb4e348872c6af956741e7acfa7c8e6a83cabd16e9c13a"
+  }
+}

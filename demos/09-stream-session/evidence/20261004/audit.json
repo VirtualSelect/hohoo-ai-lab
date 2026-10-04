@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "schedules": 18,
+  "owned_pass": 9,
+  "naive_fail": 7,
+  "contract_groups": 7,
+  "failed_controls": [
+    "cancel",
+    "clear",
+    "supersede-old-first",
+    "supersede-new-first",
+    "late-preview",
+    "duplicate-complete",
+    "late-error"
+  ]
+}

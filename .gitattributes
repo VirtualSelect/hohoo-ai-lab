@@ -20,3 +20,8 @@ demos/08-streaming-boundary/evidence/** -text
 
 experiments/07-prefix-reuse/** text eol=lf
 experiments/07-prefix-reuse/evidence/** -text
+
+demos/09-stream-session/** text eol=lf
+demos/09-stream-session/evidence/** -text
+experiments/08-cache-budget/** text eol=lf
+experiments/08-cache-budget/evidence/** -text

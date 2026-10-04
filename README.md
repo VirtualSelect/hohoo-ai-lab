@@ -38,3 +38,8 @@ Learning, experimenting and building with AI — Java, LLMs, RAG, Agents and bey
 - [A5 引用与声明契约](demos/07-grounded-claims/README.md)：22 个闭合配置案例。
 - [A6 SSE 文本流与历史提交](demos/08-streaming-boundary/README.md)：22 个回环 HTTP 案例；6 个完成、16 个拒绝或取消，不调用模型。
 - [L6 最长相同前缀复用](experiments/07-prefix-reuse/README.md)：27 个条件、81 个原始数组；局部裁剪必须同步位置编号。
+
+## 请求归属与缓存预算
+
+- [A7 流式会话所有权](demos/09-stream-session/README.md)：18种固定线程交错；旧回调不能更新当前会话。
+- [L7 字节预算缓存](experiments/08-cache-budget/README.md)：324请求、648数组，冷缓存开始计数，保留零收益的缓存抖动案例。

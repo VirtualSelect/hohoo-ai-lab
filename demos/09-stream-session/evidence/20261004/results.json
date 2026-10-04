@@ -1,0 +1,2022 @@
+{
+  "java": "1.8.0_171",
+  "cases": [
+    {
+      "history": [
+        "question-A",
+        "answer-A"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A"
+          ]
+        }
+      ],
+      "case": "normal",
+      "policy": "naive",
+      "before_new_complete": {
+        "history": [
+          "question-A",
+          "answer-A"
+        ],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "COMMITTED",
+            "epoch": 1,
+            "preview": "",
+            "history": [
+              "question-A",
+              "answer-A"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-A",
+        "answer-A"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A"
+          ]
+        }
+      ],
+      "case": "normal",
+      "policy": "owned",
+      "before_new_complete": {
+        "history": [
+          "question-A",
+          "answer-A"
+        ],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "COMMITTED",
+            "epoch": 1,
+            "preview": "",
+            "history": [
+              "question-A",
+              "answer-A"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-A",
+        "answer-A"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A"
+          ]
+        }
+      ],
+      "case": "cancel",
+      "policy": "naive",
+      "before_new_complete": {
+        "history": [
+          "question-A",
+          "answer-A"
+        ],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "cancel",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "COMMITTED",
+            "epoch": 2,
+            "preview": "",
+            "history": [
+              "question-A",
+              "answer-A"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ],
+      "case": "cancel",
+      "policy": "owned",
+      "before_new_complete": {
+        "history": [],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "cancel",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "STALE",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-A",
+        "answer-A"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "clear",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A"
+          ]
+        }
+      ],
+      "case": "clear",
+      "policy": "naive",
+      "before_new_complete": {
+        "history": [
+          "question-A",
+          "answer-A"
+        ],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "clear",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "COMMITTED",
+            "epoch": 2,
+            "preview": "",
+            "history": [
+              "question-A",
+              "answer-A"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "clear",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ],
+      "case": "clear",
+      "policy": "owned",
+      "before_new_complete": {
+        "history": [],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "clear",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "STALE",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-A",
+        "answer-A",
+        "question-B",
+        "answer-B"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "supersede",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "begin",
+          "ticket": "B",
+          "result": "STARTED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "preview",
+          "ticket": "B",
+          "result": "ACCEPTED",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A"
+          ]
+        },
+        {
+          "n": 6,
+          "kind": "complete",
+          "ticket": "B",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A",
+            "question-B",
+            "answer-B"
+          ]
+        }
+      ],
+      "case": "supersede-old-first",
+      "policy": "naive",
+      "before_new_complete": {
+        "history": [
+          "question-A",
+          "answer-A"
+        ],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "supersede",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "begin",
+            "ticket": "B",
+            "result": "STARTED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 4,
+            "kind": "preview",
+            "ticket": "B",
+            "result": "ACCEPTED",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          },
+          {
+            "n": 5,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "COMMITTED",
+            "epoch": 2,
+            "preview": "",
+            "history": [
+              "question-A",
+              "answer-A"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-B",
+        "answer-B"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "supersede",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "begin",
+          "ticket": "B",
+          "result": "STARTED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "preview",
+          "ticket": "B",
+          "result": "ACCEPTED",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 6,
+          "kind": "complete",
+          "ticket": "B",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-B",
+            "answer-B"
+          ]
+        }
+      ],
+      "case": "supersede-old-first",
+      "policy": "owned",
+      "before_new_complete": {
+        "history": [],
+        "preview": "answer-B",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "supersede",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "begin",
+            "ticket": "B",
+            "result": "STARTED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 4,
+            "kind": "preview",
+            "ticket": "B",
+            "result": "ACCEPTED",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          },
+          {
+            "n": 5,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "STALE",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-B",
+        "answer-B",
+        "question-A",
+        "answer-A"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "supersede",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "begin",
+          "ticket": "B",
+          "result": "STARTED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "preview",
+          "ticket": "B",
+          "result": "ACCEPTED",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "complete",
+          "ticket": "B",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-B",
+            "answer-B"
+          ]
+        },
+        {
+          "n": 6,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-B",
+            "answer-B",
+            "question-A",
+            "answer-A"
+          ]
+        }
+      ],
+      "case": "supersede-new-first",
+      "policy": "naive",
+      "before_new_complete": {
+        "history": [
+          "question-B",
+          "answer-B",
+          "question-A",
+          "answer-A"
+        ],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "supersede",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "begin",
+            "ticket": "B",
+            "result": "STARTED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 4,
+            "kind": "preview",
+            "ticket": "B",
+            "result": "ACCEPTED",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          },
+          {
+            "n": 5,
+            "kind": "complete",
+            "ticket": "B",
+            "result": "COMMITTED",
+            "epoch": 2,
+            "preview": "",
+            "history": [
+              "question-B",
+              "answer-B"
+            ]
+          },
+          {
+            "n": 6,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "COMMITTED",
+            "epoch": 2,
+            "preview": "",
+            "history": [
+              "question-B",
+              "answer-B",
+              "question-A",
+              "answer-A"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-B",
+        "answer-B"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "supersede",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "begin",
+          "ticket": "B",
+          "result": "STARTED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "preview",
+          "ticket": "B",
+          "result": "ACCEPTED",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "complete",
+          "ticket": "B",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-B",
+            "answer-B"
+          ]
+        },
+        {
+          "n": 6,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-B",
+            "answer-B"
+          ]
+        }
+      ],
+      "case": "supersede-new-first",
+      "policy": "owned",
+      "before_new_complete": {
+        "history": [
+          "question-B",
+          "answer-B"
+        ],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "supersede",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "begin",
+            "ticket": "B",
+            "result": "STARTED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 4,
+            "kind": "preview",
+            "ticket": "B",
+            "result": "ACCEPTED",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          },
+          {
+            "n": 5,
+            "kind": "complete",
+            "ticket": "B",
+            "result": "COMMITTED",
+            "epoch": 2,
+            "preview": "",
+            "history": [
+              "question-B",
+              "answer-B"
+            ]
+          },
+          {
+            "n": 6,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "STALE",
+            "epoch": 2,
+            "preview": "",
+            "history": [
+              "question-B",
+              "answer-B"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-A",
+        "answer-A",
+        "question-B",
+        "answer-B"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "supersede",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "begin",
+          "ticket": "B",
+          "result": "STARTED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "B",
+          "result": "ACCEPTED",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 2,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A"
+          ]
+        },
+        {
+          "n": 6,
+          "kind": "complete",
+          "ticket": "B",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A",
+            "question-B",
+            "answer-B"
+          ]
+        }
+      ],
+      "case": "late-preview",
+      "policy": "naive",
+      "before_new_complete": {
+        "history": [
+          "question-A",
+          "answer-A"
+        ],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "supersede",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "begin",
+            "ticket": "B",
+            "result": "STARTED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "preview",
+            "ticket": "B",
+            "result": "ACCEPTED",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          },
+          {
+            "n": 4,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 2,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 5,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "COMMITTED",
+            "epoch": 2,
+            "preview": "",
+            "history": [
+              "question-A",
+              "answer-A"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-B",
+        "answer-B"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "supersede",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "begin",
+          "ticket": "B",
+          "result": "STARTED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "B",
+          "result": "ACCEPTED",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 6,
+          "kind": "complete",
+          "ticket": "B",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-B",
+            "answer-B"
+          ]
+        }
+      ],
+      "case": "late-preview",
+      "policy": "owned",
+      "before_new_complete": {
+        "history": [],
+        "preview": "answer-B",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "supersede",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "begin",
+            "ticket": "B",
+            "result": "STARTED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "preview",
+            "ticket": "B",
+            "result": "ACCEPTED",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          },
+          {
+            "n": 4,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "STALE",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          },
+          {
+            "n": 5,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "STALE",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-A",
+        "answer-A",
+        "question-A",
+        "answer-A"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A"
+          ]
+        },
+        {
+          "n": 3,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A",
+            "question-A",
+            "answer-A"
+          ]
+        }
+      ],
+      "case": "duplicate-complete",
+      "policy": "naive",
+      "before_new_complete": {
+        "history": [
+          "question-A",
+          "answer-A",
+          "question-A",
+          "answer-A"
+        ],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "COMMITTED",
+            "epoch": 1,
+            "preview": "",
+            "history": [
+              "question-A",
+              "answer-A"
+            ]
+          },
+          {
+            "n": 3,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "COMMITTED",
+            "epoch": 1,
+            "preview": "",
+            "history": [
+              "question-A",
+              "answer-A",
+              "question-A",
+              "answer-A"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-A",
+        "answer-A"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A"
+          ]
+        },
+        {
+          "n": 3,
+          "kind": "complete",
+          "ticket": "A",
+          "result": "STALE",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question-A",
+            "answer-A"
+          ]
+        }
+      ],
+      "case": "duplicate-complete",
+      "policy": "owned",
+      "before_new_complete": {
+        "history": [
+          "question-A",
+          "answer-A"
+        ],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "COMMITTED",
+            "epoch": 1,
+            "preview": "",
+            "history": [
+              "question-A",
+              "answer-A"
+            ]
+          },
+          {
+            "n": 3,
+            "kind": "complete",
+            "ticket": "A",
+            "result": "STALE",
+            "epoch": 1,
+            "preview": "",
+            "history": [
+              "question-A",
+              "answer-A"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "fail",
+          "ticket": "A",
+          "result": "FAILED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ],
+      "case": "truncated",
+      "policy": "naive",
+      "before_new_complete": {
+        "history": [],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "fail",
+            "ticket": "A",
+            "result": "FAILED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          }
+        ]
+      }
+    },
+    {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "A",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "answer-A",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "fail",
+          "ticket": "A",
+          "result": "FAILED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ],
+      "case": "truncated",
+      "policy": "owned",
+      "before_new_complete": {
+        "history": [],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "preview",
+            "ticket": "A",
+            "result": "ACCEPTED",
+            "epoch": 1,
+            "preview": "answer-A",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "fail",
+            "ticket": "A",
+            "result": "FAILED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-B",
+        "answer-B"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "supersede",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "begin",
+          "ticket": "B",
+          "result": "STARTED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "B",
+          "result": "ACCEPTED",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "fail",
+          "ticket": "A",
+          "result": "FAILED",
+          "epoch": 3,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "complete",
+          "ticket": "B",
+          "result": "COMMITTED",
+          "epoch": 3,
+          "preview": "",
+          "history": [
+            "question-B",
+            "answer-B"
+          ]
+        }
+      ],
+      "case": "late-error",
+      "policy": "naive",
+      "before_new_complete": {
+        "history": [],
+        "preview": "",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "supersede",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "begin",
+            "ticket": "B",
+            "result": "STARTED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "preview",
+            "ticket": "B",
+            "result": "ACCEPTED",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          },
+          {
+            "n": 4,
+            "kind": "fail",
+            "ticket": "A",
+            "result": "FAILED",
+            "epoch": 3,
+            "preview": "",
+            "history": []
+          }
+        ]
+      }
+    },
+    {
+      "history": [
+        "question-B",
+        "answer-B"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "A",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "supersede",
+          "ticket": "A",
+          "result": "INVALIDATED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "begin",
+          "ticket": "B",
+          "result": "STARTED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "B",
+          "result": "ACCEPTED",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "fail",
+          "ticket": "A",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "answer-B",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "complete",
+          "ticket": "B",
+          "result": "COMMITTED",
+          "epoch": 2,
+          "preview": "",
+          "history": [
+            "question-B",
+            "answer-B"
+          ]
+        }
+      ],
+      "case": "late-error",
+      "policy": "owned",
+      "before_new_complete": {
+        "history": [],
+        "preview": "answer-B",
+        "events": [
+          {
+            "n": 0,
+            "kind": "begin",
+            "ticket": "A",
+            "result": "STARTED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 1,
+            "kind": "supersede",
+            "ticket": "A",
+            "result": "INVALIDATED",
+            "epoch": 1,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 2,
+            "kind": "begin",
+            "ticket": "B",
+            "result": "STARTED",
+            "epoch": 2,
+            "preview": "",
+            "history": []
+          },
+          {
+            "n": 3,
+            "kind": "preview",
+            "ticket": "B",
+            "result": "ACCEPTED",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          },
+          {
+            "n": 4,
+            "kind": "fail",
+            "ticket": "A",
+            "result": "STALE",
+            "epoch": 2,
+            "preview": "answer-B",
+            "history": []
+          }
+        ]
+      }
+    }
+  ],
+  "contract_checks": 7
+}

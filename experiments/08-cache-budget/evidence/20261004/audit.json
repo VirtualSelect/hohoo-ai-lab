@@ -1,0 +1,279 @@
+{
+  "valid": true,
+  "requests": 324,
+  "arrays": 648,
+  "traces": 27,
+  "max_error": 4.163336342344337e-16,
+  "totals": [
+    {
+      "seed": 7,
+      "budget": 4096,
+      "trace": "hot-prefix",
+      "fresh_rows": 864,
+      "projected_rows": 600,
+      "hits": 11,
+      "evictions": 0,
+      "copy_bytes": 25344
+    },
+    {
+      "seed": 7,
+      "budget": 4096,
+      "trace": "alternating-branches",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 11,
+      "copy_bytes": 25344
+    },
+    {
+      "seed": 7,
+      "budget": 4096,
+      "trace": "three-scopes",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 11,
+      "copy_bytes": 25344
+    },
+    {
+      "seed": 7,
+      "budget": 8192,
+      "trace": "hot-prefix",
+      "fresh_rows": 864,
+      "projected_rows": 336,
+      "hits": 11,
+      "evictions": 0,
+      "copy_bytes": 52800
+    },
+    {
+      "seed": 7,
+      "budget": 8192,
+      "trace": "alternating-branches",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 22,
+      "copy_bytes": 76032
+    },
+    {
+      "seed": 7,
+      "budget": 8192,
+      "trace": "three-scopes",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 22,
+      "copy_bytes": 76032
+    },
+    {
+      "seed": 7,
+      "budget": 32768,
+      "trace": "hot-prefix",
+      "fresh_rows": 864,
+      "projected_rows": 336,
+      "hits": 11,
+      "evictions": 0,
+      "copy_bytes": 52800
+    },
+    {
+      "seed": 7,
+      "budget": 32768,
+      "trace": "alternating-branches",
+      "fresh_rows": 864,
+      "projected_rows": 384,
+      "hits": 10,
+      "evictions": 0,
+      "copy_bytes": 54912
+    },
+    {
+      "seed": 7,
+      "budget": 32768,
+      "trace": "three-scopes",
+      "fresh_rows": 864,
+      "projected_rows": 432,
+      "hits": 9,
+      "evictions": 0,
+      "copy_bytes": 57024
+    },
+    {
+      "seed": 11,
+      "budget": 4096,
+      "trace": "hot-prefix",
+      "fresh_rows": 864,
+      "projected_rows": 600,
+      "hits": 11,
+      "evictions": 0,
+      "copy_bytes": 25344
+    },
+    {
+      "seed": 11,
+      "budget": 4096,
+      "trace": "alternating-branches",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 11,
+      "copy_bytes": 25344
+    },
+    {
+      "seed": 11,
+      "budget": 4096,
+      "trace": "three-scopes",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 11,
+      "copy_bytes": 25344
+    },
+    {
+      "seed": 11,
+      "budget": 8192,
+      "trace": "hot-prefix",
+      "fresh_rows": 864,
+      "projected_rows": 336,
+      "hits": 11,
+      "evictions": 0,
+      "copy_bytes": 52800
+    },
+    {
+      "seed": 11,
+      "budget": 8192,
+      "trace": "alternating-branches",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 22,
+      "copy_bytes": 76032
+    },
+    {
+      "seed": 11,
+      "budget": 8192,
+      "trace": "three-scopes",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 22,
+      "copy_bytes": 76032
+    },
+    {
+      "seed": 11,
+      "budget": 32768,
+      "trace": "hot-prefix",
+      "fresh_rows": 864,
+      "projected_rows": 336,
+      "hits": 11,
+      "evictions": 0,
+      "copy_bytes": 52800
+    },
+    {
+      "seed": 11,
+      "budget": 32768,
+      "trace": "alternating-branches",
+      "fresh_rows": 864,
+      "projected_rows": 384,
+      "hits": 10,
+      "evictions": 0,
+      "copy_bytes": 54912
+    },
+    {
+      "seed": 11,
+      "budget": 32768,
+      "trace": "three-scopes",
+      "fresh_rows": 864,
+      "projected_rows": 432,
+      "hits": 9,
+      "evictions": 0,
+      "copy_bytes": 57024
+    },
+    {
+      "seed": 23,
+      "budget": 4096,
+      "trace": "hot-prefix",
+      "fresh_rows": 864,
+      "projected_rows": 600,
+      "hits": 11,
+      "evictions": 0,
+      "copy_bytes": 25344
+    },
+    {
+      "seed": 23,
+      "budget": 4096,
+      "trace": "alternating-branches",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 11,
+      "copy_bytes": 25344
+    },
+    {
+      "seed": 23,
+      "budget": 4096,
+      "trace": "three-scopes",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 11,
+      "copy_bytes": 25344
+    },
+    {
+      "seed": 23,
+      "budget": 8192,
+      "trace": "hot-prefix",
+      "fresh_rows": 864,
+      "projected_rows": 336,
+      "hits": 11,
+      "evictions": 0,
+      "copy_bytes": 52800
+    },
+    {
+      "seed": 23,
+      "budget": 8192,
+      "trace": "alternating-branches",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 22,
+      "copy_bytes": 76032
+    },
+    {
+      "seed": 23,
+      "budget": 8192,
+      "trace": "three-scopes",
+      "fresh_rows": 864,
+      "projected_rows": 864,
+      "hits": 0,
+      "evictions": 22,
+      "copy_bytes": 76032
+    },
+    {
+      "seed": 23,
+      "budget": 32768,
+      "trace": "hot-prefix",
+      "fresh_rows": 864,
+      "projected_rows": 336,
+      "hits": 11,
+      "evictions": 0,
+      "copy_bytes": 52800
+    },
+    {
+      "seed": 23,
+      "budget": 32768,
+      "trace": "alternating-branches",
+      "fresh_rows": 864,
+      "projected_rows": 384,
+      "hits": 10,
+      "evictions": 0,
+      "copy_bytes": 54912
+    },
+    {
+      "seed": 23,
+      "budget": 32768,
+      "trace": "three-scopes",
+      "fresh_rows": 864,
+      "projected_rows": 432,
+      "hits": 9,
+      "evictions": 0,
+      "copy_bytes": 57024
+    }
+  ]
+}

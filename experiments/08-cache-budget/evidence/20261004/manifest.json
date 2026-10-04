@@ -1,0 +1,41 @@
+{
+  "commit": "0ffef550bdd1af1c25385ae535221477b512a5f9",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "protocol": {
+    "id": "L7",
+    "date": "2026-10-04",
+    "seeds": [
+      7,
+      11,
+      23
+    ],
+    "budgets": [
+      4096,
+      8192,
+      32768
+    ],
+    "traces": [
+      "hot-prefix",
+      "alternating-branches",
+      "three-scopes"
+    ],
+    "requests": 12,
+    "stride": 4,
+    "tolerance": 1e-12,
+    "scope": "untrained float64 decoder; persistent numpy K/V + position payload only; no timing claims"
+  },
+  "sources": {
+    "experiments/08-cache-budget/audit.py": "879fee03568889c8c5de333b487f499f4c79e237324b78c2ad015d514ebc223e",
+    "experiments/08-cache-budget/cache.py": "d4980114b27281155159a66fcaf25a947dd48451103d6c2201cd3f8446a698c7",
+    "experiments/08-cache-budget/run.py": "256dc1cd9e89cd8d2a5ae12f96f4484b60b1520f5904cc8939d02a91b5224c5d",
+    "experiments/08-cache-budget/test_cache.py": "c3d9b31b6b4498b329acb44f243569f3b1c8808b1ee3c2848943777c959327cd",
+    "experiments/08-cache-budget/protocol.json": "dbf9010b2cc0e47f477db3467a066f9a5f1b6ee7d8bd71236da1c2216db16493",
+    "experiments/05-attention-lab/attention.py": "e0e016a564100f412a0ddd07a6953f9c155814a837d4dba22ce7753addb1c29c",
+    "experiments/06-prefix-cache/prefix_cache.py": "603ee2a4079b831aca430d985e29b7648d71d3fba823261c3d4c7b84e89dfbf5"
+  },
+  "files": {
+    "arrays.npz": "2c7cd5dbaa7e08889735ae14c09df16d696a2237326e1fb2c56323296e240cd3",
+    "results.json": "33f3dff247207a0c2df406dc18f52b906807b982ede39720a304c4f82d0a93a7"
+  }
+}
