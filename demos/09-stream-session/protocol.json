@@ -1,0 +1,24 @@
+{
+  "id": "A7",
+  "date": "2026-10-04",
+  "cases": [
+    "normal",
+    "cancel",
+    "clear",
+    "supersede-old-first",
+    "supersede-new-first",
+    "late-preview",
+    "duplicate-complete",
+    "truncated",
+    "late-error"
+  ],
+  "policies": [
+    "naive",
+    "owned"
+  ],
+  "latch_timeout_s": 5,
+  "history_pairs": 8,
+  "receipts": 8,
+  "online_calls": 0,
+  "scope": "single process, deterministic callback interleavings, copied A6 parser"
+}
