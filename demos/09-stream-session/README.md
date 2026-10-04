@@ -10,3 +10,9 @@ python audit.py evidence/my-run
 ```
 
 `complete` 只接受调用方已经验证完整的文本；本例调用方必须通过 A6 stop + DONE 检查。8 对历史、8 个已用 ID 的保留窗；被拒绝的重复 ID 不发起请求。清空保留 ID 窗，进程重启不保留。取消是本地失效，不保证停止计费、关闭网络或跨进程幂等。naive 仅为负对照。
+
+## 已归档结果
+
+`evidence/20261004`：18种固定交错，9种归属检查通过，朴素对照7种失败。`audit.json`保留汇总；`results.json`逐事件记录中间预览和历史。
+
+配套文章：https://huhohoo.com/docs/ai-apps/java-stream-session-ownership

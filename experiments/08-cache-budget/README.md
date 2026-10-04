@@ -11,3 +11,9 @@ python experiments/08-cache-budget/audit.py experiments/08-cache-budget/evidence
 ```
 
 这不是 PagedAttention 或生产 KV 引擎。不含 Python 对象、token key、活跃请求临时缓存、NumPy内部复制、模型权重；驻留上限不是RSS上限。没有计时，不用算术计数推断加速倍数。scope 字符串不是身份认证。
+
+## 已归档结果
+
+`evidence/20261004`：324请求、648数组，最大绝对误差4.163336342344337e-16。8KiB热点组336投影行（完整重算864），交替组零命中、22淘汰。没有实测时延或加速倍数。
+
+配套文章：https://huhohoo.com/docs/llm/prefix-cache-byte-budget
