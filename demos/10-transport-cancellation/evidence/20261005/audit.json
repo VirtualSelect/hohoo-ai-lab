@@ -1,0 +1,111 @@
+{
+  "runs": 30,
+  "normal_commits": 6,
+  "cancelled_history_commits": 0,
+  "timing": [
+    {
+      "condition": "cancel-dripping",
+      "policy": "interrupt-only",
+      "median_ms": 747.7387,
+      "min_ms": 740.4872,
+      "max_ms": 750.7371,
+      "outcomes": [
+        "STALE_COMPLETE",
+        "STALE_COMPLETE",
+        "STALE_COMPLETE"
+      ],
+      "still_running": 3
+    },
+    {
+      "condition": "cancel-dripping",
+      "policy": "close-socket",
+      "median_ms": 0.176,
+      "min_ms": 0.1727,
+      "max_ms": 0.1811,
+      "outcomes": [
+        "SocketException",
+        "SocketException",
+        "SocketException"
+      ],
+      "still_running": 3
+    },
+    {
+      "condition": "cancel-stalled",
+      "policy": "interrupt-only",
+      "median_ms": 507.2114,
+      "min_ms": 501.2455,
+      "max_ms": 509.9675,
+      "outcomes": [
+        "SocketTimeoutException",
+        "SocketTimeoutException",
+        "SocketTimeoutException"
+      ],
+      "still_running": 3
+    },
+    {
+      "condition": "cancel-stalled",
+      "policy": "close-socket",
+      "median_ms": 0.1367,
+      "min_ms": 0.1188,
+      "max_ms": 0.3885,
+      "outcomes": [
+        "SocketException",
+        "SocketException",
+        "SocketException"
+      ],
+      "still_running": 3
+    },
+    {
+      "condition": "deadline-dripping",
+      "policy": "interrupt-only",
+      "median_ms": 532.3564,
+      "min_ms": 526.3309,
+      "max_ms": 543.9524,
+      "outcomes": [
+        "STALE_COMPLETE",
+        "STALE_COMPLETE",
+        "STALE_COMPLETE"
+      ],
+      "still_running": 3
+    },
+    {
+      "condition": "deadline-dripping",
+      "policy": "close-socket",
+      "median_ms": 0.4197,
+      "min_ms": 0.3161,
+      "max_ms": 0.5362,
+      "outcomes": [
+        "SocketException",
+        "SocketException",
+        "SocketException"
+      ],
+      "still_running": 3
+    },
+    {
+      "condition": "deadline-stalled",
+      "policy": "interrupt-only",
+      "median_ms": 310.5339,
+      "min_ms": 309.4551,
+      "max_ms": 310.8681,
+      "outcomes": [
+        "SocketTimeoutException",
+        "SocketTimeoutException",
+        "SocketTimeoutException"
+      ],
+      "still_running": 3
+    },
+    {
+      "condition": "deadline-stalled",
+      "policy": "close-socket",
+      "median_ms": 0.4175,
+      "min_ms": 0.4019,
+      "max_ms": 0.7101,
+      "outcomes": [
+        "SocketException",
+        "SocketException",
+        "SocketException"
+      ],
+      "still_running": 3
+    }
+  ]
+}

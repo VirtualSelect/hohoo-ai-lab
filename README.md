@@ -43,3 +43,8 @@ Learning, experimenting and building with AI — Java, LLMs, RAG, Agents and bey
 
 - [A7 流式会话所有权](demos/09-stream-session/README.md)：18种固定线程交错；旧回调不能更新当前会话。
 - [L7 字节预算缓存](experiments/08-cache-budget/README.md)：324请求、648数组，冷缓存开始计数，保留零收益的缓存抖动案例。
+
+## 连接取消与缓存准入
+
+- [A8 真实连接取消](demos/10-transport-cancellation)：30次本地HTTP对照，分别记录会话、工作线程与服务端工作。
+- [L8 缓存准入和实测查询耗时](experiments/09-cache-admission)：4,860次查询，保留计算减少但仍慢于重算的结果。

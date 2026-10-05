@@ -1,0 +1,148 @@
+{
+  "commit": "8001de16305e9a4932547867ce8d8c8f78ce4d7d",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "platform": "Windows-11-10.0.26120-SP0",
+  "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+  "timer": {
+    "implementation": "QueryPerformanceCounter()",
+    "monotonic": true,
+    "adjustable": false,
+    "resolution": 1e-07
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  },
+  "numpy_config": {
+    "Compilers": {
+      "c": {
+        "name": "msvc",
+        "linker": "link",
+        "version": "19.29.30159",
+        "commands": "cl"
+      },
+      "cython": {
+        "name": "cython",
+        "linker": "cython",
+        "version": "3.1.0",
+        "commands": "cython"
+      },
+      "c++": {
+        "name": "msvc",
+        "linker": "link",
+        "version": "19.29.30159",
+        "commands": "cl"
+      }
+    },
+    "Machine Information": {
+      "host": {
+        "cpu": "x86_64",
+        "family": "x86_64",
+        "endian": "little",
+        "system": "windows"
+      },
+      "build": {
+        "cpu": "x86_64",
+        "family": "x86_64",
+        "endian": "little",
+        "system": "windows"
+      }
+    },
+    "Build Dependencies": {
+      "blas": {
+        "name": "scipy-openblas",
+        "found": true,
+        "version": "0.3.29",
+        "detection method": "pkgconfig",
+        "include directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-ll3k360g/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include",
+        "lib directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-ll3k360g/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib",
+        "openblas configuration": "OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=24",
+        "pc file directory": "C:/a/numpy/numpy/.openblas"
+      },
+      "lapack": {
+        "name": "scipy-openblas",
+        "found": true,
+        "version": "0.3.29",
+        "detection method": "pkgconfig",
+        "include directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-ll3k360g/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include",
+        "lib directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-ll3k360g/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib",
+        "openblas configuration": "OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=24",
+        "pc file directory": "C:/a/numpy/numpy/.openblas"
+      }
+    },
+    "Python Information": {
+      "path": "C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-82yfwekj\\Scripts\\python.exe",
+      "version": "3.12"
+    },
+    "SIMD Extensions": {
+      "baseline": [
+        "SSE",
+        "SSE2",
+        "SSE3"
+      ],
+      "found": [
+        "SSSE3",
+        "SSE41",
+        "POPCNT",
+        "SSE42",
+        "AVX",
+        "F16C",
+        "FMA3",
+        "AVX2"
+      ],
+      "not found": [
+        "AVX512F",
+        "AVX512CD",
+        "AVX512_SKX",
+        "AVX512_CLX",
+        "AVX512_CNL",
+        "AVX512_ICL"
+      ]
+    }
+  },
+  "protocol": {
+    "id": "L8",
+    "seeds": [
+      7,
+      11,
+      23
+    ],
+    "budgets": [
+      8192,
+      12288,
+      16384
+    ],
+    "traces": [
+      "hot-prefix",
+      "alternating-branches",
+      "three-scopes"
+    ],
+    "policies": [
+      "none",
+      "all",
+      "longest"
+    ],
+    "requests": 12,
+    "warmups": 1,
+    "repeats": 5,
+    "order_seed": 20261005,
+    "tolerance": 1e-12,
+    "timer": "perf_counter_ns: query only; includes lookup/hash/copy/compute/admission, excludes model construction/reference/serialization. Fresh cache every trace. No model API."
+  },
+  "warmup_requests": 972,
+  "sources": {
+    "experiments/09-cache-admission/audit.py": "7f0e73a1d95d56ac5fdd30eeb6f6630cdcbf80233e69f73db6db6c9ccdac614f",
+    "experiments/09-cache-admission/cache.py": "05d78777dfb9a9b99676155dbef473efc76dc5b03b3edfce55f1caa9fc706319",
+    "experiments/09-cache-admission/run.py": "6147a50b18eca7b8cc12697698200015cbef57f08e4e38207662e59df0ecc29c",
+    "experiments/09-cache-admission/test_cache.py": "bc74909c17981a92d4945e689fcddc6eceb9ffc6a0e470307baf6b80d8b0ab96",
+    "experiments/09-cache-admission/protocol.json": "2f1fa46a77d1c8b0436b6687d2daffffd7a2d5671f0a0bdfa2f6602277632694",
+    "experiments/05-attention-lab/attention.py": "e0e016a564100f412a0ddd07a6953f9c155814a837d4dba22ce7753addb1c29c",
+    "experiments/06-prefix-cache/prefix_cache.py": "603ee2a4079b831aca430d985e29b7648d71d3fba823261c3d4c7b84e89dfbf5"
+  },
+  "files": {
+    "results.json": "a70e98c77cb4bd74c29b80abbd933be64c7d5548b33f10e2e485f905e130098b",
+    "arrays.npz": "d37be0e1ce8345c0ed8040a6c8dcc64d7d99f5e97ad490aaa7112793892ea17f"
+  }
+}

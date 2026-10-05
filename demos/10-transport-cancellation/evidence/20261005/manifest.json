@@ -1,0 +1,16 @@
+{
+  "commit": "8001de16305e9a4932547867ce8d8c8f78ce4d7d",
+  "sources": {
+    "demos/10-transport-cancellation/src/main/java/com/hohoo/ailab/session/Session.java": "cd24eb971289b0bfd2e3235fc2456b3f501da5b9821e5ba6b853a46307acb84b",
+    "demos/10-transport-cancellation/src/main/java/com/hohoo/ailab/stream/StreamReader.java": "0038042d50a786e3967fe27349aa85ff2681f67412695c54a0055b8aa1dd6575",
+    "demos/10-transport-cancellation/src/main/java/com/hohoo/ailab/transport/Suite.java": "392e7f00c3c54db74e25b5696d53adaea39cd40ab758200e8add4321be043a17",
+    "demos/10-transport-cancellation/pom.xml": "c474503c80c8bd2145d35f945ba459be95cce0b9c8edc1e05e90b39ea22785e3",
+    "demos/10-transport-cancellation/protocol.json": "7362c669485b7c362c40da61c52224e4e9934dd3abc6e066dd4ed36b2f92fec4",
+    "demos/10-transport-cancellation/run.py": "534f860b826a35fa2a937c1c4e445db1ca0ac9627089930c4a5e7a9b6d3cd582",
+    "demos/10-transport-cancellation/audit.py": "25fc676ff6694aafdd171d9817e2c68b697560e72721a6328aa30f46819631fe"
+  },
+  "files": {
+    "results.json": "9f67240e8e3a54c9a0545025996a24d9b62368895530588c87f521db42a37cf0",
+    "environment.json": "2abb49463462f9ec8f76f759d11c4d5082f46f6027819f29aecd895740dfcb01"
+  }
+}

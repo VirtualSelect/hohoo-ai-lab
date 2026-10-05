@@ -1,0 +1,2120 @@
+[
+  {
+    "condition": "complete",
+    "policy": "interrupt-only",
+    "repeat": 0,
+    "outcome": "COMMITTED",
+    "futureCancelledAtAction": false,
+    "workerExitedAtAction": false,
+    "actionMs": null,
+    "exitMs": 636.5573,
+    "afterActionMs": null,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [
+        "question",
+        "Hello"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question",
+            "Hello"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "condition": "complete",
+    "policy": "interrupt-only",
+    "repeat": 1,
+    "outcome": "COMMITTED",
+    "futureCancelledAtAction": false,
+    "workerExitedAtAction": false,
+    "actionMs": null,
+    "exitMs": 1.0688,
+    "afterActionMs": null,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [
+        "question",
+        "Hello"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question",
+            "Hello"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "condition": "complete",
+    "policy": "interrupt-only",
+    "repeat": 2,
+    "outcome": "COMMITTED",
+    "futureCancelledAtAction": false,
+    "workerExitedAtAction": false,
+    "actionMs": null,
+    "exitMs": 1.0792,
+    "afterActionMs": null,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [
+        "question",
+        "Hello"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question",
+            "Hello"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "condition": "complete",
+    "policy": "close-socket",
+    "repeat": 0,
+    "outcome": "COMMITTED",
+    "futureCancelledAtAction": false,
+    "workerExitedAtAction": false,
+    "actionMs": null,
+    "exitMs": 1.2144,
+    "afterActionMs": null,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [
+        "question",
+        "Hello"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question",
+            "Hello"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "condition": "complete",
+    "policy": "close-socket",
+    "repeat": 1,
+    "outcome": "COMMITTED",
+    "futureCancelledAtAction": false,
+    "workerExitedAtAction": false,
+    "actionMs": null,
+    "exitMs": 0.7889,
+    "afterActionMs": null,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [
+        "question",
+        "Hello"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question",
+            "Hello"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "condition": "complete",
+    "policy": "close-socket",
+    "repeat": 2,
+    "outcome": "COMMITTED",
+    "futureCancelledAtAction": false,
+    "workerExitedAtAction": false,
+    "actionMs": null,
+    "exitMs": 0.8899,
+    "afterActionMs": null,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [
+        "question",
+        "Hello"
+      ],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "COMMITTED",
+          "epoch": 1,
+          "preview": "",
+          "history": [
+            "question",
+            "Hello"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-stalled",
+    "policy": "interrupt-only",
+    "repeat": 0,
+    "outcome": "SocketTimeoutException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 0.7445,
+    "exitMs": 501.99,
+    "afterActionMs": 501.2455,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-stalled",
+    "policy": "interrupt-only",
+    "repeat": 1,
+    "outcome": "SocketTimeoutException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 0.7977,
+    "exitMs": 510.7652,
+    "afterActionMs": 509.9675,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-stalled",
+    "policy": "interrupt-only",
+    "repeat": 2,
+    "outcome": "SocketTimeoutException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 0.7994,
+    "exitMs": 508.0108,
+    "afterActionMs": 507.2114,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-stalled",
+    "policy": "close-socket",
+    "repeat": 0,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 1.8972,
+    "exitMs": 2.2857,
+    "afterActionMs": 0.3885,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-stalled",
+    "policy": "close-socket",
+    "repeat": 1,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 1.078,
+    "exitMs": 1.2147,
+    "afterActionMs": 0.1367,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-stalled",
+    "policy": "close-socket",
+    "repeat": 2,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 1.2453,
+    "exitMs": 1.3641,
+    "afterActionMs": 0.1188,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-dripping",
+    "policy": "interrupt-only",
+    "repeat": 0,
+    "outcome": "STALE_COMPLETE",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 1.1749,
+    "exitMs": 751.912,
+    "afterActionMs": 750.7371,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 6,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 7,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 8,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 9,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 10,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 11,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-dripping",
+    "policy": "interrupt-only",
+    "repeat": 1,
+    "outcome": "STALE_COMPLETE",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 1.2211,
+    "exitMs": 741.7083,
+    "afterActionMs": 740.4872,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 6,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 7,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 8,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 9,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 10,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 11,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-dripping",
+    "policy": "interrupt-only",
+    "repeat": 2,
+    "outcome": "STALE_COMPLETE",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 1.1972,
+    "exitMs": 748.9359,
+    "afterActionMs": 747.7387,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 6,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 7,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 8,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 9,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 10,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 11,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-dripping",
+    "policy": "close-socket",
+    "repeat": 0,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 1.4366,
+    "exitMs": 1.6093,
+    "afterActionMs": 0.1727,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 8,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-dripping",
+    "policy": "close-socket",
+    "repeat": 1,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 2.1344,
+    "exitMs": 2.3155,
+    "afterActionMs": 0.1811,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 8,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "cancel-dripping",
+    "policy": "close-socket",
+    "repeat": 2,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 1.1652,
+    "exitMs": 1.3412,
+    "afterActionMs": 0.176,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 8,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-stalled",
+    "policy": "interrupt-only",
+    "repeat": 0,
+    "outcome": "SocketTimeoutException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 202.2226,
+    "exitMs": 512.7565,
+    "afterActionMs": 310.5339,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-stalled",
+    "policy": "interrupt-only",
+    "repeat": 1,
+    "outcome": "SocketTimeoutException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 201.4785,
+    "exitMs": 512.3466,
+    "afterActionMs": 310.8681,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-stalled",
+    "policy": "interrupt-only",
+    "repeat": 2,
+    "outcome": "SocketTimeoutException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 201.8254,
+    "exitMs": 511.2805,
+    "afterActionMs": 309.4551,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-stalled",
+    "policy": "close-socket",
+    "repeat": 0,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 201.0389,
+    "exitMs": 201.749,
+    "afterActionMs": 0.7101,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-stalled",
+    "policy": "close-socket",
+    "repeat": 1,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 215.1112,
+    "exitMs": 215.5131,
+    "afterActionMs": 0.4019,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-stalled",
+    "policy": "close-socket",
+    "repeat": 2,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 202.4868,
+    "exitMs": 202.9043,
+    "afterActionMs": 0.4175,
+    "serverWorkSteps": 0,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-dripping",
+    "policy": "interrupt-only",
+    "repeat": 0,
+    "outcome": "STALE_COMPLETE",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 215.7535,
+    "exitMs": 742.0844,
+    "afterActionMs": 526.3309,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello.",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello..",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 6,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 7,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 8,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 9,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 10,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 11,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-dripping",
+    "policy": "interrupt-only",
+    "repeat": 1,
+    "outcome": "STALE_COMPLETE",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 200.0965,
+    "exitMs": 744.0489,
+    "afterActionMs": 543.9524,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello.",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello..",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 6,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 7,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 8,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 9,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 10,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 11,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-dripping",
+    "policy": "interrupt-only",
+    "repeat": 2,
+    "outcome": "STALE_COMPLETE",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 214.0801,
+    "exitMs": 746.4365,
+    "afterActionMs": 532.3564,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 0,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello.",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello..",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 6,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 7,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 8,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 9,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 10,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 11,
+          "kind": "complete",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-dripping",
+    "policy": "close-socket",
+    "repeat": 0,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 214.3087,
+    "exitMs": 214.7284,
+    "afterActionMs": 0.4197,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 6,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello.",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello..",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-dripping",
+    "policy": "close-socket",
+    "repeat": 1,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 201.4331,
+    "exitMs": 201.9693,
+    "afterActionMs": 0.5362,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 6,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello.",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello..",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  },
+  {
+    "condition": "deadline-dripping",
+    "policy": "close-socket",
+    "repeat": 2,
+    "outcome": "SocketException",
+    "futureCancelledAtAction": true,
+    "workerExitedAtAction": false,
+    "actionMs": 201.0969,
+    "exitMs": 201.413,
+    "afterActionMs": 0.3161,
+    "serverWorkSteps": 8,
+    "serverWriteErrors": 6,
+    "session": {
+      "history": [],
+      "preview": "",
+      "events": [
+        {
+          "n": 0,
+          "kind": "begin",
+          "ticket": "request-1",
+          "result": "STARTED",
+          "epoch": 1,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 1,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello",
+          "history": []
+        },
+        {
+          "n": 2,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello.",
+          "history": []
+        },
+        {
+          "n": 3,
+          "kind": "preview",
+          "ticket": "request-1",
+          "result": "ACCEPTED",
+          "epoch": 1,
+          "preview": "Hello..",
+          "history": []
+        },
+        {
+          "n": 4,
+          "kind": "cancel",
+          "ticket": "request-1",
+          "result": "INVALIDATED",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        },
+        {
+          "n": 5,
+          "kind": "fail",
+          "ticket": "request-1",
+          "result": "STALE",
+          "epoch": 2,
+          "preview": "",
+          "history": []
+        }
+      ]
+    }
+  }
+]
