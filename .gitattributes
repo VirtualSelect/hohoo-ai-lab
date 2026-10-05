@@ -25,3 +25,9 @@ demos/09-stream-session/** text eol=lf
 demos/09-stream-session/evidence/** -text
 experiments/08-cache-budget/** text eol=lf
 experiments/08-cache-budget/evidence/** -text
+
+demos/10-transport-cancellation/** text eol=lf
+demos/10-transport-cancellation/evidence/** -text
+
+experiments/09-cache-admission/** text eol=lf
+experiments/09-cache-admission/evidence/** -text

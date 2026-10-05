@@ -1,0 +1,20 @@
+{
+  "id": "A8",
+  "conditions": [
+    "complete",
+    "cancel-stalled",
+    "cancel-dripping",
+    "deadline-stalled",
+    "deadline-dripping"
+  ],
+  "policies": [
+    "interrupt-only",
+    "close-socket"
+  ],
+  "repeats": 3,
+  "idle_timeout_ms": 500,
+  "deadline_ms": 200,
+  "drip_steps": 8,
+  "drip_interval_ms": 80,
+  "scope": "Loopback classic Socket, HTTP/1.1 connection-close SSE, deadline starts after connect, no TLS/chunked SDK or live model calls"
+}

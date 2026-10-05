@@ -1,0 +1,29 @@
+{
+  "id": "L8",
+  "seeds": [
+    7,
+    11,
+    23
+  ],
+  "budgets": [
+    8192,
+    12288,
+    16384
+  ],
+  "traces": [
+    "hot-prefix",
+    "alternating-branches",
+    "three-scopes"
+  ],
+  "policies": [
+    "none",
+    "all",
+    "longest"
+  ],
+  "requests": 12,
+  "warmups": 1,
+  "repeats": 5,
+  "order_seed": 20261005,
+  "tolerance": 1e-12,
+  "timer": "perf_counter_ns: query only; includes lookup/hash/copy/compute/admission, excludes model construction/reference/serialization. Fresh cache every trace. No model API."
+}
