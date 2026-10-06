@@ -1,7 +1,18 @@
 import json,hashlib,sys,statistics
 from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2]
+def verify_sources(manifest,root=ROOT):
+ sources=manifest.get('sources')
+ if not isinstance(sources,dict) or not sources:raise ValueError('Missing source fingerprints')
+ for name,expected in sources.items():
+  target=(root/name).resolve()
+  if not target.is_relative_to(root.resolve()) or not target.is_file():raise ValueError('Invalid source path: '+name)
+  actual=hashlib.sha256(target.read_bytes().replace(b'\r\n',b'\n')).hexdigest()
+  if actual!=expected:raise ValueError('Source mismatch; use the evidence-pinned revision: '+name)
+
 def audit(out):
  m=json.loads((out/'manifest.json').read_text('utf8'));r=json.loads((out/'results.json').read_text('utf8'))
+ verify_sources(m)
  for n,h in m['files'].items():assert hashlib.sha256((out/n).read_bytes()).hexdigest()==h
  assert len(r)==30 and len({(x['condition'],x['policy'],x['repeat']) for x in r})==30
  for x in r:

@@ -29,7 +29,42 @@ public final class StreamReader {
         default:throw new Failure("INVALID_JSON");
         }
     }
+    // Gson 2.10's non-lenient mode still accepts some non-JSON tokens.
+    // Validate lexical spelling; JsonReader below checks structure and duplicate keys.
+    static void lexical(String raw) throws Failure {
+        for (int i=0;i<raw.length();) {
+            char c=raw.charAt(i);
+            if (" \t\r\n{}[]:,".indexOf(c)>=0) { i++; continue; }
+            if (c=='"') {
+                boolean closed=false; i++;
+                while (i<raw.length()) {
+                    c=raw.charAt(i++);
+                    if(c=='"') {closed=true;break;}
+                    if(c<0x20)throw new Failure("INVALID_JSON");
+                    if(c=='\\') {
+                        if(i==raw.length())throw new Failure("INVALID_JSON");
+                        c=raw.charAt(i++);
+                        if(c=='u') {
+                            for(int j=0;j<4;j++) {
+                                if(i==raw.length()||"0123456789abcdefABCDEF".indexOf(raw.charAt(i++))<0)
+                                    throw new Failure("INVALID_JSON");
+                            }
+                        } else if("\"\\/bfnrt".indexOf(c)<0)throw new Failure("INVALID_JSON");
+                    }
+                }
+                if(!closed)throw new Failure("INVALID_JSON");
+            } else {
+                int start=i;
+                while(i<raw.length()&&" \t\r\n{}[]:,\"".indexOf(raw.charAt(i))<0)i++;
+                String token=raw.substring(start,i);
+                if(!token.equals("true")&&!token.equals("false")&&!token.equals("null")
+                        &&!token.matches("-?(0|[1-9][0-9]*)(\\.[0-9]+)?([eE][+-]?[0-9]+)?"))
+                    throw new Failure("INVALID_JSON");
+            }
+        }
+    }
     static JsonObject object(String raw) throws Failure {
+        lexical(raw);
         try(JsonReader r=new JsonReader(new StringReader(raw))) {
             r.setLenient(false);JsonElement e=value(r,0);
             if(r.peek()!=JsonToken.END_DOCUMENT||!e.isJsonObject())throw new Failure("INVALID_JSON");

@@ -2,8 +2,19 @@ import hashlib,json,sys,statistics
 from collections import OrderedDict,defaultdict
 from pathlib import Path
 import numpy as np
+ROOT=Path(__file__).resolve().parents[2]
+def verify_sources(manifest,root=ROOT):
+ sources=manifest.get('sources')
+ if not isinstance(sources,dict) or not sources:raise ValueError('Missing source fingerprints')
+ for name,expected in sources.items():
+  target=(root/name).resolve()
+  if not target.is_relative_to(root.resolve()) or not target.is_file():raise ValueError('Invalid source path: '+name)
+  actual=hashlib.sha256(target.read_bytes().replace(b'\r\n',b'\n')).hexdigest()
+  if actual!=expected:raise ValueError('Source mismatch; use the evidence-pinned revision: '+name)
+
 def audit(out):
  manifest=json.loads((out/'manifest.json').read_text('utf8'));rows=json.loads((out/'results.json').read_text('utf8'));arrays=np.load(out/'arrays.npz');groups=defaultdict(list)
+ verify_sources(manifest)
  for n,h in manifest['files'].items():assert hashlib.sha256((out/n).read_bytes()).hexdigest()==h
  assert len(rows)==4860 and len(arrays.files)==1944
  for r in rows:groups[(r['seed'],r['budget'],r['trace'],r['policy'],r['repeat'])].append(r)
