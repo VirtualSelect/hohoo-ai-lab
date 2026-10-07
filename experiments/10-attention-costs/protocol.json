@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "seeds": [
+    7,
+    19,
+    41
+  ],
+  "lengths": [
+    64,
+    256,
+    1024
+  ],
+  "d": 32,
+  "query_rows": 8,
+  "block": 32,
+  "timing_repeats": 31,
+  "warmup": 5,
+  "profile_repeats": 101,
+  "quantization": [
+    "tensor",
+    "row"
+  ],
+  "outlier_factor": 40,
+  "boundaries": "Untrained synthetic arrays; CPU NumPy only. No causal prefill comparison, model quality, GPU kernels or online calls. Score temporary size is analytical, not process peak RSS."
+}
