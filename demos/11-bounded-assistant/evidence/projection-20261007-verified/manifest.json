@@ -1,0 +1,13 @@
+{
+  "commit": "d53993f932f1e1bc881e7ee03b2a69df91ddd119",
+  "sources": {
+    "demos/11-bounded-assistant/src/main/java/com/hohoo/ailab/bounded/ContextBudget.java": "e8653a6b60f03272e31b275a317ec7475ac2f35e37593c8dc6415299aa4d091e",
+    "demos/11-bounded-assistant/src/main/java/com/hohoo/ailab/bounded/TurnJournal.java": "5265d92b10110f34977cd4d4f5d58739c22c50f934ff128751b2b5cd36cc1d54",
+    "demos/11-bounded-assistant/src/main/java/com/hohoo/ailab/bounded/ProjectionScenario.java": "9b306a91b5d387b272725b9706c6dfa0e69555dc79f7e9dd97421a9d69320298",
+    "demos/11-bounded-assistant/projection.py": "b7c444f533f56fb242dd6a879f42e2908952bb55116436826a9d55cb0a7939bc"
+  },
+  "files": {
+    "conversation.log": "386d8c245e32bd4a90debb6b06e4b591fa162b3e7bba7cbfce7cc156af3d622f",
+    "projection.json": "ad9c4630249e6344aff81b6e0a03c3ead314575e1ef1e1773a806cb0f32649cd"
+  }
+}

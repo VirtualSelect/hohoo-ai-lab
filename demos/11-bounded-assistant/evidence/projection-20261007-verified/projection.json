@@ -1,0 +1,10 @@
+{
+  "narrow_request_bytes": 264,
+  "narrow_kept_turns": 1,
+  "old_fact_in_narrow_request": false,
+  "projection_preserved_file_bytes": true,
+  "reopened_turns": 3,
+  "wide_request_bytes": 480,
+  "old_fact_in_wide_request": true,
+  "rejected_request_preserved_file_bytes": true
+}
