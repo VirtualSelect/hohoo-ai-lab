@@ -31,3 +31,8 @@ demos/10-transport-cancellation/evidence/** -text
 
 experiments/09-cache-admission/** text eol=lf
 experiments/09-cache-admission/evidence/** -text
+
+/demos/11-bounded-assistant/** text eol=lf
+/demos/11-bounded-assistant/evidence/** -text
+/experiments/10-attention-costs/** text eol=lf
+/experiments/10-attention-costs/evidence/** -text
