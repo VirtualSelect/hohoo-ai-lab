@@ -48,3 +48,10 @@ Learning, experimenting and building with AI — Java, LLMs, RAG, Agents and bey
 
 - [A8 真实连接取消](demos/10-transport-cancellation)：30次本地HTTP对照，分别记录会话、工作线程与服务端工作。
 - [L8 缓存准入和实测查询耗时](experiments/09-cache-admission)：4,860次查询，保留计算减少但仍慢于重算的结果。
+
+## 2026-10-07 / 请求边界与注意力开销
+
+- [有边界的助手组件](demos/11-bounded-assistant/README.md)：完整日志与请求窗口分离、总期限重试、异常退出后的完整轮恢复；22个边界案例、3个halt进程，另有裁剪→提交→重启→扩窗的连续实验。全部使用本地固定材料，不调用付费模型。
+- [注意力成本实验](experiments/10-attention-costs/README.md)：拆分909次缓存查询开销；对照在线分块Softmax与稠密参考的误差和558次计时；保存36组KV int8量化对照与原始数组。保留“计算更少但仍更慢”和离群值导致大误差的结果。
+
+它们是可组合的教学组件，不宣称已经交付完整在线助手、GPU内核或真实模型质量评测。
