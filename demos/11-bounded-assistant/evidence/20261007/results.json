@@ -1,0 +1,165 @@
+[
+  {
+    "case": "budget-140",
+    "passed": true,
+    "evidence": [
+      0,
+      2,
+      140
+    ]
+  },
+  {
+    "case": "budget-235",
+    "passed": true,
+    "evidence": [
+      1,
+      1,
+      235
+    ]
+  },
+  {
+    "case": "budget-308",
+    "passed": true,
+    "evidence": [
+      2,
+      0,
+      308
+    ]
+  },
+  {
+    "case": "budget-408",
+    "passed": true,
+    "evidence": [
+      2,
+      0,
+      308
+    ]
+  },
+  {
+    "case": "mandatory-overflow",
+    "passed": true,
+    "evidence": 140
+  },
+  {
+    "case": "history-not-mutated",
+    "passed": true,
+    "evidence": 2
+  },
+  {
+    "case": "bytes-not-characters",
+    "passed": true,
+    "evidence": 140
+  },
+  {
+    "case": "retry-ok",
+    "passed": true,
+    "evidence": {
+      "attempts": 1,
+      "status": 200,
+      "outcome": "ok",
+      "body": "local fixture; no LLM",
+      "elapsedMs": 93
+    }
+  },
+  {
+    "case": "success-ok",
+    "passed": true,
+    "evidence": 200
+  },
+  {
+    "case": "retry-once",
+    "passed": true,
+    "evidence": {
+      "attempts": 2,
+      "status": 200,
+      "outcome": "ok",
+      "body": "local fixture; no LLM",
+      "elapsedMs": 34
+    }
+  },
+  {
+    "case": "success-once",
+    "passed": true,
+    "evidence": 200
+  },
+  {
+    "case": "retry-auth",
+    "passed": true,
+    "evidence": {
+      "attempts": 1,
+      "status": 401,
+      "outcome": "not-retryable",
+      "elapsedMs": 5
+    }
+  },
+  {
+    "case": "retry-long",
+    "passed": true,
+    "evidence": {
+      "attempts": 1,
+      "status": 503,
+      "outcome": "deadline-before-retry",
+      "elapsedMs": 2
+    }
+  },
+  {
+    "case": "retry-always",
+    "passed": true,
+    "evidence": {
+      "attempts": 3,
+      "status": 503,
+      "outcome": "attempt-limit",
+      "elapsedMs": 84
+    }
+  },
+  {
+    "case": "retry-slow",
+    "passed": true,
+    "evidence": {
+      "attempts": 1,
+      "status": 0,
+      "outcome": "deadline-or-interrupt",
+      "elapsedMs": 45
+    }
+  },
+  {
+    "case": "retry-unsafe",
+    "passed": true,
+    "evidence": {
+      "attempts": 1,
+      "status": 503,
+      "outcome": "not-retryable",
+      "elapsedMs": 2
+    }
+  },
+  {
+    "case": "deduplicate-commit",
+    "passed": true,
+    "evidence": 1
+  },
+  {
+    "case": "conflicting-id",
+    "passed": true,
+    "evidence": "rejected"
+  },
+  {
+    "case": "second-writer",
+    "passed": true,
+    "evidence": "rejected"
+  },
+  {
+    "case": "all-truncated-tails",
+    "passed": true,
+    "evidence": 142
+  },
+  {
+    "case": "restart-two-turns",
+    "passed": true,
+    "evidence": 2
+  },
+  {
+    "case": "complete-corruption-fails-closed",
+    "passed": true,
+    "evidence": "rejected"
+  }
+]

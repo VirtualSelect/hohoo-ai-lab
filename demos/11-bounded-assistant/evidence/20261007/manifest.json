@@ -1,0 +1,23 @@
+{
+  "java": "java version \"1.8.0_171\"\nJava(TM) SE Runtime Environment (build 1.8.0_171-b11)\nJava HotSpot(TM) 64-Bit Server VM (build 25.171-b11, mixed mode)",
+  "platform": "Windows-11-10.0.26120-SP0",
+  "commit": "b4e1949b9cc6728e4d8c531d144f68a94e5bf5f2",
+  "sources": {
+    "demos/11-bounded-assistant/src/main/java/com/hohoo/ailab/bounded/ContextBudget.java": "e8653a6b60f03272e31b275a317ec7475ac2f35e37593c8dc6415299aa4d091e",
+    "demos/11-bounded-assistant/src/main/java/com/hohoo/ailab/bounded/CrashWriter.java": "11bf4f622905a3b0dc8df667ac86a0b2d15bfb72d67d9ab405e6ed97527a9f34",
+    "demos/11-bounded-assistant/src/main/java/com/hohoo/ailab/bounded/RetryBudget.java": "bcca0a13ce1b27760881324715d014cc4e90217e8ed68294bde6de2f892bb534",
+    "demos/11-bounded-assistant/src/main/java/com/hohoo/ailab/bounded/Suite.java": "c958d81087732a27b57151e22b18ab61d4a281868ad3caef0da16d2756287ee5",
+    "demos/11-bounded-assistant/src/main/java/com/hohoo/ailab/bounded/TurnJournal.java": "5265d92b10110f34977cd4d4f5d58739c22c50f934ff128751b2b5cd36cc1d54",
+    "demos/11-bounded-assistant/run.py": "6aefbecf39b0486286338c65e4c4f602d038c82307919b9d01ecc87e6e1ea841",
+    "demos/11-bounded-assistant/audit.py": "d9a5e01512345cb40f38a3affe1ecffe9ae6bd8d66cca693f635e69bb86b9e55",
+    "demos/11-bounded-assistant/protocol.json": "0ff53a915476ddc6a4759c830a81805afebdb6ea5984ef0bd014abac3e83fcff"
+  },
+  "files": {
+    "before.log": "f51a2a1d52a1c2f13582f23e253bcad03941ed5f93a788bd9374f87256a51df0",
+    "committed.log": "d8d4a305bfc124e22ce12ab74be8301e908a56f26e136335c876c4e58aa4d448",
+    "crashes.json": "4a7848be3adfdb7c19e2db9dc3789feb0d57da7e22622d18475c5c8cf18982dd",
+    "partial.log": "f51a2a1d52a1c2f13582f23e253bcad03941ed5f93a788bd9374f87256a51df0",
+    "results.json": "519ef621a2c888f1f29c8fef84c374d54e93d02248c79a0a8c648b6b6d37f4d2",
+    "turns.log": "0626c8f6e8b40539cb68b4ff3abd5b73825decea561f34ae35b856cc2dc6f959"
+  }
+}
