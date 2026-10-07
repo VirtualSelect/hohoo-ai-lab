@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "context": "UTF8 JSON wire bytes; whole contiguous suffix of turns; mandatory system/current; no token estimate",
+  "retry": "7 local HTTP conditions; explicit safe operation; 429/503; max3 attempts; monotonic total deadline",
+  "journal": "single writer; SHA256 complete records; incomplete tail truncation; all byte prefixes and 3 child-process Runtime.halt crashes",
+  "scope": "No TLS, DNS deadline guarantee, multiwriter, power-loss or exactly-once model invocation. HTTP-date Retry-After deliberately fails closed."
+}
