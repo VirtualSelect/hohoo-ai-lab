@@ -55,3 +55,10 @@ Learning, experimenting and building with AI — Java, LLMs, RAG, Agents and bey
 - [注意力成本实验](experiments/10-attention-costs/README.md)：拆分909次缓存查询开销；对照在线分块Softmax与稠密参考的误差和558次计时；保存36组KV int8量化对照与原始数组。保留“计算更少但仍更慢”和离群值导致大误差的结果。
 
 它们是可组合的教学组件，不宣称已经交付完整在线助手、GPU内核或真实模型质量评测。
+
+## 2026-10-09 / 幂等重试与量化轴
+
+- [Java 幂等重试](demos/12-idempotent-retry/README.md)：七组真实本机 HTTP 故障，保留并发认领、丢回复重放、请求冲突及进程崩溃后重复执行。不是 exactly-once，也没有模型请求。[分享文章](https://huhohoo.com/docs/ai-apps/java-idempotent-retry)。
+- [KV 量化轴](experiments/11-kv-quantization-axes/README.md)：18份固定合成输入、162个对照，保存整数码与独立审计。混合轴在通道离群条件更好，但不是普遍更优；不代表实际模型质量或速度。[分享文章](https://huhohoo.com/docs/llm/kv-quantization-axes)。
+
+固定归档提交：`009289d3c9314d64a495303d9b16517080282788`。文章与代码由 AI 辅助整理，结论仅依据本地已执行的协议与归档产物；根目录后续说明不改变该证据版本。
