@@ -1,0 +1,495 @@
+[
+  {
+    "case": "unkeyed_lost_reply",
+    "calls": [
+      {
+        "error": "RemoteDisconnected"
+      },
+      {
+        "status": 200,
+        "body": "2",
+        "replay": "false"
+      }
+    ],
+    "counter": 2,
+    "crash_exit_code": null
+  },
+  {
+    "case": "keyed_lost_reply",
+    "calls": [
+      {
+        "error": "RemoteDisconnected"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      }
+    ],
+    "counter": 1,
+    "crash_exit_code": null
+  },
+  {
+    "case": "concurrent_duplicate",
+    "calls": [
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      }
+    ],
+    "counter": 1,
+    "crash_exit_code": null
+  },
+  {
+    "case": "body_conflict",
+    "calls": [
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "false"
+      },
+      {
+        "status": 409,
+        "body": "key/body conflict",
+        "replay": null
+      }
+    ],
+    "counter": 1,
+    "crash_exit_code": null
+  },
+  {
+    "case": "restart_after_reply",
+    "calls": [
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "2",
+        "replay": "false"
+      }
+    ],
+    "counter": 2,
+    "crash_exit_code": null
+  },
+  {
+    "case": "crash_after_effect",
+    "calls": [
+      {
+        "error": "ConnectionResetError"
+      },
+      {
+        "status": 200,
+        "body": "2",
+        "replay": "false"
+      }
+    ],
+    "counter": 2,
+    "crash_exit_code": 23
+  },
+  {
+    "case": "capacity_and_input",
+    "calls": [
+      {
+        "status": 400,
+        "body": "invalid key",
+        "replay": null
+      },
+      {
+        "status": 413,
+        "body": "body too large",
+        "replay": null
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "2",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "3",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "4",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "5",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "6",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "7",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "8",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "9",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "10",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "11",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "12",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "13",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "14",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "15",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "16",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "17",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "18",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "19",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "20",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "21",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "22",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "23",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "24",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "25",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "26",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "27",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "28",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "29",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "30",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "31",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "32",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "33",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "34",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "35",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "36",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "37",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "38",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "39",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "40",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "41",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "42",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "43",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "44",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "45",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "46",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "47",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "48",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "49",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "50",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "51",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "52",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "53",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "54",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "55",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "56",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "57",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "58",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "59",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "60",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "61",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "62",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "63",
+        "replay": "false"
+      },
+      {
+        "status": 200,
+        "body": "64",
+        "replay": "false"
+      },
+      {
+        "status": 429,
+        "body": "registry full",
+        "replay": null
+      },
+      {
+        "status": 200,
+        "body": "1",
+        "replay": "true"
+      }
+    ],
+    "counter": 64,
+    "crash_exit_code": null
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "protocol": {
+    "version": 1,
+    "date": "2026-10-09",
+    "concurrent_clients": 12,
+    "registry_capacity": 64,
+    "max_body_bytes": 4096,
+    "cases": [
+      "unkeyed_lost_reply",
+      "keyed_lost_reply",
+      "concurrent_duplicate",
+      "body_conflict",
+      "restart_after_reply",
+      "crash_after_effect",
+      "capacity_and_input"
+    ],
+    "boundary": "Loopback HTTP and a local durable counter. Volatile deduplication, one server process, no TTL, no database transaction, model call, payment, distributed lock or exactly-once claim. Test-only failure headers must never be exposed as a production API."
+  },
+  "source_commit": "f3b4fec58682190eecbabbd68468e759a11c8b98",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26120-SP0",
+  "java": "java version \"1.8.0_171\"\nJava(TM) SE Runtime Environment (build 1.8.0_171-b11)\nJava HotSpot(TM) 64-Bit Server VM (build 25.171-b11, mixed mode)",
+  "sources": {
+    "audit.py": "f015448896d3a1737368fcbffb6cf5f509dfdc19a447702161971cb6b7492040",
+    "IdempotencyServer.java": "cb0da1e4107ed2a515e48ab8bef42c7bb867e3f35476b87d0daca2d430ae5ed5",
+    "protocol.json": "44449642b00dfe1375ac879a05a490599fd7f23e8fbeae543ce85c7a9f311a6d",
+    "run.py": "0d6d16e3a7956ae16864d5228b6008ed6b21a68658c4948b7b633814b77b3620"
+  },
+  "files": {
+    "results.json": "6951987665e95fc9170d19c8ab8edbd817214ad6425d4093a21a9dbb74229fff"
+  }
+}
