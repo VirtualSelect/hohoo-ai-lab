@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "date": "2026-10-09",
+  "concurrent_clients": 12,
+  "registry_capacity": 64,
+  "max_body_bytes": 4096,
+  "cases": ["unkeyed_lost_reply", "keyed_lost_reply", "concurrent_duplicate", "body_conflict", "restart_after_reply", "crash_after_effect", "capacity_and_input"],
+  "boundary": "Loopback HTTP and a local durable counter. Volatile deduplication, one server process, no TTL, no database transaction, model call, payment, distributed lock or exactly-once claim. Test-only failure headers must never be exposed as a production API."
+}

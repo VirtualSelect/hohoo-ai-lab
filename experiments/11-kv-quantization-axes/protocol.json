@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "date": "2026-10-09",
+  "seeds": [7,19,41],
+  "lengths": [64,256],
+  "d": 32,
+  "queries": 8,
+  "conditions": ["clean","key_channel_outlier","value_token_outlier"],
+  "outlier_factor": 40,
+  "methods": {"tensor":["tensor","tensor"],"row":["row","row"],"hybrid":["channel","row"]},
+  "targets": ["K","V","KV"],
+  "boundary": "Untrained float32 Gaussian arrays, symmetric INT8 with float32 scales, CPU NumPy attention. Not KIVI's grouped asymmetric 2-bit implementation, a trained model quality test, a GPU speedup or peak-memory measurement. No online calls."
+}
