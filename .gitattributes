@@ -36,3 +36,8 @@ experiments/09-cache-admission/evidence/** -text
 /demos/11-bounded-assistant/evidence/** -text
 /experiments/10-attention-costs/** text eol=lf
 /experiments/10-attention-costs/evidence/** -text
+
+/demos/13-durable-dispatch/** text eol=lf
+/demos/13-durable-dispatch/evidence/** -text
+/experiments/12-packed-kv/** text eol=lf
+/experiments/12-packed-kv/evidence/** -text
