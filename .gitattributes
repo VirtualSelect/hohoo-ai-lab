@@ -41,3 +41,7 @@ experiments/09-cache-admission/evidence/** -text
 /demos/13-durable-dispatch/evidence/** -text
 /experiments/12-packed-kv/** text eol=lf
 /experiments/12-packed-kv/evidence/** -text
+
+# Preserve original raw hashes for the published 2026-10-09 evidence.
+/demos/12-idempotent-retry/evidence/** -text
+/experiments/11-kv-quantization-axes/evidence/** -text
