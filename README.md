@@ -62,3 +62,8 @@ Learning, experimenting and building with AI — Java, LLMs, RAG, Agents and bey
 - [KV 量化轴](experiments/11-kv-quantization-axes/README.md)：18份固定合成输入、162个对照，保存整数码与独立审计。混合轴在通道离群条件更好，但不是普遍更优；不代表实际模型质量或速度。[分享文章](https://huhohoo.com/docs/llm/kv-quantization-axes)。
 
 固定归档提交：`009289d3c9314d64a495303d9b16517080282788`。文章与代码由 AI 辅助整理，结论仅依据本地已执行的协议与归档产物；根目录后续说明不改变该证据版本。
+
+## 2026-10-11 / 持久恢复与打包缓存
+
+- [Java三篇配套工程](demos/13-durable-dispatch/README.md)：持久幂等、Outbox与历史对账，17场景真实进程/HTTP对照。
+- [LLM三篇配套实验](experiments/12-packed-kv/README.md)：4-bit分组、近期残差与分块反量化，保留810条CPU原始计时及负结果。

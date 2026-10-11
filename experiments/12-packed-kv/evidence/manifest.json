@@ -1,0 +1,56 @@
+{
+  "protocol": {
+    "version": 1,
+    "seeds": [
+      7,
+      19,
+      41
+    ],
+    "lengths": [
+      128,
+      512
+    ],
+    "d": 32,
+    "queries": 4,
+    "groups": [
+      8,
+      32
+    ],
+    "bits": [
+      4,
+      8
+    ],
+    "conditions": [
+      "clean",
+      "early_focus",
+      "recent_focus"
+    ],
+    "residual_tokens": [
+      0,
+      16,
+      64
+    ],
+    "block_tokens": 32,
+    "warmups": 3,
+    "timing_rounds": 15,
+    "timing_scope": "CPU NumPy decode plus attention, prepacked inputs; no tokenizer, projection, model, GPU or network",
+    "tolerance": 1e-10
+  },
+  "source_commit": "b42c301fce524c6818326311a4c05bb5119b5f8b",
+  "platform": "Windows-11-10.0.26120-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "sources": {
+    "audit.py": "99c013cd20af9d466e5ce5f4a31cfd9dd02ddfa4e073ea78663d42ce2d5212fa",
+    "core.py": "81436855a0e8f7acc842b7be2cb93fbf93ac7248e6db08da579e672f97d8f19a",
+    "protocol.json": "8358d24d88f5eed16419d2cf87e37cc198aa1a55e56bb1ecf91dd18828747533",
+    "requirements.txt": "a23aaf94250a9f53031a592980142245a848e2372b6c6c3093e8260b129265b8",
+    "run.py": "29481d099b3104212ad23b9d78b3e2be1e546d16bc44e59d67f84eb6fc5b7301",
+    "test_core.py": "1c663676e974ce04b8debb0952e306aaa6fc5e3bae99c29e76eb42390adf376c"
+  },
+  "files": {
+    "arrays.npz": "fbf46d3460055e885ef1e3b95a46637faf7e46288d2602fd9903a72d96f19abe",
+    "results.json": "31d347d8d22199b19c20515f5a125a278f9eb17f7f3b370f595bad6669e2f214",
+    "timings.json": "ac2ef410657a689bc504795c57675600833dfe8f8b1bd200b02ae926b22b1fbc"
+  }
+}

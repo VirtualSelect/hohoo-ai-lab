@@ -1,0 +1,5672 @@
+[
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 42300
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 109600
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 324200
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 110300
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 319600
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 42000
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 311300
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 39400
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 101400
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 37400
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 100000
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 288300
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 100400
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 286100
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 38800
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 286300
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 38500
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 102700
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 88800
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 243100
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 341400
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 103500
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 298700
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 39500
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 290400
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 38900
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 101800
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 37600
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 99800
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 287700
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 100800
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 288800
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 43100
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 287900
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 38800
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 100600
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 37500
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 99900
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 289800
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 101400
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 285900
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 38700
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 287300
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 38500
+  },
+  {
+    "input": "s7_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 100900
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 37500
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 97100
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 277200
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 95500
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 272500
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 36400
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 272100
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 36100
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 97300
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 35100
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 102100
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 431900
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 101500
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 277100
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 40300
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 280800
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 37000
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 97400
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 35400
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 96000
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 274000
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 96500
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 277500
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 37300
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 397900
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 66800
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 181600
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 63800
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 187100
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 538600
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 178700
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 532500
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 65700
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 531400
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 69800
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 176800
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 62700
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 246700
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 534600
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 172600
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 522600
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 63800
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 488800
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 62600
+  },
+  {
+    "input": "s7_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 166000
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 39700
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 105300
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 310700
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 99000
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 276100
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 37200
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 271000
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 36400
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 96200
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 35500
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 95900
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 325500
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 131400
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 640800
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 84800
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 291400
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 36400
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 97300
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 34600
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 95900
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 272800
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 95700
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 272000
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 38000
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 271000
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 36700
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 95800
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 35000
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 96400
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 274400
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 95700
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 269800
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 36400
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 370000
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 64300
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 104900
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 36000
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 97400
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 275700
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 95300
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 272500
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 36600
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 276900
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 36200
+  },
+  {
+    "input": "s7_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 96400
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 129200
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 220200
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 1204800
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 214000
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 1513700
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 124000
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 1758200
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 86000
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 216200
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 79900
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 212900
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 1019000
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 214400
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 1009100
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 81400
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 1045800
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 80000
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 215200
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 76400
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 215100
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 1254600
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 217900
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 1029600
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 82100
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 1013800
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 81100
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 251500
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 78000
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 221100
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 1023600
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 211500
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 1019800
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 80900
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 1010800
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 78600
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 212900
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 78700
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 213300
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 1213900
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 235300
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 1031500
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 80300
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 1008700
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 78700
+  },
+  {
+    "input": "s7_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 214600
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 82800
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 213600
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 1270500
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 385800
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 2043000
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 140900
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 2023100
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 191500
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 384100
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 129200
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 365400
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 2010100
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 374200
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 1881900
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 135100
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 1872400
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 138000
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 382800
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 132500
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 377400
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 1863700
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 366900
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 2083600
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 139100
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 2055700
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 132300
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 379500
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 130300
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 381700
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 2050300
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 371800
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 1865100
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 132600
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 1852200
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 136500
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 381700
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 131600
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 371400
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 1844900
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 368500
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 1780900
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 139900
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 2079400
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 134200
+  },
+  {
+    "input": "s7_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 385700
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 141600
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 381000
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 1909200
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 370500
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 1901500
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 139700
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 2032600
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 134600
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 379500
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 130600
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 386200
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 2021600
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 385700
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 2061100
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 136900
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 1898100
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 135700
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 381300
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 134900
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 377500
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 1873600
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 369300
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 1849600
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 136100
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 1898800
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 130500
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 367500
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 128000
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 368000
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 1803100
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 381000
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 1854900
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 130100
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 1835100
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 128900
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 368700
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 127700
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 378800
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 1894600
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 377000
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 1741900
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 135200
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 2008000
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 134800
+  },
+  {
+    "input": "s7_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 376700
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 43800
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 110600
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 339100
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 152800
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 317200
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 40800
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 313500
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 40000
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 112900
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 34700
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 107900
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 274600
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 95500
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 268900
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 36100
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 269400
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 38600
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 96600
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 34500
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 93600
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 269100
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 94500
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 272500
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 35600
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 285000
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 36300
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 94700
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 34300
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 93100
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 268500
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 94500
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 271700
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 35800
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 267900
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 35700
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 94700
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 34600
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 97500
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 268800
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 98200
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 267800
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 35700
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 265800
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 35600
+  },
+  {
+    "input": "s19_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 93500
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 37900
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 96900
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 273500
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 96000
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 277400
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 37200
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 272400
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 42800
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 96900
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 36000
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 94800
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 278500
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 96000
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 270900
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 37200
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 271400
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 37000
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 95800
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 35600
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 191800
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 677400
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 184400
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 603300
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 71700
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 601700
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 70600
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 182300
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 67800
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 244100
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 602100
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 180000
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 559700
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 71100
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 569300
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 116300
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 258600
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 84000
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 194000
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 597200
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 180100
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 586200
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 73600
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 592700
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 73300
+  },
+  {
+    "input": "s19_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 197900
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 40900
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 105900
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 311200
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 104800
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 302000
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 38500
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 299800
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 38200
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 123200
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 36400
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 97800
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 274200
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 95900
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 269300
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 36500
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 273000
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 36200
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 95800
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 34600
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 94600
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 269700
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 94200
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 276300
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 36500
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 268900
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 35700
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 95300
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 34400
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 99400
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 269600
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 95200
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 272400
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 35700
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 267000
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 36200
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 94300
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 34600
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 94200
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 360600
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 176600
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 582100
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 81000
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 524400
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 40600
+  },
+  {
+    "input": "s19_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 101500
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 129700
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 362400
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 1985300
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 375100
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 2011200
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 133500
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 1797400
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 128200
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 364000
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 124900
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 362900
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 1976700
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 380000
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 1955200
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 128700
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 2015300
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 219100
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 377400
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 128500
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 366000
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 1855800
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 359400
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 1853500
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 131800
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 2019400
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 131000
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 364900
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 163600
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 362200
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 1806500
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 374100
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 1855700
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 127900
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 1786900
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 130600
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 373300
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 127700
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 368300
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 2001600
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 362100
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 1931600
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 135400
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 1981200
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 129000
+  },
+  {
+    "input": "s19_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 368600
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 90600
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 229400
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 1152000
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 215800
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 1041600
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 81500
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 1046100
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 80600
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 215600
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 77700
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 212600
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 1045400
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 213300
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 1031600
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 78700
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 1254600
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 100900
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 284800
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 80300
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 253900
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 1091000
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 213100
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 1126500
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 81100
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 1042700
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 80700
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 214200
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 78100
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 213700
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 1045100
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 213900
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 1205700
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 87900
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 1179600
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 88400
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 221400
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 79000
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 226000
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 1207700
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 221700
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 1042800
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 81000
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 1034700
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 79900
+  },
+  {
+    "input": "s19_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 213300
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 78100
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 212200
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 1022800
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 209100
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 1018600
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 79600
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 1135400
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 84800
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 252300
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 78900
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 215700
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 1035100
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 210700
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 1023400
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 81600
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 1017900
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 80000
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 212200
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 77500
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 209500
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 2040800
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 439600
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 2188900
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 133200
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 1794800
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 128000
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 361400
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 129500
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 371700
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 1913400
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 368300
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 2021300
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 94200
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 1137900
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 107000
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 254500
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 109300
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 263500
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 1399700
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 216400
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 1340700
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 123800
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 2477400
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 158900
+  },
+  {
+    "input": "s19_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 366000
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 36300
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 93900
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 271000
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 94000
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 263600
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 35900
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 264200
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 35400
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 93200
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 34200
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 92600
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 264700
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 93200
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 284700
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 89700
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 435500
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 41700
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 105300
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 37300
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 103300
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 393000
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 106300
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 348800
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 38200
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 292500
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 36400
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 95100
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 34700
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 94400
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 267800
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 94200
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 265900
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 41600
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 324600
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 38400
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 110500
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 38000
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 103800
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 311300
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 98600
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 275100
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 36500
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 337900
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 37500
+  },
+  {
+    "input": "s41_n128_clean",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 98700
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 37100
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 97800
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 274500
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 96300
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 275000
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 36500
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 280800
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 36800
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 98900
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 35100
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 95500
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 276300
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 96500
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 275400
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 36300
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 274900
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 36000
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 96800
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 35300
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 103500
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 275500
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 96000
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 273700
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 36600
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 272600
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 36300
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 96100
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 34900
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 95400
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 273700
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 105500
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 274100
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 36000
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 276300
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 36000
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 97300
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 36200
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 96100
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 305900
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 99500
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 371600
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 49300
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 475800
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 65400
+  },
+  {
+    "input": "s41_n128_early_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 183800
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 37800
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 102700
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 279000
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 97500
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 275200
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 36900
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 275800
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 36500
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 97000
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 35400
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 96600
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 275700
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 96500
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 274200
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 36200
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 279100
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 36700
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 96900
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 35600
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 95800
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 274800
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 96600
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 274800
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 36400
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 273700
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 36400
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 96700
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 35200
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 96200
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 278400
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 97500
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 274800
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 36800
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 273800
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 36400
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 96300
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 35600
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 95700
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 355700
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 186400
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 752100
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 89100
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 758600
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 80100
+  },
+  {
+    "input": "s41_n128_recent_focus",
+    "n": 128,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 221600
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 121900
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 229200
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 1535900
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 402600
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 1232600
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 88100
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 1061700
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 83200
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 226400
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 78400
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 220700
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 1091400
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 221300
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 1099000
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 81700
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 1063100
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 81000
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 219000
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 77500
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 221100
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 1063300
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 216600
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 1062800
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 82200
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 1059100
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 80600
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 216000
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 80400
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 218100
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 1057200
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 220100
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 1056000
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 81700
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 1810700
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 141800
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 393200
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 136100
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 386800
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 2068400
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 381700
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 2074600
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 134200
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 2037300
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 132000
+  },
+  {
+    "input": "s41_n512_clean",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 376300
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 83300
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 225800
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 1055500
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 218900
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 1055200
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 82100
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 1144700
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 141000
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 402200
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 134300
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 391300
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 2108800
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 384000
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 1233300
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 87400
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 1133000
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 83400
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 219800
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 80100
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 218000
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 1355200
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 382400
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 1886700
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 135400
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 1836400
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 130900
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 370200
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 129100
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 371100
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 1880400
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 378200
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 1413700
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 88300
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 1058900
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 84000
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 222300
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 79700
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 222200
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 1408600
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 429200
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 1273200
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 91100
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 1060300
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 83400
+  },
+  {
+    "input": "s41_n512_early_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 220000
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 0,
+    "nanoseconds": 81100
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 0,
+    "nanoseconds": 221100
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 0,
+    "nanoseconds": 1052500
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 1,
+    "nanoseconds": 214800
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 1,
+    "nanoseconds": 1051400
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 1,
+    "nanoseconds": 79500
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 2,
+    "nanoseconds": 1047800
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 2,
+    "nanoseconds": 80300
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 2,
+    "nanoseconds": 215300
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 3,
+    "nanoseconds": 77000
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 3,
+    "nanoseconds": 248900
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 3,
+    "nanoseconds": 1062300
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 4,
+    "nanoseconds": 216700
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 4,
+    "nanoseconds": 1055400
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 4,
+    "nanoseconds": 78600
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 5,
+    "nanoseconds": 1050400
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 5,
+    "nanoseconds": 78400
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 5,
+    "nanoseconds": 215000
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 6,
+    "nanoseconds": 79900
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 6,
+    "nanoseconds": 216000
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 6,
+    "nanoseconds": 1305000
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 7,
+    "nanoseconds": 243900
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 7,
+    "nanoseconds": 1176200
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 7,
+    "nanoseconds": 84600
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 8,
+    "nanoseconds": 1059400
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 8,
+    "nanoseconds": 78800
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 8,
+    "nanoseconds": 216000
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 9,
+    "nanoseconds": 77000
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 9,
+    "nanoseconds": 215700
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 9,
+    "nanoseconds": 1097600
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 10,
+    "nanoseconds": 387200
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 10,
+    "nanoseconds": 1864900
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 10,
+    "nanoseconds": 94600
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 11,
+    "nanoseconds": 1148200
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 11,
+    "nanoseconds": 118300
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 11,
+    "nanoseconds": 233000
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 12,
+    "nanoseconds": 85900
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 12,
+    "nanoseconds": 219500
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 12,
+    "nanoseconds": 1144900
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 13,
+    "nanoseconds": 228400
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 13,
+    "nanoseconds": 1074300
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 13,
+    "nanoseconds": 83600
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_blocks",
+    "round": 14,
+    "nanoseconds": 1067100
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "float32_cache",
+    "round": 14,
+    "nanoseconds": 81500
+  },
+  {
+    "input": "s41_n512_recent_focus",
+    "n": 512,
+    "method": "decode_dense",
+    "round": 14,
+    "nanoseconds": 217800
+  }
+]

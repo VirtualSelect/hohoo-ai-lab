@@ -1,0 +1,110 @@
+[
+  {
+    "section": "ledger",
+    "case": "before",
+    "count": 1
+  },
+  {
+    "section": "ledger",
+    "case": "partial",
+    "count": 1
+  },
+  {
+    "section": "ledger",
+    "case": "after",
+    "count": 1
+  },
+  {
+    "section": "ledger",
+    "case": "concurrent",
+    "count": 1
+  },
+  {
+    "section": "ledger",
+    "case": "conflict",
+    "rejected": true,
+    "count": 1
+  },
+  {
+    "section": "ledger",
+    "case": "corrupt",
+    "rejected": true,
+    "unchanged": true
+  },
+  {
+    "section": "ledger",
+    "case": "truncated_prefixes",
+    "prefixes": 99,
+    "exact_recovery": true
+  },
+  {
+    "section": "outbox",
+    "case": "keyed_delivery",
+    "effects": 1,
+    "receipts": 1,
+    "history": 1
+  },
+  {
+    "section": "outbox",
+    "case": "unkeyed_delivery",
+    "effects": 2,
+    "receipts": 1,
+    "history": 1
+  },
+  {
+    "section": "outbox",
+    "case": "receiver_restart",
+    "effects": 1,
+    "receipts": 1,
+    "history": 1
+  },
+  {
+    "section": "outbox",
+    "case": "unavailable",
+    "effects": 1,
+    "receipts": 1,
+    "history": 1
+  },
+  {
+    "section": "outbox",
+    "case": "receiver_conflict",
+    "effects": 1,
+    "receipts": 0,
+    "history": 0
+  },
+  {
+    "section": "history",
+    "case": "delivery",
+    "effects": 1,
+    "receipts": 1,
+    "history": 1
+  },
+  {
+    "section": "history",
+    "case": "receipt",
+    "effects": 1,
+    "receipts": 1,
+    "history": 1
+  },
+  {
+    "section": "history",
+    "case": "history",
+    "effects": 1,
+    "receipts": 1,
+    "history": 1
+  },
+  {
+    "section": "history",
+    "case": "two_intents",
+    "effects": 2,
+    "receipts": 2,
+    "history": 2
+  },
+  {
+    "section": "history",
+    "case": "parallel_resume",
+    "effects": 1,
+    "receipts": 1,
+    "history": 1
+  }
+]

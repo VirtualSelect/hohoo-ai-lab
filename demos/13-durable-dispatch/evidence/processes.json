@@ -1,0 +1,2175 @@
+[
+  {
+    "args": [
+      "apply",
+      "<OUT>\\ledger-before.wal",
+      "turn-1",
+      "add-one",
+      "before"
+    ],
+    "exit": 23,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\ledger-before.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\ledger-before.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\ledger-partial.wal",
+      "turn-1",
+      "add-one",
+      "partial"
+    ],
+    "exit": 23,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\ledger-partial.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\ledger-partial.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\ledger-after.wal",
+      "turn-1",
+      "add-one",
+      "after"
+    ],
+    "exit": 23,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\ledger-after.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\ledger-after.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\concurrent.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\concurrent.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\concurrent.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\concurrent.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\concurrent.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\concurrent.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\concurrent.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\concurrent.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\concurrent.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\concurrent.wal",
+      "turn-1",
+      "different",
+      "none"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Exception in thread \"main\" java.lang.IllegalArgumentException: KEY_CONFLICT\n\tat Ledger.apply(Ledger.java:79)\n\tat Workflow.main(Workflow.java:73)"
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\concurrent.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\corrupt.wal"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Exception in thread \"main\" java.io.IOException: checksum mismatch; manual recovery required\n\tat Ledger.scan(Ledger.java:54)\n\tat Ledger.read(Ledger.java:67)\n\tat Workflow.main(Workflow.java:74)"
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\0.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\1.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\2.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\3.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\4.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\5.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\6.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\7.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\8.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\9.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\10.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\11.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\12.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\13.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\14.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\15.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\16.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\17.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\18.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\19.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\20.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\21.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\22.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\23.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\24.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\25.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\26.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\27.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\28.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\29.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\30.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\31.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\32.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\33.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\34.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\35.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\36.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\37.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\38.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\39.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\40.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\41.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\42.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\43.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\44.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\45.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\46.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\47.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\48.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\49.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\50.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\51.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\52.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\53.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\54.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\55.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\56.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\57.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\58.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\59.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\60.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\61.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\62.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\63.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\64.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\65.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\66.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\67.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\68.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\69.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\70.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\71.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\72.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\73.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\74.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\75.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\76.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\77.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\78.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\79.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\80.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\81.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\82.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\83.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\84.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\85.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\86.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\87.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\88.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\89.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\90.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\91.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\92.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\93.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\94.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\95.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\96.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\97.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\prefixes\\98.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\keyed_delivery\\intents.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\keyed_delivery",
+      "53379",
+      "delivery"
+    ],
+    "exit": 23,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\keyed_delivery",
+      "53379",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\keyed_delivery\\receiver.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\keyed_delivery\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\keyed_delivery\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\unkeyed_delivery\\intents.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\unkeyed_delivery",
+      "51454",
+      "delivery"
+    ],
+    "exit": 23,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\unkeyed_delivery",
+      "51454",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\unkeyed_delivery\\receiver.wal"
+    ],
+    "exit": 0,
+    "stdout": "2",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\unkeyed_delivery\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\unkeyed_delivery\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\receiver_restart\\intents.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\receiver_restart",
+      "64825",
+      "delivery"
+    ],
+    "exit": 23,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\receiver_restart",
+      "64036",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\receiver_restart\\receiver.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\receiver_restart\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\receiver_restart\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\unavailable\\intents.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\unavailable",
+      "62633",
+      "none"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Exception in thread \"main\" java.net.SocketTimeoutException: connect timed out\n\tat java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)\n\tat java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)\n\tat java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)\n\tat java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)\n\tat java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)\n\tat java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)\n\tat java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)\n\tat java.net.Socket.connect(Socket.java:589)\n\tat sun.net.NetworkClient.doConnect(NetworkClient.java:175)\n\tat sun.net.www.http.HttpClient.openServer(HttpClient.java:463)\n\tat sun.net.www.http.HttpClient.openServer(HttpClient.java:558)\n\tat sun.net.www.http.HttpClient.<init>(HttpClient.java:242)\n\tat sun.net.www.http.HttpClient.New(HttpClient.java:339)\n\tat sun.net.www.http.HttpClient.New(HttpClient.java:357)\n\tat sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)\n\tat sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)\n\tat sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)\n\tat sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)\n\tat sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1334)\n\tat sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1309)\n\tat Workflow.deliver(Workflow.java:45)\n\tat Workflow.resume(Workflow.java:60)\n\tat Workflow.main(Workflow.java:76)"
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\unavailable\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "0",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\unavailable\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "0",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\unavailable",
+      "53144",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\unavailable\\receiver.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\unavailable\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\unavailable\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\receiver_conflict\\intents.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\receiver_conflict\\receiver.wal",
+      "turn-1",
+      "incompatible",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\receiver_conflict",
+      "57001",
+      "none"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Exception in thread \"main\" java.io.IOException: receiver rejected delivery\n\tat Workflow.deliver(Workflow.java:46)\n\tat Workflow.resume(Workflow.java:60)\n\tat Workflow.main(Workflow.java:76)"
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\receiver_conflict\\receiver.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\receiver_conflict\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "0",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\receiver_conflict\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "0",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\recover-delivery\\intents.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-delivery",
+      "51039",
+      "delivery"
+    ],
+    "exit": 23,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-delivery",
+      "51039",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-delivery",
+      "51039",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-delivery\\receiver.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-delivery\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-delivery\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\recover-receipt\\intents.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-receipt",
+      "57568",
+      "receipt"
+    ],
+    "exit": 23,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-receipt",
+      "57568",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-receipt",
+      "57568",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-receipt\\receiver.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-receipt\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-receipt\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\recover-history\\intents.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-history",
+      "51137",
+      "history"
+    ],
+    "exit": 23,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-history",
+      "51137",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-history",
+      "51137",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-history\\receiver.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-history\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-history\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\recover-two_intents\\intents.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\recover-two_intents\\intents.wal",
+      "turn-2",
+      "second-question",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "2",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-two_intents",
+      "51143",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-two_intents",
+      "51143",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-two_intents\\receiver.wal"
+    ],
+    "exit": 0,
+    "stdout": "2",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-two_intents\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "2",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-two_intents\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "2",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "apply",
+      "<OUT>\\recover-parallel_resume\\intents.wal",
+      "turn-1",
+      "add-one",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-parallel_resume",
+      "51539",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-parallel_resume",
+      "51539",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-parallel_resume",
+      "51539",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-parallel_resume",
+      "51539",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-parallel_resume",
+      "51539",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-parallel_resume",
+      "51539",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-parallel_resume",
+      "51539",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-parallel_resume",
+      "51539",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "resume",
+      "<OUT>\\recover-parallel_resume",
+      "51539",
+      "none"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-parallel_resume\\receiver.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-parallel_resume\\receipts.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "count",
+      "<OUT>\\recover-parallel_resume\\history.wal"
+    ],
+    "exit": 0,
+    "stdout": "1",
+    "stderr": ""
+  }
+]
