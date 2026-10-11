@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "date": "2026-10-11",
+  "scope": "Local Java 8 journals, independent processes and loopback HTTP; no model calls, no power-loss guarantees",
+  "ledger_cases": ["before", "partial", "after", "concurrent", "conflict", "corrupt", "truncated_prefixes"],
+  "outbox_cases": ["keyed_delivery", "unkeyed_delivery", "receiver_restart", "unavailable", "receiver_conflict"],
+  "history_cases": ["delivery", "receipt", "history", "two_intents", "parallel_resume"],
+  "concurrent_processes": 8,
+  "crash_exit_code": 23,
+  "limitations": ["CRC detects accidental damage, not malicious tampering", "cooperative local processes only", "no compaction or retention", "no authentication; bind loopback only", "no claim of end-to-end exactly-once"]
+}

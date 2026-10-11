@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "seeds": [7, 19, 41],
+  "lengths": [128, 512],
+  "d": 32,
+  "queries": 4,
+  "groups": [8, 32],
+  "bits": [4, 8],
+  "conditions": ["clean", "early_focus", "recent_focus"],
+  "residual_tokens": [0, 16, 64],
+  "block_tokens": 32,
+  "warmups": 3,
+  "timing_rounds": 15,
+  "timing_scope": "CPU NumPy decode plus attention, prepacked inputs; no tokenizer, projection, model, GPU or network",
+  "tolerance": 1e-10
+}
