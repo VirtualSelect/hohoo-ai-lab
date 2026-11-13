@@ -44,9 +44,7 @@ public final class ChatClient {
                     bytesOut.write(buffer, 0, n);
                 }
             }
-            try {
-                return JsonParser.parseString(new String(bytesOut.toByteArray(), StandardCharsets.UTF_8)).getAsJsonObject();
-            } catch (RuntimeException e) { throw new IOException("invalid_response_json"); }
+            return JsonInput.parseResponse(bytesOut.toByteArray());
         } finally { c.disconnect(); }
     }
 }
