@@ -5,7 +5,11 @@ H=pathlib.Path(__file__).resolve().parent; ROOT=H.parents[1]
 P=json.loads((H/'protocol.json').read_text())
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--out',type=pathlib.Path,default=H/'evidence');args=parser.parse_args();args.out.mkdir(parents=True,exist_ok=True)
+    parser=argparse.ArgumentParser();parser.add_argument('--out',type=pathlib.Path,required=True,help='New output directory; existing directories are never overwritten');args=parser.parse_args()
+    try:
+        args.out.mkdir(parents=True,exist_ok=False)
+    except FileExistsError:
+        parser.error('Output directory already exists. Choose a new directory; archived evidence must not be overwritten.')
     rows=[]; arrays={}
     for seed in P['seeds']:
         for n in P['lengths']:

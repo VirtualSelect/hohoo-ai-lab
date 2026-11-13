@@ -1,0 +1,15 @@
+{
+  "version": "owned-cancellation-v1",
+  "scope": "One journal owner and a fresh lease per turn. Real loopback sockets with fixed SSE replies; no provider, billing, TLS, chunked HTTP, reconnect, hard deadline or general HTTP-client claim.",
+  "control": "The flag-only case observes the owner for 100ms while the server continuation gate is held. Then explicit cleanup closes the socket. This is a bounded observation, not a latency distribution.",
+  "cases": [
+    {"name": "complete", "receivedRequests": 1, "acceptedConnections": 1, "storedTurns": 2, "outcome": "committed"},
+    {"name": "before-start", "receivedRequests": 0, "acceptedConnections": 0, "storedTurns": 1, "outcome": "rejected"},
+    {"name": "before-register", "receivedRequests": 0, "acceptedConnections": 0, "storedTurns": 1, "outcome": "rejected"},
+    {"name": "after-register", "receivedRequests": 0, "acceptedConnections": 0, "storedTurns": 1, "outcome": "rejected"},
+    {"name": "flag-only", "receivedRequests": 1, "acceptedConnections": 1, "storedTurns": 1, "outcome": "rejected"},
+    {"name": "close-reading", "receivedRequests": 1, "acceptedConnections": 1, "storedTurns": 1, "outcome": "rejected"},
+    {"name": "before-commit", "receivedRequests": 1, "acceptedConnections": 1, "storedTurns": 1, "outcome": "rejected"},
+    {"name": "old-lease", "receivedRequests": 2, "acceptedConnections": 2, "storedTurns": 3, "outcome": "committed"}
+  ]
+}

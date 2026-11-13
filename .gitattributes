@@ -45,3 +45,6 @@ experiments/09-cache-admission/evidence/** -text
 # Preserve original raw hashes for the published 2026-10-09 evidence.
 /demos/12-idempotent-retry/evidence/** -text
 /experiments/11-kv-quantization-axes/evidence/** -text
+
+/demos/14-turn-flow/** text eol=lf
+/demos/15-cancellable-turn-flow/** text eol=lf

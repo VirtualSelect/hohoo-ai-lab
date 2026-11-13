@@ -21,6 +21,7 @@ public final class Classification {
     public static Classification parse(String text) throws IOException {
         require(text != null && text.length() <= 8000, "content_missing_or_too_large");
         // Do not strip fences or extract a substring: reject ambiguous output.
+        JsonInput.checkLexical(text);
         JsonReader reader = new JsonReader(new StringReader(text));
         reader.setLenient(false);
         require(reader.peek() == JsonToken.BEGIN_OBJECT, "object_required");

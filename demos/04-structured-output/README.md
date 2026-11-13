@@ -11,7 +11,17 @@ cd demos/04-structured-output
 mvn -q compile exec:java '-Dexec.args=--self-test'
 ```
 
-已在 Java 1.8.0_171 实际运行 35 项检查，含 localhost HTTP 故障注入；不访问模型。fixture 是人工测试输入，不能用来统计模型格式通过率。测试报告写入 evidence/offline-*.json，每次独立保存。
+原2026-09-28版本在 Java 1.8.0_171 实际运行35项检查，含localhost HTTP故障注入；不访问模型。fixture是人工测试输入，不能用来统计模型格式通过率。测试报告写入evidence/offline-*.json，每次独立保存。此前字符串词法修订新增6项检查，得到41项；本轮再加19项回环响应检查，当前共60项通过。原35项归档与32组字符串对照不改写。
+
+### 2026-11-12 复核修订（2026-11-13发布）
+
+原固定版本的`setLenient(false)`仍会接受字符串中的非法`\'`转义，例如`{"category":"llm","tags":["can\'t"]}`，并将其解码为`can't`。正常的单引号不需要转义。已在流式读取前补充字符串词法检查，原字段、重复键、类型和业务约束继续由原校验器负责；没有更换依赖，也没有修改历史35项检查或32组Java/TypeScript对照的归档结果。新增回归覆盖非法转义、合法单引号/Unicode/反斜杠/双引号，以及围栏适配后仍须校验。公开旧提交仍有该缺陷，不能把本地修订当成已发布版本。
+
+### 响应字节与外层JSON复核（2026-11-13修订）
+
+原ChatClient将坏UTF-8替换为U+FFFD后继续验收；外层JsonParser还接受注释、单引号/无引号字段、重复content与非标准关键字。JsonInput现在以CharsetDecoder配合CodingErrorAction.REPORT拒绝坏字节，复用并扩展词法检查，按对象核对解码后的重复字段、结束位置与最多64层容器，再构建Gson树。根容器计一层；开头UTF-8 BOM保留兼容。1MB响应上限、读取超时与不重试规则不变，不更换Java/Gson依赖。
+
+合法U+FFFD的UTF-8是EF BF BD，不能靠禁止这个字符来拦坏字节FF。60项检查包括原41项与19项回环响应：坏字节及JSON缺口拒绝，中文/emoji、合法替换字符、指数数字/标准关键字、不同对象同名字段与64层边界保留，65层拒绝。HTTP仅访问127.0.0.1，未调用提供商；新检查记录仍标为fixture，不是新的模型实验。旧固定提交缺陷保留在原文章勘误中。
 
 ## 真实 API（按需，有调用成本）
 
@@ -58,9 +68,10 @@ mvn -q compile exec:java '-Dexec.args=--replay evidence/live-20260928/live-1.jso
 
 - StructuredOutput：固定教学请求、CLI、证据写入、显式在线探测/离线重放。
 - ChatClient：HTTPS、超时、1MB响应上限、拒绝重定向、不自动重试。
+- JsonInput：UTF-8解码、共享词法与外层JSON结构/重复键/深度边界。
 - Classification：检查 envelope 的 assistant / stop / content，再严格检查内部对象的字段、枚举与 tags。
 - ContentFormat：可选的单一代码围栏适配。
-- ContractTests：35个离线契约、协议与 HTTP 行为检查。
+- ContractTests：当前60项离线契约、协议与回环HTTP检查；原35项与此前41项版本分别保留。
 - contract.schema.json：核心 JSON 契约；Java 额外拒绝重复键、标签控制字符和首尾空白。
 
 为什么不用 Gson.fromJson 直接转 DTO？反序列化不等于业务验证。用 JsonReader 检查实际 token 类型，避免将数字变成标签字符串；拒绝重复键避免“后面的值覆盖前面”的歧义。

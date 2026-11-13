@@ -1,0 +1,24 @@
+{
+  "version": "turn-flow-local-v3",
+  "scope": "Single-owner turn composition with synthetic replies over real loopback HTTP. No model, paid service, TLS, power-loss, or production reliability claim.",
+  "policy": "One generation attempt; plain-text nonblank UTF-8 reply up to 512 bytes; reject cancellation or deadline observed at pre-commit checkpoints. A cancellation racing after the final check cannot undo a commit. Append errors make the coordinator unusable until the journal is reopened.",
+  "deadlineCase": "deadline-after uses a controlled monotonic clock, not measured latency",
+  "cases": [
+    {"name": "two-turns", "httpRequests": 2, "seededTurns": 0, "committedTurns": 2},
+    {"name": "project-not-delete", "httpRequests": 1, "seededTurns": 2, "committedTurns": 3},
+    {"name": "reopen-replay-conflict", "httpRequests": 1, "seededTurns": 0, "committedTurns": 1},
+    {"name": "budget", "httpRequests": 0, "seededTurns": 1, "committedTurns": 1},
+    {"name": "blank", "httpRequests": 1, "seededTurns": 1, "committedTurns": 1},
+    {"name": "unavailable", "httpRequests": 1, "seededTurns": 1, "committedTurns": 1},
+    {"name": "lost", "httpRequests": 1, "seededTurns": 1, "committedTurns": 1},
+    {"name": "cancel-before", "httpRequests": 0, "seededTurns": 1, "committedTurns": 1},
+    {"name": "cancel-after", "httpRequests": 1, "seededTurns": 1, "committedTurns": 1},
+    {"name": "deadline-after", "httpRequests": 1, "seededTurns": 1, "committedTurns": 1},
+    {"name": "interrupt-before", "httpRequests": 0, "seededTurns": 1, "committedTurns": 1},
+    {"name": "answer-bytes", "httpRequests": 1, "seededTurns": 1, "committedTurns": 1},
+    {"name": "malformed-utf8", "httpRequests": 1, "seededTurns": 1, "committedTurns": 1},
+    {"name": "response-limit", "httpRequests": 1, "seededTurns": 1, "committedTurns": 1},
+    {"name": "owner-thread", "httpRequests": 0, "seededTurns": 1, "committedTurns": 1},
+    {"name": "commit-io-poisons-flow", "httpRequests": 1, "seededTurns": 1, "committedTurns": 1}
+  ]
+}
